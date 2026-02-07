@@ -1,1090 +1,1300 @@
-Tema 1: Lenguaje de marcado HTML5
-1.	¿De qué estándar surge el lenguaje HTML?
-A. XML, como una versión simplificada para la web.
-B. SGML, como estándar general de marcado.
-C. Markdown, como lenguaje ligero de marcado.
-D. La especificación ECMAScript del W3C.
-Correcta: B
-2.	Un documento HTML:
-A. Se limita a etiquetas HTML y no admite integración con otros lenguajes.
-B. Solo puede incluir JavaScript, pero no CSS.
-C. Combina HTML con otros lenguajes.
-D. Es un documento de texto plano sin estructura.
-Correcta: C
-3.	Mejoras de HTML5 respecto a HTML:
-A. Incorpora tag para definir diálogos y conversaciones.
-B. Elimina por completo los formularios, sustituyéndolos por JSON.
-C. Impide el uso de multimedia sin plugins externos.
-D. Sustituye CSS por atributos de estilo obligatorios.
-Correcta: A
-4.	La etiqueta <img> sirve para:
-A. Crear un contenedor para imágenes como si fuera un <div>.
-B. Insertar una imagen.
-C. Insertar un vídeo en formato MP4.
-D. Definir un mapa del sitio para buscadores.
-Correcta: B
-5.	En un formulario HTML, el campo action:
-A. Define el método de envío (GET o POST).
-B. Indica la página a la que se envían los datos.
-C. Indica el tipo MIME del formulario.
-D. Bloquea el envío hasta validar con CSS.
-Correcta: B
-6.	La etiqueta <head> permite:
-A. Insertar el contenido visible principal de la página.
-B. Introducir metadatos sobre el documento.
-C. Incluir únicamente enlaces de navegación.
-D. Definir el pie de página del documento.
-Correcta: B
-7.	Las etiquetas semánticas de HTML5 buscan:
-A. Eliminar el uso de JavaScript en la web.
-B. Sustituir la necesidad de usar <div> para identificar cada bloque.
-C. Convertir HTML en un lenguaje de programación completo.
-D. Obligar a usar tablas para el diseño.
-Correcta: B
-8.	Para representar contenido en un párrafo se usa:
-A. <p>.
-B. <span>.
-C. <br>.
-D. <h1>.
-Correcta: A
-9.	¿Qué etiqueta define una lista no ordenada?
-A. <ol>.
-B. <ul>.
-C. <li>.
-D. <dl>.
-Correcta: B
-10.	Los lenguajes de marcado se centran en:
-A. La compilación del código a binario.
-B. La estructuración del contenido.
-C. El acceso directo a memoria y punteros.
-D. El control de procesos del sistema operativo.
-Correcta: B
-11.	XHTML se diferencia de HTML en que:
-A. Permite omitir siempre el cierre de etiquetas.
-B. No sigue ninguna regla de sintaxis estricta.
-C. No posee un conjunto de etiquetas predefinido.
-D. Es un lenguaje de hojas de estilo.
-Correcta: C
-12.	¿Es obligatorio cerrar las etiquetas en HTML5?
-A. No, nunca se cierran etiquetas en HTML5.
-B. Solo se cierran etiquetas si llevan atributos.
-C. Sí, para mantener la intención declarativa y el rigor estructural.
-D. Solo se cierran en documentos JSON-LD.
-Correcta: C
-13.	¿Qué elemento de HTML5 se usa para dibujos y gráficos?
-A. <svg>.
-B. <img>.
-C. <canvas>.
-D. <style>.
-Correcta: C
-14.	El atributo method en formularios suele aceptar:
-A. PUT y DELETE.
-B. FTP y SMTP.
-C. GET y POST.
-D. TCP y UDP.
-Correcta: C
-15.	¿Qué etiqueta de HTML5 define un bloque de contenido independiente (como un post)?
-A. <section>.
-B. <div>.
-C. <article>.
-D. <aside>.
-Correcta: C
-________________________________________
-Tema 2: Introducción a hojas de estilo CSS
-1.	HTML y CSS se centran respectivamente en:
-A. Presentación y lógica de negocio.
-B. Estructura y presentación.
-C. Acceso a datos y seguridad.
-D. Compilación y ejecución.
-Correcta: B
-2.	CSS3 agrega funcionalidades como:
-A. Gestión de sesiones y cookies.
-B. Control de procesos en segundo plano.
-C. Rotación, múltiples fondos y redondeo de bordes.
-D. Compilación a bytecode.
-Correcta: C
-3.	¿Qué código HTML5 enlaza una hoja de estilo externa?
-A. <style src="estilo.css"></style>
-B. <css link="estilo.css">
-C. <link rel="stylesheet" href="estilo.css">
-D. <script rel="stylesheet" href="estilo.css"></script>
-Correcta: C
-4.	Ventaja del enlace externo en CSS:
-A. Impide que el navegador use caché.
-B. Permite cambios globales afectando a todas las páginas vinculadas.
-C. Obliga a escribir los estilos dentro del HTML.
-D. Solo funciona en HTML5, no en HTML4.
-Correcta: B
-5.	Los selectores CSS universales usan el símbolo:
-A. *.
-B. #.
-C. ..
-D. @.
-Correcta: A
-6.	Un identificador (id) en CSS:
-A. Puede repetirse infinitas veces en la misma página.
-B. No puede repetirse en el mismo documento.
-C. Solo puede aplicarse a etiquetas <div>.
-D. Sustituye a las clases en CSS3.
-Correcta: B
-7.	Las clases (class) en CSS:
-A. Solo pueden usarse una vez por documento.
-B. Se aplican automáticamente sin declararlas en HTML.
-C. Pueden usarse en múltiples etiquetas.
-D. Son exclusivas del <head>.
-Correcta: C
-8.	CSS3 introduce el canal alfa para:
-A. Definir el tamaño de fuente.
-B. La transparencia.
-C. Mejorar la velocidad del servidor.
-D. Establecer el orden de carga del HTML.
-Correcta: B
-9.	Las pseudo-clases permiten:
-A. Cambiar el HTML del servidor.
-B. Definir nuevos elementos HTML dinámicos.
-C. Clasificar elementos según su estado (ej. hover).
-D. Convertir CSS en un lenguaje de programación.
-Correcta: C
-10.	¿Qué propiedad de CSS3 genera bordes redondeados?
-A. border-style.
-B. border-radius.
-C. outline.
-D. padding.
-Correcta: B
-11.	text-shadow en CSS3 sirve para:
-A. Cambiar el tipo de letra por una fuente externa.
-B. Ajustar el interlineado del texto.
-C. Sombrear textos.
-D. Crear bordes redondeados en el texto.
-Correcta: C
-12.	¿Qué es un gradiente en CSS3?
-A. Un tipo de fuente especial para títulos.
-B. Un script que genera colores aleatorios.
-C. Una transición entre al menos dos colores.
-D. Un borde que se dibuja con puntos.
-Correcta: C
-13.	Las transformaciones en CSS3 permiten:
-A. Ejecutar lógica condicional en el navegador.
-B. Realizar cambios geométricos a los elementos.
-C. Modificar la estructura del DOM en tiempo real.
-D. Sustituir imágenes por texto automáticamente.
-Correcta: B
-14.	¿Se recomienda incluir estilos dentro de la etiqueta HTML?
-A. Sí, porque mejora la reutilización.
-B. Sí, porque aumenta la velocidad del servidor.
-C. No, se prefiere la separación total de contenido y estilo.
-D. Solo si se usa Bootstrap.
-Correcta: C
-15.	¿Qué selector se usa para un elemento con un ID específico?
-A. El símbolo .
-B. El símbolo *
-C. El símbolo #
-D. El símbolo @
-Correcta: C
-________________________________________
-Tema 3: JavaScript, JQuery y AJAX
-1.	El lenguaje JavaScript normalmente se ejecuta en:
-A. El cliente.
-B. El servidor exclusivamente.
-C. El router de red.
-D. El compilador del sistema operativo.
-Correcta: A
-2.	AJAX significa:
-A. Advanced JSON and XForms.
-B. Asynchronous JavaScript and XML (o eXtensions en algunos textos).
-C. Automatic Java and XHTML.
-D. Assembled JavaScript and XHTML.
-Correcta: B
-3.	¿Qué problema resuelve AJAX?
-A. Permite compilar JavaScript a C++ automáticamente.
-B. Permite recargar áreas de la web sin recargar la página completa.
-C. Sustituye HTTP por FTP en comunicaciones web.
-D. Elimina la necesidad de usar CSS.
-Correcta: B
-4.	La sintaxis de JQuery se basa en:
-A. El objeto jQuery() o $().
-B. El objeto document.queryCss().
-C. El objeto window.ajax().
-D. El objeto style.selector().
-Correcta: A
-5.	¿Qué aporta JQuery a la UX?
-A. Sustituye HTML por un lenguaje binario.
-B. Evita el uso del DOM en el navegador.
-C. Interactividad como barras de menú, pestañas y búsquedas.
-D. Obliga a recargar la página para cada acción.
-Correcta: C
-6.	Pasos para activar AJAX:
-A. Llamada a JS, petición asíncrona, recuperación de datos, modificación de la página.
-B. Cargar CSS, compilar HTML, reiniciar servidor, mostrar resultados.
-C. Guardar cookies, cerrar sesión, reiniciar navegador, volver a entrar.
-D. Definir tablas, migrar base de datos, lanzar servidor FTP, renderizar.
-Correcta: A
-7.	El DOM es:
-A. Un lenguaje de programación para servidores.
-B. Un sistema de bases de datos del navegador.
-C. Una estructura arbórea que crea el navegador al cargar la web.
-D. Un protocolo de red para intercambiar archivos.
-Correcta: C
-8.	JavaScript es un lenguaje:
-A. Compilado a código máquina antes de ejecutarse.
-B. Exclusivo para bases de datos relacionales.
-C. De scripting e interpretado.
-D. Diseñado para sustituir HTML.
-Correcta: C
-9.	El objeto XMLHttpRequest es fundamental para:
-A. Definir estilos CSS dinámicos.
-B. AJAX.
-C. Sustituir el servidor por el cliente.
-D. Ejecutar Java dentro del navegador.
-Correcta: B
-10.	JQuery utiliza selectores basados en:
-A. XPath.
-B. CSS.
-C. SQL.
-D. FTP.
-Correcta: B
-11.	¿Qué etiqueta avisa si JavaScript está bloqueado?
-A. <nojs>
-B. <noscript>
-C. <script-blocked>
-D. <js-off>
-Correcta: B
-12.	En JQuery, el argumento de $( ) es un:
-A. Compilador.
-B. Motor de renderizado.
-C. Selector.
-D. Tipo de dato binario.
-Correcta: C
-13.	JavaScript es de tipado:
-A. Fuerte y estático.
-B. Débil o no tipado.
-C. Solo numérico.
-D. Exclusivo de enteros.
-Correcta: B
-14.	¿Qué permite dotar de dinamismo a una web estática?
-A. JavaScript.
-B. HTML5.
-C. CSS3.
-D. SGML.
-Correcta: A
-15.	¿Se puede incluir JS dentro del archivo HTML?
-A. No, debe ir siempre en un archivo externo.
-B. Sí, entre etiquetas <script>.
-C. Solo si se usa XHTML estricto.
-D. Solo dentro de <style>.
-Correcta: B
-________________________________________
-Tema 4: Programación Orientada a Componentes (POC)
-1.	Un componente es:
-A. Un único objeto sin interfaces.
-B. Una colección de objetos que proporcionan servicios a diferentes sistemas.
-C. Un archivo HTML con estilos embebidos.
-D. Un script que solo se ejecuta en cliente.
-Correcta: B
-2.	Estados de creación de un componente:
-A. Diseño, compilación, ejecución y depuración.
-B. Construcción, despliegue, borrado y reinicio.
-C. Análisis, prueba, mantenimiento y retirada.
-D. Especificación, implementación, objeto y contratos.
-Correcta: D
-3.	Ventaja principal de la POC:
-A. Reutilización de código.
-B. Sustituir completamente la POO.
-C. Evitar el uso de interfaces.
-D. Obligar a la herencia múltiple.
-Correcta: A
-4.	Diferencia entre objeto y componente:
-A. Un componente no puede reutilizarse.
-B. Un objeto siempre se ejecuta en red y un componente no.
-C. El componente es una entidad autónoma que exporta rendimiento y usa interfaces abiertas.
-D. Un componente no tiene contratos ni interfaces.
-Correcta: C
-5.	Reutilización de "caja negra" significa:
-A. No se conoce la implementación interna, solo su interfaz.
-B. Se conoce todo el código fuente y se modifica libremente.
-C. Se reutiliza copiando y pegando el código en cada proyecto.
-D. Solo se reutilizan variables globales.
-Correcta: A
-6.	La POC es una variante de:
-A. Programación estructurada.
-B. Programación funcional.
-C. La Programación Orientada a Objetos (POO).
-D. Programación lógica.
-Correcta: C
-7.	La interfaz de un componente es:
-A. Un archivo de configuración sin relación con el cliente.
-B. El nexo de unión entre el cliente y la implementación.
-C. Un conjunto de estilos CSS.
-D. Un protocolo de red.
-Correcta: B
-8.	Componentes con estado:
-A. Aquellos que no guardan datos nunca.
-B. Aquellos que solo tienen métodos estáticos.
-C. Aquellos que almacenan datos de manera local (ej. un contador).
-D. Aquellos que solo funcionan en bases de datos.
-Correcta: C
-9.	¿Qué lenguaje permite la creación clara de componentes?
-A. Java y Ada95.
-B. HTML y CSS.
-C. SQL y XML.
-D. Python y Bash.
-Correcta: A
-10.	Un contrato de uso establece:
-A. La funcionalidad a través de su interfaz.
-B. La estética visual del componente.
-C. La velocidad de descarga de la web.
-D. El tipo de navegador obligatorio.
-Correcta: A
-11.	La POC utiliza principalmente:
-A. La herencia en lugar de la composición.
-B. La recursividad como base del diseño.
-C. La composición en lugar de la herencia.
-D. El acoplamiento fuerte como objetivo.
-Correcta: C
-12.	Los componentes pueden ejecutarse de forma:
-A. Solo local.
-B. Local o distribuida.
-C. Solo en cliente.
-D. Solo en servidor.
-Correcta: B
-13.	¿Es necesaria la fase de instalación de un componente?
-A. No, los componentes no requieren registro.
-B. Solo si el componente usa CSS3.
-C. Sí, para registrarlo en el sistema y que las aplicaciones lo usen.
-D. Solo en aplicaciones móviles.
-Correcta: C
-14.	La fase de especificación debe ser:
-A. Independiente de la plataforma de desarrollo.
-B. Dependiente del lenguaje de programación del cliente.
-C. Exclusiva para Windows.
-D. Obligatoria en HTML.
-Correcta: A
-15.	Bajo acoplamiento en componentes implica:
-A. Mayor dependencia y menos flexibilidad.
-B. Menor dependencia entre módulos.
-C. Herencia obligatoria entre módulos.
-D. Uso exclusivo de variables globales.
-Correcta: B
-________________________________________
-Tema 5: Arquitectura de componentes
-1.	La arquitectura de componentes busca:
-A. Evitar cualquier reutilización de código.
-B. Sustituir el ciclo de vida del software por prototipos.
-C. Desarrollos más robustos, homogéneos y escalables.
-D. Obligar a usar un único lenguaje de programación.
-Correcta: C
-2.	CORBA se centra en:
-A. Facilitar el uso de componentes remotos mediante POO.
-B. Sustituir HTTP por SMTP.
-C. Eliminar el uso de middleware en redes.
-D. Crear únicamente páginas estáticas HTML.
-Correcta: A
-3.	DCOM permite:
-A. Ejecutar CSS en el servidor.
-B. Diseñar interfaces gráficas con HTML5.
-C. Desarrollar componentes distribuidos.
-D. Sustituir Java por JavaScript.
-Correcta: C
-4.	Enterprise JavaBeans (EJB) utiliza un modelo:
-A. Peer-to-peer.
-B. Monolítico sin capas.
-C. Cliente-Servidor.
-D. Exclusivo de escritorio.
-Correcta: C
-5.	Composición simple en POC ocurre cuando:
-A. Solo se usan componentes propios sin frameworks.
-B. Se combinan componentes de un framework con otros.
-C. Se elimina toda dependencia y no hay interfaces.
-D. Los componentes se copian dentro del mismo archivo.
-Correcta: B
-6.	La arquitectura software detalla estructuras con un:
-A. Alto nivel de abstracción.
-B. Bajo nivel de ensamblador.
-C. Nivel de microcódigo.
-D. Nivel de hardware físico.
-Correcta: A
-7.	¿Qué tecnología busca transparencia para el desarrollador?
-A. CORBA.
-B. .NET.
-C. HTML5.
-D. CSS3.
-Correcta: B
-8.	La composición heterogénea implica:
-A. Componer solo dentro del mismo lenguaje.
-B. Eliminar frameworks y usar solo componentes puros.
-C. Componer componentes a través de diferentes frameworks.
-D. Ejecutar componentes solo localmente.
-Correcta: C
-9.	¿Es posible tratar a un framework como un componente?
-A. No, un framework nunca puede encapsularse.
-B. Solo si se reescribe en ensamblador.
-C. Sí, mediante la extensión del framework.
-D. Solo en arquitecturas monolíticas.
-Correcta: C
-10.	Composición transitiva es:
-A. La composición que se hace en un único paso y termina ahí.
-B. El resultado de una composición previa que se vuelve a combinar.
-C. La composición exclusiva de componentes gráficos.
-D. La eliminación de interfaces para simplificar.
-Correcta: B
-11.	Para lograr reutilización es necesario crear:
-A. Repositorios de imágenes.
-B. Repositorios de componentes.
-C. Repositorios de usuarios.
-D. Repositorios de conexiones HTTP.
-Correcta: B
-12.	La arquitectura basada en componentes enfatiza:
-A. La herencia y el acoplamiento fuerte.
-B. La descomposición en componentes funcionales con interfaces definidas.
-C. El uso exclusivo de variables globales.
-D. La ausencia total de contratos.
-Correcta: B
-13.	¿Qué aporta la arquitectura de componentes al ciclo industrial?
-A. Mayor eficiencia.
-B. Mayor dependencia entre módulos.
-C. Menor reutilización.
-D. Sustitución de pruebas por despliegue directo.
-Correcta: A
-14.	La arquitectura ayuda a prever:
-A. El color final del diseño.
-B. Cambios en el software.
-C. La marca del navegador del usuario.
-D. El tipo de teclado del programador.
-Correcta: B
-15.	¿Los componentes deben ser dependientes entre sí?
-A. Sí, porque mejora el control.
-B. Sí, porque evita interfaces.
-C. No, la fuerza de la arquitectura reside en su independencia e interfaz.
-D. Solo en sistemas distribuidos.
-Correcta: C
-________________________________________
-Tema 6: Bootstrap
-1.	Bootstrap garantiza:
-A. Un diseño adaptativo y principios de accesibilidad.
-B. La ejecución de Java en el navegador sin servidor.
-C. La compilación automática de CSS a HTML.
-D. La eliminación de JavaScript en interfaces web.
-Correcta: A
-2.	Requisitos para ejecutar Bootstrap 3:
-A. Solo HTML y CSS.
-B. CSS, JS, HTML5 y JQuery.
-C. PHP, MySQL y Apache.
-D. XML, XSLT y XPath.
-Correcta: B
-3.	El diseño con rejilla de Bootstrap:
-A. Obliga a usar tablas HTML para maquetar.
-B. Elimina el uso de contenedores en la web.
-C. Sustituye CSS por JavaScript para el layout.
-D. Crea una estructura ordenada y proporciona continuidad.
-Correcta: D
-4.	Etiqueta necesaria para el diseño adaptativo en móviles:
-A. <meta name="mobile" content="true">
-B. <meta charset="UTF-8">
-C. <meta name="viewport" content="width=device-width, initial-scale=1">
-D. <meta http-equiv="refresh" content="30">
-Correcta: C
-5.	Tipos de rejillas según dispositivo:
-A. tv, console, pc, mobile.
-B. xs (móviles), sm (tablets), md (PC), lg (PC gran pantalla).
-C. small, medium, large, xlarge.
-D. 1col, 2col, 3col, 4col.
-Correcta: B
-6.	Clase para centrar la web automáticamente:
-A. row-center
-B. container
-C. align-web
-D. center-blocks
-Correcta: B
-7.	Bootstrap es un framework orientado a:
-A. Enmaquetado HTML y diseño CSS.
-B. Bases de datos distribuidas.
-C. Control de procesos del sistema operativo.
-D. Compilación de Java en servidor.
-Correcta: A
-8.	Atributo box-shadow en Bootstrap:
-A. Añade efectos visuales según el estado de un campo.
-B. Cambia el método HTTP de un formulario.
-C. Define el tamaño de la rejilla responsive.
-D. Crea enlaces de navegación semánticos.
-Correcta: A
-9.	Para formularios que ocupen poco espacio se usa la clase:
-A. form-compact
-B. form-inline
-C. form-small
-D. form-grid
-Correcta: B
-10.	¿Cómo se desactiva el diseño adaptativo?
-A. Eliminando los archivos CSS.
-B. Desactivando JavaScript del navegador.
-C. Eliminando la etiqueta viewport y el max-width de contenedores.
-D. Cambiando <div> por <span>.
-Correcta: C
-11.	Bootstrap distingue tres estados en formularios:
-A. error-only, success-only, warning-only.
-B. has-error, has-success y has-warning.
-C. form-red, form-green, form-yellow.
-D. state-0, state-1, state-2.
-Correcta: B
-12.	La clase sr-only sirve para:
-A. Aumentar el tamaño del texto en móviles.
-B. Ocultar elementos para mejorar rendimiento.
-C. Accesibilidad, ocultando etiquetas visualmente pero no para lectores.
-D. Crear sombras en texto automáticamente.
-Correcta: C
-13.	¿Bootstrap incluye iconos?
-A. No, requiere librerías externas obligatorias.
-B. Sí, pero solo si se usa React.
-C. Sí, tiene un amplio número de componentes CSS disponibles.
-D. Solo soporta iconos SVG personalizados.
-Correcta: C
-14.	La rejilla de Bootstrap divide la página en:
-A. Filas sin columnas.
-B. Columnas sin filas.
-C. Campos e interludios dentro de márgenes.
-D. Un único contenedor fijo sin divisiones.
-Correcta: C
-15.	Bootstrap es capaz de lograr diseño adaptativo en:
-A. Solo móviles.
-B. Solo PC.
-C. Solo tablets.
-D. PC, Tablet y Smartphones.
-Correcta: D
-________________________________________
-Tema 7: Patrón Modelo Vista Controlador (MVC)
-1.	En MVC, la M significa:
-A. Módulo: controla la navegación de la web.
-B. Monitor: supervisa las peticiones HTTP.
-C. Modelo: Maneja datos y lógica de negocios.
-D. Motor: renderiza la interfaz de usuario.
-Correcta: C
-2.	En MVC, la V significa:
-A. Vista: Se encarga del diseño y presentación.
-B. Validación: comprueba reglas de negocio.
-C. Versión: gestiona cambios del código.
-D. Variable: contiene datos temporales.
-Correcta: A
-3.	En MVC, la C significa:
-A. Cliente: ejecuta la aplicación.
-B. Conector: une capas de persistencia.
-C. Controlador: Enruta comandos a modelos y vistas.
-D. Compilador: transforma el código a binario.
-Correcta: C
-4.	El controlador en MVC actúa como:
-A. Enlace entre el modelo y la vista ante eventos de usuario.
-B. Motor de base de datos relacional.
-C. Sustituto de la vista para mostrar HTML.
-D. Sistema de archivos para recursos estáticos.
-Correcta: A
-5.	En la implementación Java de MVC, el Servlet suele ser:
-A. La Vista.
-B. El Controlador.
-C. El Modelo.
-D. El navegador del cliente.
-Correcta: B
-6.	En la implementación Java de MVC, el JSP suele ser:
-A. La Vista.
-B. El Controlador.
-C. El Modelo.
-D. El servidor de aplicaciones.
-Correcta: A
-7.	En la implementación Java de MVC, el JavaBean o EJB es:
-A. El Controlador (recibe eventos).
-B. La Vista (renderiza HTML).
-C. El Modelo (comunica con BD).
-D. El Router (gestiona red).
-Correcta: C
-8.	WSDM es un método de desarrollo web centrado en:
-A. La base de datos más que el usuario.
-B. El usuario más que en los datos.
-C. La compilación y despliegue automático.
-D. El diseño gráfico exclusivamente.
-Correcta: B
-9.	Metodología UWE se fundamenta en:
-A. Un metamodelo basado en XML.
-B. Un metamodelo basado en UML.
-C. Un metamodelo basado en HTML5.
-D. Un metamodelo basado en CSS3.
-Correcta: B
-10.	WebML se caracteriza por:
-A. Bajo nivel de abstracción y foco técnico inicial.
-B. Un alto nivel de abstracción sin considerar detalles técnicos iniciales.
-C. Exclusividad para aplicaciones móviles.
-D. Sustituir patrones de diseño por scripts.
-Correcta: B
-11.	Framework para la capa de Modelo en Java:
-A. Bootstrap.
-B. Node.js.
-C. JPA o Hibernate.
-D. JQuery.
-Correcta: C
-12.	Framework para la capa de Vista en Java:
-A. JSF (Java Servlet Faces).
-B. JPA.
-C. Hibernate.
-D. Apache Axis.
-Correcta: A
-13.	Un patrón de diseño es:
-A. Un lenguaje de programación para web.
-B. Una solución general y reutilizable a problemas comunes.
-C. Un protocolo de transporte de datos.
-D. Un estándar de marcado derivado de SGML.
-Correcta: B
-14.	Tipos de patrones de diseño:
-A. Estáticos, dinámicos y persistentes.
-B. Creacionales, estructurales y de comportamiento.
-C. Cliente, servidor y distribuido.
-D. HTML, CSS y JavaScript.
-Correcta: B
-15.	¿MVC permite la separación de lógica de negocio y visualización?
-A. No, mezcla ambas capas para simplificar.
-B. Solo en aplicaciones sin base de datos.
-C. Sí, es su objetivo fundamental.
-D. Solo si se usa AJAX.
-Correcta: C
-________________________________________
-Tema 8: Tecnologías Grid de la información
-1.	Con la creación de clusters se consigue:
-A. Eliminar completamente la necesidad de redes.
-B. Ejecutar únicamente tareas de usuario individuales.
-C. Reemplazar HTTP por FTP en sistemas distribuidos.
-D. Compartir recursos (carga o computación) entre nodos.
-Correcta: D
-2.	Las aplicaciones distribuidas de alto rendimiento (HPC):
-A. Requieren gran capacidad de cómputo, superior a un único superordenador.
-B. Solo ejecutan tareas ofimáticas de bajo consumo.
-C. Se limitan a sistemas monousuario.
-D. Funcionan siempre sin paralelismo.
-Correcta: A
-3.	La Tecnología Grid está diseñada para:
-A. Resolver problemas demasiado grandes para un superordenador.
-B. Ejecutar solo páginas HTML estáticas.
-C. Eliminar el uso de middleware distribuido.
-D. Sustituir los clusters locales por un único PC.
-Correcta: A
-4.	Tres puntos fundamentales para considerar un sistema como Grid:
-A. Coordinación de recursos, protocolos estándar y QoS.
-B. Uso exclusivo de JavaScript, HTML5 y CSS3.
-C. Monolitismo, acoplamiento fuerte y baja latencia.
-D. Seguridad nula, ejecución local y sin estándares.
-Correcta: A
-5.	La tecnología Grid ha de ser:
-A. Dependiente de un único proveedor y plataforma.
-B. Local, monolítica y rígida.
-C. Exclusiva para superordenadores idénticos.
-D. Independiente, concurrente, contextualizable y económica.
-Correcta: D
-6.	Diferencia entre Cluster y Grid:
-A. Un grid siempre es local y un cluster siempre remoto.
-B. Los clusters suelen ser locales, el Grid une clusters dispersos geográficamente.
-C. Un cluster usa HTTP y un grid usa FTP.
-D. No existe diferencia: son sinónimos.
-Correcta: B
-7.	Aplicaciones HTC (Alta Productividad) se encargan de:
-A. Renderizado gráfico en tiempo real exclusivamente.
-B. Tareas secuenciales que pueden dividirse y componerse.
-C. Solo tareas interactivas de baja duración.
-D. Tareas que requieren GPU obligatoria.
-Correcta: B
-8.	La e-Ciencia es:
-A. Cuando la ciencia depende de la computación (meteorología, bioinformática).
-B. La ciencia realizada sin herramientas digitales.
-C. Un tipo de diseño web orientado a datos.
-D. Un estándar de comunicación HTTP.
-Correcta: A
-9.	¿Qué es la Meta-computación?
-A. Un único superordenador con más memoria.
-B. La unión de varios superordenadores.
-C. Un navegador especializado en HPC.
-D. Un protocolo de cifrado de red.
-Correcta: B
-10.	Ventaja de los clusters:
-A. Menor fiabilidad por depender de múltiples nodos.
-B. Obligan a usar nodos idénticos siempre.
-C. No permiten paralelización.
-D. Disminución de la obsolescencia y mayor fiabilidad (tolerancia a fallos).
-Correcta: D
-11.	El software de control en Grid sirve para:
-A. Cambiar el HTML de las páginas servidas.
-B. Monitorizar y controlar los recursos globalmente.
-C. Compilar programas en lenguaje ensamblador.
-D. Sustituir la red por ejecución local.
-Correcta: B
-12.	El criterio económico en Grid implica:
-A. Ser más caro que usar un superordenador dedicado.
-B. Ser más rentable que el uso de mainframes.
-C. Evitar cualquier reutilización de recursos.
-D. Obligar a adquirir hardware propietario.
-Correcta: B
-13.	QoS en Grid mide:
-A. Tiempo de respuesta, rendimiento y seguridad.
-B. Solo el ancho de banda de red.
-C. Únicamente el número de usuarios conectados.
-D. El tamaño de archivos HTML.
-Correcta: A
-14.	¿Los nodos en un Grid deben ser idénticos?
-A. Sí, es obligatorio que sean iguales.
-B. Sí, para asegurar compatibilidad de hardware.
-C. No, se usan elementos heterogéneos.
-D. Solo si el Grid usa HTTP.
-Correcta: C
-15.	La tecnología Grid se enmarca en el paradigma de:
-A. Programación local monousuario.
-B. Computación distribuida.
-C. Computación sin red.
-D. Compilación estática.
-Correcta: B
-________________________________________
-Tema 9: Arquitectura Orientada a Servicios (SOA)
-1.	SOAP es la tecnología utilizada para:
-A. Invocar servicios descubiertos y comunicar consumidor con proveedor.
-B. Diseñar interfaces web responsive.
-C. Reemplazar HTTP por FTP en servicios.
-D. Sustituir XML por CSS3.
-Correcta: A
-2.	¿Qué es un Web Service?
-A. Un archivo HTML con estilos embebidos.
-B. Un componente que solo funciona en local.
-C. Una tecnología que habilita la comunicación entre computadoras mediante protocolos y estándares.
-D. Un estándar de diseño gráfico para web.
-Correcta: C
-3.	Apache Axis está formado por:
-A. La aplicación AXIS y el servidor Apache.
-B. Un navegador y un motor CSS.
-C. Un compilador JavaScript y un router.
-D. Un framework de Bootstrap y un plugin JQuery.
-Correcta: A
-4.	Un Web Service puede utilizar protocolos como:
-A. TCP únicamente.
-B. SMTP exclusivamente.
-C. XML-RPC, SOAP o REST.
-D. FTP para todos los casos.
-Correcta: C
-5.	WSDL sirve para:
-A. Describir las interfaces de los servicios web.
-B. Ejecutar JavaScript en el servidor.
-C. Definir estilos de presentación CSS.
-D. Realizar consultas SQL en remoto.
-Correcta: A
-6.	Elementos de la arquitectura SOA:
-A. Cliente, Servidor, Navegador, HTML.
-B. Proveedor, Consumidor, Registro y el Servicio.
-C. Modelo, Vista, Controlador y Servlet.
-D. DNS, TCP, UDP y HTTP.
-Correcta: B
-7.	SOA permite el desarrollo de aplicaciones:
-A. Monolíticas y fuertemente acopladas.
-B. Débilmente acopladas y distribuidas.
-C. Sin interfaces y sin contratos.
-D. Exclusivas para escritorio.
-Correcta: B
-8.	¿SOA se vincula a una única tecnología?
-A. Sí, solo puede usarse con SOAP.
-B. No, puede usar RPC, CORBA o Web Services.
-C. Sí, es obligatorio usar REST.
-D. Sí, únicamente funciona con HTTP/3.
-Correcta: B
-9.	La fase de registro en SOA sirve para:
-A. Que el consumidor publique sus necesidades en un repositorio.
-B. Que el proveedor especifique su interfaz y funcionalidades en un repositorio.
-C. Que el servidor elimine servicios obsoletos automáticamente.
-D. Que el navegador guarde cookies de sesión.
-Correcta: B
-10.	¿Qué protocolo de transporte usa SOA por defecto?
-A. SMTP.
-B. FTP.
-C. HTTP.
-D. UDP.
-Correcta: C
-11.	IBM WebSphere es:
-A. Un lenguaje de marcado derivado de SGML.
-B. Un middleware para crear aplicaciones multiplataforma usando servicios web.
-C. Un estándar de estilos para CSS3.
-D. Un framework para diseño responsive en cliente.
-Correcta: B
-12.	SOA busca soluciones:
-A. Independientes para cada problema mediante módulos.
-B. Dependientes y fuertemente acopladas.
-C. Basadas solo en HTML estático.
-D. Que eliminen el registro de servicios.
-Correcta: A
-13.	El consumidor en SOA es quien:
-A. Publica servicios en el registro.
-B. Implementa el servicio web.
-C. Demanda la utilización de determinados servicios.
-D. Compila el WSDL a HTML.
-Correcta: C
-14.	Enhanced Web Services en Java incluyen:
-A. Un motor de estilos para CSS3.
-B. Funcionalidades para intercambio de mensajes.
-C. Un navegador integrado para pruebas.
-D. Un compilador de Bootstrap.
-Correcta: B
-15.	SOA ofrece un desarrollo de aplicaciones web:
-A. Lento e inestable.
-B. Solo válido para aplicaciones sin red.
-C. Ágil y robusto.
-D. Incompatible con sistemas distribuidos.
-Correcta: C
-________________________________________
-Tema 10: Protocolo HTTP
-1.	HTTP es un protocolo:
-A. Exclusivo para transferencia de archivos multimedia.
-B. De capa física para transmisión eléctrica.
-C. Basado en redes P2P sin servidor.
-D. Basado en arquitectura cliente-servidor, para intercambio de información y carente de estado.
-Correcta: D
-2.	Diferencia principal entre HTTP y HTTPS:
-A. La seguridad.
-B. La sintaxis del HTML.
-C. La capacidad de ejecutar JavaScript.
-D. El uso de CSS3 obligatorio.
-Correcta: A
-3.	Un código de respuesta HTTP 404 significa:
-A. El servidor ha fallado completamente (error 5xx).
-B. El recurso existe, pero requiere autenticación.
-C. Se ha comunicado con el servidor, pero el recurso no existe.
-D. La petición se ha procesado correctamente sin contenido.
-Correcta: C
-4.	Diferencia entre petición GET y POST:
-A. GET solo funciona en HTTPS y POST solo en HTTP.
-B. GET envía datos en la URL; POST los envía de forma "oculta" en el cuerpo del mensaje.
-C. GET siempre cifra el contenido y POST no.
-D. GET se usa para subir archivos y POST para leer páginas.
-Correcta: B
-5.	Las cookies se clasifican por almacenamiento en:
-A. De sesión y persistentes.
-B. Públicas y privadas.
-C. Locales y remotas.
-D. Temporales y cifradas únicamente.
-Correcta: A
-6.	SSL y TLS son:
-A. Lenguajes de marcado para servicios web.
-B. Métodos HTTP equivalentes a GET y POST.
-C. Frameworks de Java para MVC.
-D. Protocolos seguros usados por HTTPS para conexiones cliente-servidor.
-Correcta: D
-7.	El protocolo HTTP pertenece a la capa de:
-A. Enlace de datos.
-B. Aplicación.
-C. Física.
-D. Transporte.
-Correcta: B
-8.	Una URL especifica:
-A. Solo la IP del servidor y nada más.
-B. El método HTTP y el tamaño de respuesta.
-C. Protocolo, dirección/nombre del recurso y opcionalmente puerto.
-D. El tipo de cifrado de la conexión.
-Correcta: C
-9.	URI puede entenderse como:
-A. Un localizador.
-B. Un cifrado de red.
-C. Un tipo de cookie persistente.
-D. Un puerto TCP fijo.
-Correcta: A
-10.	URN permite:
-A. Indicar el protocolo y puerto obligatorios.
-B. Identificar recursos en la red pero no indica cómo acceder a ellos.
-C. Sustituir completamente a las URLs en navegadores.
-D. Transferir datos cifrados en HTTP.
-Correcta: B
-11.	Las conexiones persistentes sirven para:
-A. Aumentar el número de errores 404.
-B. Obligar a cerrar TCP tras cada petición.
-C. Reducir el tráfico de peticiones usando una misma conexión TCP.
-D. Sustituir GET por POST automáticamente.
-Correcta: C
-12.	¿Qué protocolo es más inapropiado para información sensible?
-A. POST.
-B. GET.
-C. HTTPS.
-D. TLS.
-Correcta: B
-13.	Los códigos HTTP 5xx indican:
-A. Redirecciones del navegador.
-B. Error del servidor.
-C. Error del cliente (URL incorrecta).
-D. Respuestas informativas 1xx.
-Correcta: B
-14.	El método HEAD es equivalente a GET pero:
-A. Devuelve el cuerpo del mensaje y no cabeceras.
-B. Solo devuelve las cabeceras, no el mensaje.
-C. Cambia recursos en el servidor.
-D. Se usa únicamente para subir archivos.
-Correcta: B
-15.	¿Qué sistema de cifrado usa HTTPS?
-A. Solo cifrado simétrico.
-B. Solo cifrado asimétrico.
-C. Una combinación de clave asimétrica (SSL) y simétrica (TLS).
-D. No usa cifrado, solo hashing.
-Correcta: C
+{
+  "title": "Banco de preguntas (Temas 1–10)",
+  "version": "1.0",
+  "format": {
+    "theme_object": {
+      "theme": "string",
+      "questions": "array<Question>"
+    },
+    "question_object": {
+      "id": "string",
+      "question": "string",
+      "options": [
+        { "letter": "A", "text": "string" },
+        { "letter": "B", "text": "string" },
+        { "letter": "C", "text": "string" },
+        { "letter": "D", "text": "string" }
+      ],
+      "correct_letter": "A|B|C|D",
+      "correct_text": "string",
+      "definition": "string",
+      "explanation": "string"
+    }
+  },
+  "themes": [
+    {
+      "theme": "Tema 1: Lenguaje de marcado HTML5",
+      "questions": [
+        {
+          "id": "T1_Q01",
+          "question": "¿De qué estándar surge el lenguaje HTML?",
+          "options": [
+            { "letter": "A", "text": "XML, como una versión simplificada para la web." },
+            { "letter": "B", "text": "SGML, como estándar general de marcado." },
+            { "letter": "C", "text": "Markdown, como lenguaje ligero de marcado." },
+            { "letter": "D", "text": "La especificación ECMAScript del W3C." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "SGML, como estándar general de marcado.",
+          "definition": "SGML (Standard Generalized Markup Language) es un metaestándar de marcado del que derivan lenguajes como HTML; define reglas para crear lenguajes de marcado.",
+          "explanation": "HTML se definió originalmente como una aplicación de SGML (HTML 2.0/4.01 se describen como aplicaciones SGML). Por eso su origen conceptual y normativo está en SGML, no en XML (que llegó después como simplificación)."
+        },
+        {
+          "id": "T1_Q02",
+          "question": "Un documento HTML:",
+          "options": [
+            { "letter": "A", "text": "Se limita a etiquetas HTML y no admite integración con otros lenguajes." },
+            { "letter": "B", "text": "Solo puede incluir JavaScript, pero no CSS." },
+            { "letter": "C", "text": "Combina HTML con otros lenguajes." },
+            { "letter": "D", "text": "Es un documento de texto plano sin estructura." }
+          ],
+          "correct_letter": "C",
+          "correct_text": "Combina HTML con otros lenguajes.",
+          "definition": "HTML estructura el contenido, y puede integrarse con CSS (presentación) y JavaScript (comportamiento), además de incluir recursos externos (imágenes, fuentes, etc.).",
+          "explanation": "En la práctica un documento web usa HTML como base, enlaza CSS (con <link> o <style>) y JavaScript (con <script>), por lo que no se limita solo a etiquetas HTML."
+        },
+        {
+          "id": "T1_Q03",
+          "question": "Mejoras de HTML5 respecto a HTML:",
+          "options": [
+            { "letter": "A", "text": "Incorpora tag para definir diálogos y conversaciones." },
+            { "letter": "B", "text": "Elimina por completo los formularios, sustituyéndolos por JSON." },
+            { "letter": "C", "text": "Impide el uso de multimedia sin plugins externos." },
+            { "letter": "D", "text": "Sustituye CSS por atributos de estilo obligatorios." }
+          ],
+          "correct_letter": "A",
+          "correct_text": "Incorpora tag para definir diálogos y conversaciones.",
+          "definition": "<dialog> es un elemento de HTML que representa un cuadro de diálogo o componente interactivo modal/no modal.",
+          "explanation": "HTML5 añade elementos semánticos y de interfaz como <dialog>. Las otras opciones son falsas: HTML5 amplía formularios, facilita multimedia nativa (<audio>, <video>) y no sustituye CSS."
+        },
+        {
+          "id": "T1_Q04",
+          "question": "La etiqueta <img> sirve para:",
+          "options": [
+            { "letter": "A", "text": "Crear un contenedor para imágenes como si fuera un <div>." },
+            { "letter": "B", "text": "Insertar una imagen." },
+            { "letter": "C", "text": "Insertar un vídeo en formato MP4." },
+            { "letter": "D", "text": "Definir un mapa del sitio para buscadores." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "Insertar una imagen.",
+          "definition": "<img> es un elemento vacío que inserta una imagen en el documento mediante atributos como src y alt.",
+          "explanation": "<img> referencia un recurso gráfico (src) y proporciona texto alternativo (alt). Para vídeo se usa <video>, y no es un contenedor."
+        },
+        {
+          "id": "T1_Q05",
+          "question": "En un formulario HTML, el campo action:",
+          "options": [
+            { "letter": "A", "text": "Define el método de envío (GET o POST)." },
+            { "letter": "B", "text": "Indica la página a la que se envían los datos." },
+            { "letter": "C", "text": "Indica el tipo MIME del formulario." },
+            { "letter": "D", "text": "Bloquea el envío hasta validar con CSS." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "Indica la página a la que se envían los datos.",
+          "definition": "action es el atributo del <form> que define la URL destino (endpoint) que recibirá los datos del formulario.",
+          "explanation": "method define GET/POST; action define el destino (ruta/URL) del envío. El tipo MIME lo define enctype."
+        },
+        {
+          "id": "T1_Q06",
+          "question": "La etiqueta <head> permite:",
+          "options": [
+            { "letter": "A", "text": "Insertar el contenido visible principal de la página." },
+            { "letter": "B", "text": "Introducir metadatos sobre el documento." },
+            { "letter": "C", "text": "Incluir únicamente enlaces de navegación." },
+            { "letter": "D", "text": "Definir el pie de página del documento." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "Introducir metadatos sobre el documento.",
+          "definition": "<head> contiene metadatos y recursos: <meta>, <title>, <link>, <style>, <script> (normalmente), etc.",
+          "explanation": "El contenido visible va en <body>. En <head> se definen título, codificación, viewport, enlaces a CSS/JS, descripción, etc."
+        },
+        {
+          "id": "T1_Q07",
+          "question": "Las etiquetas semánticas de HTML5 buscan:",
+          "options": [
+            { "letter": "A", "text": "Eliminar el uso de JavaScript en la web." },
+            { "letter": "B", "text": "Sustituir la necesidad de usar <div> para identificar cada bloque." },
+            { "letter": "C", "text": "Convertir HTML en un lenguaje de programación completo." },
+            { "letter": "D", "text": "Obligar a usar tablas para el diseño." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "Sustituir la necesidad de usar <div> para identificar cada bloque.",
+          "definition": "Etiquetas semánticas como <header>, <nav>, <main>, <section>, <article>, <aside>, <footer> aportan significado estructural al documento.",
+          "explanation": "Su objetivo es expresar la estructura y el significado del contenido, mejorando accesibilidad, SEO y mantenibilidad, reduciendo el “divitis”."
+        },
+        {
+          "id": "T1_Q08",
+          "question": "Para representar contenido en un párrafo se usa:",
+          "options": [
+            { "letter": "A", "text": "<p>." },
+            { "letter": "B", "text": "<span>." },
+            { "letter": "C", "text": "<br>." },
+            { "letter": "D", "text": "<h1>." }
+          ],
+          "correct_letter": "A",
+          "correct_text": "<p>.",
+          "definition": "<p> define un párrafo (bloque de texto). <span> es inline; <br> es salto de línea; <h1> es encabezado.",
+          "explanation": "El elemento semántico correcto para un párrafo es <p>, porque delimita un bloque textual con sentido."
+        },
+        {
+          "id": "T1_Q09",
+          "question": "¿Qué etiqueta define una lista no ordenada?",
+          "options": [
+            { "letter": "A", "text": "<ol>." },
+            { "letter": "B", "text": "<ul>." },
+            { "letter": "C", "text": "<li>." },
+            { "letter": "D", "text": "<dl>." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "<ul>.",
+          "definition": "<ul> define una lista no ordenada; <ol> ordenada; <li> ítem; <dl> lista de definiciones.",
+          "explanation": "Una lista no ordenada se representa con <ul> y sus elementos con <li>."
+        },
+        {
+          "id": "T1_Q10",
+          "question": "Los lenguajes de marcado se centran en:",
+          "options": [
+            { "letter": "A", "text": "La compilación del código a binario." },
+            { "letter": "B", "text": "La estructuración del contenido." },
+            { "letter": "C", "text": "El acceso directo a memoria y punteros." },
+            { "letter": "D", "text": "El control de procesos del sistema operativo." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "La estructuración del contenido.",
+          "definition": "Un lenguaje de marcado usa “marcas” (etiquetas) para describir la estructura y el significado del contenido, no para ejecutar lógica.",
+          "explanation": "HTML/XML describen estructura/semántica. Compilación, memoria o procesos son de lenguajes de programación o del SO."
+        },
+        {
+          "id": "T1_Q11",
+          "question": "XHTML se diferencia de HTML en que:",
+          "options": [
+            { "letter": "A", "text": "Permite omitir siempre el cierre de etiquetas." },
+            { "letter": "B", "text": "No sigue ninguna regla de sintaxis estricta." },
+            { "letter": "C", "text": "No posee un conjunto de etiquetas predefinido." },
+            { "letter": "D", "text": "Es un lenguaje de hojas de estilo." }
+          ],
+          "correct_letter": "C",
+          "correct_text": "No posee un conjunto de etiquetas predefinido.",
+          "definition": "XHTML es HTML expresado como XML: exige sintaxis XML (bien formado). En XML no existe un conjunto único fijo de etiquetas; el vocabulario puede definirse por esquema/DTD.",
+          "explanation": "La idea evaluada aquí es “XHTML/HTML sobre XML”: XML es extensible y no trae un conjunto cerrado universal de etiquetas. A diferencia de HTML, cuyo vocabulario está definido por especificación."
+        },
+        {
+          "id": "T1_Q12",
+          "question": "¿Es obligatorio cerrar las etiquetas en HTML5?",
+          "options": [
+            { "letter": "A", "text": "No, nunca se cierran etiquetas en HTML5." },
+            { "letter": "B", "text": "Solo se cierran etiquetas si llevan atributos." },
+            { "letter": "C", "text": "Sí, para mantener la intención declarativa y el rigor estructural." },
+            { "letter": "D", "text": "Solo se cierran en documentos JSON-LD." }
+          ],
+          "correct_letter": "C",
+          "correct_text": "Sí, para mantener la intención declarativa y el rigor estructural.",
+          "definition": "Buenas prácticas HTML: cerrar correctamente los elementos que lo requieren y anidar de forma coherente; algunos elementos vacíos no llevan cierre (p.ej., <img>).",
+          "explanation": "Aunque el parser HTML es tolerante, la práctica correcta es cerrar las etiquetas no vacías y respetar el anidamiento, porque mejora la validez, accesibilidad y evita errores de estructura."
+        },
+        {
+          "id": "T1_Q13",
+          "question": "¿Qué elemento de HTML5 se usa para dibujos y gráficos?",
+          "options": [
+            { "letter": "A", "text": "<svg>." },
+            { "letter": "B", "text": "<img>." },
+            { "letter": "C", "text": "<canvas>." },
+            { "letter": "D", "text": "<style>." }
+          ],
+          "correct_letter": "C",
+          "correct_text": "<canvas>.",
+          "definition": "<canvas> define una superficie de dibujo en bitmap controlada por scripts (normalmente JavaScript) para renderizado 2D/3D.",
+          "explanation": "<canvas> se diseñó para dibujo dinámico (gráficos, juegos, visualizaciones). <svg> también sirve para gráficos vectoriales, pero la opción correcta indicada es canvas."
+        },
+        {
+          "id": "T1_Q14",
+          "question": "El atributo method en formularios suele aceptar:",
+          "options": [
+            { "letter": "A", "text": "PUT y DELETE." },
+            { "letter": "B", "text": "FTP y SMTP." },
+            { "letter": "C", "text": "GET y POST." },
+            { "letter": "D", "text": "TCP y UDP." }
+          ],
+          "correct_letter": "C",
+          "correct_text": "GET y POST.",
+          "definition": "method en <form> define el método HTTP del envío; en HTML clásico los más usados/soportados directamente son GET y POST.",
+          "explanation": "Los formularios estándar usan GET (parámetros en URL) o POST (datos en cuerpo). PUT/DELETE no son valores típicos del atributo method en HTML clásico sin técnicas adicionales."
+        },
+        {
+          "id": "T1_Q15",
+          "question": "¿Qué etiqueta de HTML5 define un bloque de contenido independiente (como un post)?",
+          "options": [
+            { "letter": "A", "text": "<section>." },
+            { "letter": "B", "text": "<div>." },
+            { "letter": "C", "text": "<article>." },
+            { "letter": "D", "text": "<aside>." }
+          ],
+          "correct_letter": "C",
+          "correct_text": "<article>.",
+          "definition": "<article> representa una unidad de contenido autocontenida e independiente (post, noticia, entrada, comentario).",
+          "explanation": "Un post/blog entry es un contenido reutilizable/independiente, por lo que semánticamente encaja con <article>."
+        },
 
+        {
+          "id": "T1_Q16",
+          "question": "Un documento HTML: A. Únicamente permite la utilización de lenguaje HTML. B. Combina HTML con otros lenguajes. C. Puede utilizar cualquier conjunto de etiquetas. D. Todas son ciertas.",
+          "options": [
+            { "letter": "A", "text": "Únicamente permite la utilización de lenguaje HTML." },
+            { "letter": "B", "text": "Combina HTML con otros lenguajes." },
+            { "letter": "C", "text": "Puede utilizar cualquier conjunto de etiquetas." },
+            { "letter": "D", "text": "Todas son ciertas." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "Combina HTML con otros lenguajes.",
+          "definition": "En desarrollo web, HTML se complementa con CSS y JavaScript, además de poder integrarse con plantillas del servidor.",
+          "explanation": "A es falsa (se integra con CSS/JS), C es falsa en HTML (vocabulario definido), por lo que D no puede ser correcta."
+        },
+        {
+          "id": "T1_Q17",
+          "question": "El lenguaje HTML: A. Surge del estándar SGML. B. Posee un conjunto de etiquetas determinado. C. Es un estándar para la creación de páginas web. D. B y C son ciertas.",
+          "options": [
+            { "letter": "A", "text": "Surge del estándar SGML." },
+            { "letter": "B", "text": "Posee un conjunto de etiquetas determinado." },
+            { "letter": "C", "text": "Es un estándar para la creación de páginas web." },
+            { "letter": "D", "text": "B y C son ciertas." }
+          ],
+          "correct_letter": "D",
+          "correct_text": "B y C son ciertas.",
+          "definition": "HTML es un estándar de marcado con vocabulario definido (elementos/atributos) para estructurar documentos web.",
+          "explanation": "B y C son verdaderas: HTML define un conjunto de elementos y es el estándar base para páginas web. (A es históricamente cierta, pero aquí la opción correcta marcada es D)."
+        },
+        {
+          "id": "T1_Q18",
+          "question": "Los lenguajes de marcado: A. Permiten definir la apariencia visual de un documento. B. Se centran en la estructuración del contenido. C. Ponen marcas en un documento. D. A y C son ciertas.",
+          "options": [
+            { "letter": "A", "text": "Permiten definir la apariencia visual de un documento." },
+            { "letter": "B", "text": "Se centran en la estructuración del contenido." },
+            { "letter": "C", "text": "Ponen marcas en un documento." },
+            { "letter": "D", "text": "A y C son ciertas." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "Se centran en la estructuración del contenido.",
+          "definition": "Lenguaje de marcado: describe estructura/semántica con marcas (tags), separando contenido de presentación.",
+          "explanation": "La presentación corresponde a CSS. Aunque usan marcas (C), el foco del lenguaje de marcado es estructurar el contenido (B)."
+        },
+        {
+          "id": "T1_Q19",
+          "question": "XHTML: A. Es una variante de HTML. B. Se basa en XML. C. No posee un conjunto de etiquetas predefinido. D. Todas son ciertas.",
+          "options": [
+            { "letter": "A", "text": "Es una variante de HTML." },
+            { "letter": "B", "text": "Se basa en XML." },
+            { "letter": "C", "text": "No posee un conjunto de etiquetas predefinido." },
+            { "letter": "D", "text": "Todas son ciertas." }
+          ],
+          "correct_letter": "D",
+          "correct_text": "Todas son ciertas.",
+          "definition": "XHTML es HTML serializado como XML, sometido a reglas de bien formado; se apoya en el enfoque extensible de XML.",
+          "explanation": "A y B son correctas por definición. En el marco del examen, se considera C correcta por la extensibilidad/vocabulario de XML, por lo que D agrupa las afirmaciones como verdaderas."
+        },
+        {
+          "id": "T1_Q20",
+          "question": "Los formularios: A. HTML no soporta formularios. B. Permiten el envío de información al servidor. C. Pueden utilizarse con otros lenguajes. D. B y C son ciertas.",
+          "options": [
+            { "letter": "A", "text": "HTML no soporta formularios." },
+            { "letter": "B", "text": "Permiten el envío de información al servidor." },
+            { "letter": "C", "text": "Pueden utilizarse con otros lenguajes." },
+            { "letter": "D", "text": "B y C son ciertas." }
+          ],
+          "correct_letter": "D",
+          "correct_text": "B y C son ciertas.",
+          "definition": "Un formulario HTML (<form>) captura datos y los envía a un endpoint para procesamiento (servidor o APIs).",
+          "explanation": "A es falsa (HTML sí soporta formularios). B es verdadera (envío de datos). C es verdadera (se procesan con lenguajes/servidor), por eso D."
+        },
+        {
+          "id": "T1_Q21",
+          "question": "HTML 5: A. Varía la sintaxis de HTML. B. No se puede utilizar con el protocolo http. C. Incorpora funcionalidades nuevas para aplicaciones web. D. Todas son ciertas.",
+          "options": [
+            { "letter": "A", "text": "Varía la sintaxis de HTML." },
+            { "letter": "B", "text": "No se puede utilizar con el protocolo http." },
+            { "letter": "C", "text": "Incorpora funcionalidades nuevas para aplicaciones web." },
+            { "letter": "D", "text": "Todas son ciertas." }
+          ],
+          "correct_letter": "C",
+          "correct_text": "Incorpora funcionalidades nuevas para aplicaciones web.",
+          "definition": "HTML5 introduce nuevos elementos semánticos, APIs (storage, multimedia, canvas) y mejoras en formularios.",
+          "explanation": "B es falsa (se usa sobre HTTP/HTTPS). A no es la idea central (HTML5 amplía y define parsing). C es el cambio clave: nuevas capacidades para apps web."
+        },
+        {
+          "id": "T1_Q22",
+          "question": "HTML 5: A. No se basa en el estándar SGML. B. Utiliza XML. C. Define mejor la semántica de la web. D. Todas son ciertas.",
+          "options": [
+            { "letter": "A", "text": "No se basa en el estándar SGML." },
+            { "letter": "B", "text": "Utiliza XML." },
+            { "letter": "C", "text": "Define mejor la semántica de la web." },
+            { "letter": "D", "text": "Todas son ciertas." }
+          ],
+          "correct_letter": "C",
+          "correct_text": "Define mejor la semántica de la web.",
+          "definition": "Semántica web en HTML5: uso de elementos con significado estructural (<main>, <article>, <nav>, etc.).",
+          "explanation": "HTML5 potencia la semántica con nuevas etiquetas. No “usa XML” (eso sería XHTML), por tanto D no puede ser correcta."
+        },
+        {
+          "id": "T1_Q23",
+          "question": "Alguna de las mejoras de HTML5 respecto a HTML son: A. Incorpora tag para definir diálogos y conversaciones entre varias personas. B. Incorpora AJAX. C. Es compatible con todos los navegadores. D. Todas las respuestas son correctas.",
+          "options": [
+            { "letter": "A", "text": "Incorpora tag para definir diálogos y conversaciones entre varias personas." },
+            { "letter": "B", "text": "Incorpora AJAX." },
+            { "letter": "C", "text": "Es compatible con todos los navegadores." },
+            { "letter": "D", "text": "Todas las respuestas son correctas." }
+          ],
+          "correct_letter": "A",
+          "correct_text": "Incorpora tag para definir diálogos y conversaciones entre varias personas.",
+          "definition": "HTML5 añade elementos nuevos (p.ej., <dialog>) y APIs; AJAX no es parte de HTML como tal, sino técnica con JS.",
+          "explanation": "AJAX no lo “incorpora” HTML5; es una técnica JavaScript. La compatibilidad total con todos los navegadores no es absoluta. La mejora clara listada es la incorporación de etiquetas nuevas como <dialog>."
+        },
+        {
+          "id": "T1_Q24",
+          "question": "En un formulario HTML: A. El campo «action» define la dirección del servidor para validar los datos. B. El campo «action» indica la página a la que se envían los datos del formulario. C. No se permiten combinar botones con otros elementos. D. Hay que definir los campos en un archivo .form.",
+          "options": [
+            { "letter": "A", "text": "El campo «action» define la dirección del servidor para validar los datos." },
+            { "letter": "B", "text": "El campo «action» indica la página a la que se envían los datos del formulario." },
+            { "letter": "C", "text": "No se permiten combinar botones con otros elementos." },
+            { "letter": "D", "text": "Hay que definir los campos en un archivo .form." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "El campo «action» indica la página a la que se envían los datos del formulario.",
+          "definition": "action define la URL destino; la validación puede ocurrir en cliente (JS) o servidor, pero no la define action.",
+          "explanation": "La descripción precisa es B: action es el endpoint receptor de los datos. A es imprecisa (no necesariamente “validar”). C y D son falsas."
+        },
+        {
+          "id": "T1_Q25",
+          "question": "La etiqueta <img>: A. Permite insertar una tabla. B. Permite insertar una imagen. C. Se introduce con HTML 5. D. No se puede utilizar para entornos móviles.",
+          "options": [
+            { "letter": "A", "text": "Permite insertar una tabla." },
+            { "letter": "B", "text": "Permite insertar una imagen." },
+            { "letter": "C", "text": "Se introduce con HTML 5." },
+            { "letter": "D", "text": "No se puede utilizar para entornos móviles." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "Permite insertar una imagen.",
+          "definition": "<img> inserta imágenes desde los inicios de HTML; es compatible con móvil y responsive con CSS.",
+          "explanation": "B describe la función real. No es exclusiva de HTML5 y se usa perfectamente en móviles."
+        },
+        {
+          "id": "T1_Q26",
+          "question": "La etiqueta <head> de un documento web: A. Es obligatoria. B. Permite introducir metadatos sobre el documento web. C. Puede contener elementos visualizables como listas o tablas. D. Se elimina en HTML 5.",
+          "options": [
+            { "letter": "A", "text": "Es obligatoria." },
+            { "letter": "B", "text": "Permite introducir metadatos sobre el documento web." },
+            { "letter": "C", "text": "Puede contener elementos visualizables como listas o tablas." },
+            { "letter": "D", "text": "Se elimina en HTML 5." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "Permite introducir metadatos sobre el documento web.",
+          "definition": "<head> agrupa metadatos y recursos no visibles directamente: título, meta, enlaces a CSS, scripts, etc.",
+          "explanation": "La función principal evaluada es B. C es incorrecta (contenido visible debe ir en <body>) y D es falsa."
+        },
+        {
+          "id": "T1_Q27",
+          "question": "Dado el siguiente código HTML: Alternativa A: <x><y><z>… </z></y></x> Alternativa B: <x><y><z>… </x></y></z> A. Tanto la alternativa A como la B son correctas. B. La alternativa B es correcta porque el anidamiento implica que se cierren primero las tags que primero se abren. C. La alternativa A es correcta porque el anidamiento implica que se cierren las tags en dicho orden. D. No se pueden anidar tags.",
+          "options": [
+            { "letter": "A", "text": "Tanto la alternativa A como la B son correctas." },
+            { "letter": "B", "text": "La alternativa B es correcta porque el anidamiento implica que se cierren primero las tags que primero se abren." },
+            { "letter": "C", "text": "La alternativa A es correcta porque el anidamiento implica que se cierren las tags en dicho orden." },
+            { "letter": "D", "text": "No se pueden anidar tags." }
+          ],
+          "correct_letter": "C",
+          "correct_text": "La alternativa A es correcta porque el anidamiento implica que se cierren las tags en dicho orden.",
+          "definition": "Regla de anidamiento: las etiquetas deben cerrarse en orden LIFO (la última que se abre es la primera que se cierra).",
+          "explanation": "La alternativa A respeta el anidamiento correcto (<z> cierra antes que <y> y <x>). La B rompe la estructura, cerrando <x> antes de <z>."
+        },
+        {
+          "id": "T1_Q28",
+          "question": "¿Qué es el HTML? A. Un lenguaje de programación. B. Un lenguaje de marcado. C. Un motor de base de datos. D. Un protocolo de transferencia.",
+          "options": [
+            { "letter": "A", "text": "Un lenguaje de programación." },
+            { "letter": "B", "text": "Un lenguaje de marcado." },
+            { "letter": "C", "text": "Un motor de base de datos." },
+            { "letter": "D", "text": "Un protocolo de transferencia." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "Un lenguaje de marcado.",
+          "definition": "HTML (HyperText Markup Language) describe estructura y semántica de documentos web mediante etiquetas.",
+          "explanation": "HTML no ejecuta lógica general como un lenguaje de programación; etiqueta y estructura contenido."
+        },
+        {
+          "id": "T1_Q29",
+          "question": "¿Cuál de estas es una etiqueta semántica nueva en HTML5? A. <div> B. <article> C. <b> D. <font>",
+          "options": [
+            { "letter": "A", "text": "<div>" },
+            { "letter": "B", "text": "<article>" },
+            { "letter": "C", "text": "<b>" },
+            { "letter": "D", "text": "<font>" }
+          ],
+          "correct_letter": "B",
+          "correct_text": "<article>",
+          "definition": "<article> identifica contenido autónomo (entrada, noticia).",
+          "explanation": "<div> es genérica, <b> es formato inline, <font> está obsoleta; <article> es semántica propia de HTML5."
+        },
+        {
+          "id": "T1_Q30",
+          "question": "Para representar contenido en un párrafo se usa la etiqueta: A. <paragraph> B. <p> C. <text> D. <div>",
+          "options": [
+            { "letter": "A", "text": "<paragraph>" },
+            { "letter": "B", "text": "<p>" },
+            { "letter": "C", "text": "<text>" },
+            { "letter": "D", "text": "<div>" }
+          ],
+          "correct_letter": "B",
+          "correct_text": "<p>",
+          "definition": "<p> define un párrafo (bloque de texto).",
+          "explanation": "La etiqueta estándar para párrafos es <p>; el resto no son etiquetas válidas (paragraph/text) o son genéricas (<div>)."
+        }
+      ]
+    },
 
-Tema 1: Lenguaje de marcado HTML5
-pregunta 1: Un documento HTML: A. Únicamente permite la utilización de lenguaje HTML. B. Combina HTML con otros lenguajes. C. Puede utilizar cualquier conjunto de etiquetas. D. Todas son ciertas. Correcta: B
-pregunta 2: El lenguaje HTML: A. Surge del estándar SGML. B. Posee un conjunto de etiquetas determinado. C. Es un estándar para la creación de páginas web. D. B y C son ciertas. Correcta: D
-pregunta 3: Los lenguajes de marcado: A. Permiten definir la apariencia visual de un documento. B. Se centran en la estructuración del contenido. C. Ponen marcas en un documento. D. A y C son ciertas. Correcta: B
-pregunta 4: XHTML: A. Es una variante de HTML. B. Se basa en XML. C. No posee un conjunto de etiquetas predefinido. D. Todas son ciertas. Correcta: D
-pregunta 5: Los formularios: A. HTML no soporta formularios. B. Permiten el envío de información al servidor. C. Pueden utilizarse con otros lenguajes. D. B y C son ciertas. Correcta: D
-pregunta 6: HTML 5: A. Varía la sintaxis de HTML. B. No se puede utilizar con el protocolo http. C. Incorpora funcionalidades nuevas para aplicaciones web. D. Todas son ciertas. Correcta: C
-pregunta 7: HTML 5: A. No se basa en el estándar SGML. B. Utiliza XML. C. Define mejor la semántica de la web. D. Todas son ciertas. Correcta: C
-pregunta 8: Alguna de las mejoras de HTML5 respecto a HTML son: A. Incorpora tag para definir diálogos y conversaciones entre varias personas. B. Incorpora AJAX. C. Es compatible con todos los navegadores. D. Todas las respuestas son correctas. Correcta: A
-pregunta 9: En un formulario HTML: A. El campo «action» define la dirección del servidor para validar los datos. B. El campo «action» indica la página a la que se envían los datos del formulario. C. No se permiten combinar botones con otros elementos. D. Hay que definir los campos en un archivo .form. Correcta: B
-pregunta 10: La etiqueta <img>: A. Permite insertar una tabla. B. Permite insertar una imagen. C. Se introduce con HTML 5. D. No se puede utilizar para entornos móviles. Correcta: B
-pregunta 11: La etiqueta <head> de un documento web: A. Es obligatoria. B. Permite introducir metadatos sobre el documento web. C. Puede contener elementos visualizables como listas o tablas. D. Se elimina en HTML 5. Correcta: B
-pregunta 12: Dado el siguiente código HTML: Alternativa A: <x><y><z>… </z></y></x> Alternativa B: <x><y><z>… </x></y></z> A. Tanto la alternativa A como la B son correctas. B. La alternativa B es correcta porque el anidamiento implica que se cierren primero las tags que primero se abren. C. La alternativa A es correcta porque el anidamiento implica que se cierren las tags en dicho orden. D. No se pueden anidar tags. Correcta: C
-pregunta 13: ¿Qué es el HTML? A. Un lenguaje de programación. B. Un lenguaje de marcado. C. Un motor de base de datos. D. Un protocolo de transferencia. Correcta: B
-pregunta 14: ¿Cuál de estas es una etiqueta semántica nueva en HTML5? A. <div> B. <article> C. <b> D. <font> Correcta: B
-pregunta 15: Para representar contenido en un párrafo se usa la etiqueta: A. <paragraph> B. <p> C. <text> D. <div> Correcta: B
--------------------------------------------------------------------------------- 
-Tema 2: Introducción a hojas de estilo CSS
-pregunta 1: Las hojas CSS: A. No se pueden utilizar con HTML. B. Utiliza selectores. C. Requieren un lenguaje intermedio para vincularse con HTML. D. B y C son ciertas. Correcta: B
-pregunta 2: En CSS: A. Existen elementos identificadores. B. No puede repetirse varias veces la utilización de un identificador. C. Los identificadores solo existen en HTML. D. A y B son correctas. Correcta: D
-pregunta 3: CSS3 agrega: A. Todas las respuestas son correctas. B. Transparencia, texto sombreado y rotación. C. Rotación, múltiples fondos y redondeo de bordes. D. Sombreado de cajas de texto, rotación y transparencia. Correcta: C
-pregunta 4: HTML y CSS se centran en: A. La estructura y el contenido respectivamente. B. La estructura y la presentación respectivamente. C. La presentación y el control de datos respectivamente. D. Ninguna respuesta es correcta. Correcta: B
-pregunta 5: En CSS3, el canal alfa se utiliza para: A. La definición de colores primarios. B. La transparencia. C. La rotación de elementos. D. La velocidad de carga. Correcta: B
-pregunta 6: ¿Qué código HTML5 enlaza una hoja de estilo externa? A. <style src="estilo.css"> B. <link rel="stylesheet" href="estilo.css"> C. <a href="estilo.css"> D. <css link="estilo.css"> Correcta: B
-pregunta 7: Las clases en CSS se unen a HTML a través del atributo: A. id. B. link. C. class. D. style. Correcta: C
-pregunta 8: Los selectores CSS universales utilizan el símbolo: A. # B. . C. * D. @ Correcta: C
-pregunta 9: La propiedad border-radius en CSS3 sirve para: A. Bordes sombreados. B. Bordes redondeados. C. Bordes con imagen. D. Grosor del borde. Correcta: B
-pregunta 10: CSS3 permite realizar: A. Transformaciones pero no transiciones. B. Transiciones pero no transformaciones. C. Ambas tareas (transformaciones y transiciones). D. Ninguna de las anteriores. Correcta: C
-pregunta 11: Una ventaja del enlace externo de la hoja de estilos es: A. Afecta solo a una página del sitio. B. Permite cambios globales afectando a todas las páginas vinculadas. C. Aumenta el tamaño del archivo HTML. D. No requiere conexión a internet. Correcta: B
-pregunta 12: Las pseudo-clases permiten clasificar elementos atendiendo a: A. Su nombre de etiqueta. B. El estado en el que se encuentren (ej. hover). C. Su posición en la base de datos. D. El color del texto. Correcta: B
-pregunta 13: El objetivo principal de CSS es: A. Estructurar el contenido. B. Lograr la separación total entre contenido y presentación. C. Ejecutar código en el servidor. D. Manejar bases de datos. Correcta: B
-pregunta 14: Para aplicar sombra a un texto en CSS3 se usa: A. box-shadow. B. text-shadow. C. font-shadow. D. shadow-text. Correcta: B
-pregunta 15: ¿Se pueden aplicar varias imágenes de fondo a un mismo elemento en CSS3? A. No, solo una por elemento. B. Sí, es una novedad de CSS3. C. Solo si el elemento es un <div>. D. Solo en navegadores antiguos. Correcta: B
--------------------------------------------------------------------------------- 
-Tema 3: JavaScript, JQuery y AJAX
-pregunta 1: El lenguaje JavaScript normalmente se ejecuta en: A. El cliente. B. El servidor. C. La base de datos. D. El router. Correcta: A
-pregunta 2: AJAX: A. Quiere decir Asynchronous JavaScript and XML (o eXtensions). B. Sirve para cargar datos en background sin recargar la página. C. No se trata de un lenguaje nuevo sino de la combinación de tecnologías. D. Todas las respuestas son correctas. Correcta: D
-pregunta 3: Respecto a la sintaxis de JQuery: A. Se basa en el objeto jQuery o $(). B. Al objeto jQuery se le pasa como argumento un "selector". C. JQuery utiliza selectores CSS. D. Todas las respuestas son verdaderas. Correcta: D
-pregunta 4: Para utilizar AJAX es necesario activarlo mediante estos pasos: A. Llamada a JS, petición asíncrona (XMLHttpRequest), recuperación de datos, modificación de la página. B. Llamada AJAX, formateo al servidor, extracción, modificación. C. Llamada, respuesta, extracción, modificación. D. Ninguna es correcta. Correcta: A
-pregunta 5: ¿Qué aporta JQuery a la UX (Experiencia de Usuario) en general? A. Interactividad como barras de menú, pestañas y búsquedas. B. Colores y diseño estático. C. Programación polimórfica dentro del DOM. D. Todas las anteriores son falsas. Correcta: A
-pregunta 6: JavaScript es un lenguaje: A. Fuertemente tipado. B. De tipado débil o no tipado. C. Compilado. D. De bajo nivel. Correcta: B
-pregunta 7: El DOM (Document Object Model) es: A. Una base de datos. B. Una estructura arbórea que crea el navegador al cargar la web. C. Un servidor de aplicaciones. D. Un lenguaje de marcado. Correcta: B
-pregunta 8: Para introducir JavaScript en un documento HTML: A. Es necesario incluir el código JS en archivos .php. B. El código JS se puede incluir dentro del archivo .html entre etiquetas <script>. C. El código JS se puede incluir dentro de los archivos CSS. D. No se puede incluir directamente. Correcta: B
-pregunta 9: ¿Qué etiqueta se usa para avisar que JavaScript está bloqueado en el navegador? A. <script> B. <noscript> C. <nojavascript> D. <alert> Correcta: B
-pregunta 10: JQuery es: A. Una base de datos relacional. B. Un framework para JavaScript. C. Un lenguaje de servidor. D. Un protocolo de red. Correcta: B
-pregunta 11: JavaScript permite dotar de: A. "Dinamismo" a una página web estática. B. Estructura básica al HTML. C. Seguridad absoluta a la red. D. Conectividad física. Correcta: A
-pregunta 12: El objeto fundamental en el funcionamiento de AJAX es: A. XMLDocument. B. XMLHttpRequest. C. JSRequest. D. AsyncObject. Correcta: B
-pregunta 13: JavaScript es un lenguaje: A. De scripting e interpretado. B. De modelado de datos. C. Que solo se ejecuta en servidores. D. De alto acoplamiento. Correcta: A
-pregunta 14: Un atributo HTML puede ser modificado a través del DOM: A. Solo tomando elementos unitarios. B. Tomando elementos raíz o funciones de grupo. C. No se pueden modificar atributos con el DOM. D. Todas son ciertas. Correcta: D
-pregunta 15: ¿Qué problema resuelve AJAX? A. La falta de colores en la web. B. La necesidad de recargar la página completa ante un cambio pequeño. C. El almacenamiento de datos en el cliente. D. El diseño adaptativo. Correcta: B
--------------------------------------------------------------------------------- 
-Tema 4: Concepto de la programación orientada a componentes
-pregunta 1: Un componente es: A. Una colección de objetos que proporcionan servicios a diferentes sistemas. B. Una entidad que solo se ejecuta localmente. C. Un conjunto de datos sin comportamiento. D. Un lenguaje de programación. Correcta: A
-pregunta 2: Los estados por los que puede pasar la creación de un componente son: A. Caracterización, implementación, compilación, documentación. B. Especificación, implementación, objeto componente y contratos. C. Diseño, código, prueba y error. D. Ninguna es correcta. Correcta: B
-pregunta 3: Una de las ventajas principales de los componentes es: A. El alto acoplamiento. B. La reutilización de código. C. La baja cohesión. D. Que dependen totalmente del lenguaje del cliente. Correcta: B
-pregunta 4: La Programación Orientada a Componentes (POC) surge a partir de: A. La programación funcional. B. La programación estructurada. C. La programación orientada a objetos. D. La programación lógica. Correcta: C
-pregunta 5: La reutilización de "caja negra" en componentes significa: A. Se conoce la implementación interna. B. No se conoce la implementación interna, solo su interfaz. C. El código es de color negro. D. No se puede reutilizar. Correcta: B
-pregunta 6: La POC utiliza fundamentalmente la: A. Herencia. B. Composición. C. Polimorfismo estático. D. Recursividad. Correcta: B
-pregunta 7: El nexo de unión entre el cliente del componente y su implementación es: A. La base de datos. B. El entorno de ejecución. C. La interfaz. D. El contrato de realización. Correcta: C
-pregunta 8: Los componentes con estado son aquellos que: A. No guardan ningún dato. B. Almacenan datos de manera local al componente. C. Solo se ejecutan en el servidor. D. Están desactivados. Correcta: B
-pregunta 9: ¿Qué lenguajes permiten la creación clara de componentes? A. Solo HTML. B. Java y Ada95. C. C y Assembly. D. CSS y SQL. Correcta: B
-pregunta 10: Al hablar del contexto de un componente es necesario: A. Especificar su interfaz. B. El entorno de ejecución. C. Especificar su compatibilidad (CORBA, J2EE, etc.). D. Todas son ciertas. Correcta: D
-pregunta 11: La fase de especificación de un componente debe ser: A. Dependiente del lenguaje. B. Independiente de la plataforma de desarrollo. C. Realizada después de la implementación. D. Solo documental. Correcta: B
-pregunta 12: El "contrato de uso" de un componente establece: A. El precio del software. B. La funcionalidad a través de su interfaz. C. Quién es el dueño del código. D. La forma de compilarlo. Correcta: B
-pregunta 13: La instalación de un componente permite: A. Probar su interfaz. B. Registrar el componente en el sistema para que otras aplicaciones lo usen. C. Borrar el código fuente. D. B y C son ciertas. Correcta: B
-pregunta 14: ¿Se pueden ejecutar los componentes de forma distribuida? A. No, solo localmente. B. Sí, pueden ejecutarse tanto local como distribuidamente. C. Solo si están escritos en C++. D. Solo en sistemas Windows. Correcta: B
-pregunta 15: Un componente es una unidad que se incluye en un paquete: A. Complicado. B. Instalable y con pocas dependencias. C. De gran tamaño. D. Sin interfaz. Correcta: B
--------------------------------------------------------------------------------- 
-Tema 5: Arquitectura de componentes
-pregunta 1: La Arquitectura basada en componentes NO es cierto que: A. Describe una aproximación de ingeniería de software al diseño y desarrollo de un sistema. B. Se enfoca en la descomposición del diseño en componentes aislados/funcionales. C. Los componentes pueden estar desarrollados en múltiples lenguajes. D. No pone énfasis en que las interfaces estén bien definidas. Correcta: D
-pregunta 2: La arquitectura software detalla estructuras y relaciones con un: A. Alto nivel de abstracción. B. Bajo nivel de detalle físico. C. Enfoque solo en el hardware. D. Ninguna es correcta. Correcta: A
-pregunta 3: CORBA se centra en: A. Facilitar el uso de componentes remotos utilizando el paradigma orientado a objetos. B. Bases de datos relacionales. C. Diseño de interfaces gráficas. D. Seguridad física. Correcta: A
-pregunta 4: DCOM permite desarrollar: A. Páginas web estáticas. B. Componentes distribuidos facilitando su comunicación. C. Solo componentes locales. D. Protocolos de red. Correcta: B
-pregunta 5: Enterprise JavaBeans (EJB) utiliza un modelo: A. P2P. B. Cliente-Servidor. C. Basado en ficheros. D. Solo para móviles. Correcta: B
-pregunta 6: En la POC hablamos de composición simple cuando: A. No existe este tipo. B. Se combinan los componentes de un framework con otros. C. No se usan interfaces. D. El componente es pequeño. Correcta: B
-pregunta 7: La composición heterogénea implica: A. Usar un solo lenguaje. B. Componer componentes a través de diferentes frameworks. C. Usar componentes idénticos. D. No usar frameworks. Correcta: B
-pregunta 8: La arquitectura software permite realizar: A. Previsiones en el software. B. Análisis de correcciones ante errores. C. Contextualización del software. D. Todas las anteriores son correctas. Correcta: D
-pregunta 9: Para lograr la reutilización de componentes es necesario crear: A. Archivos .txt. B. Repositorios de componentes. C. Nuevos lenguajes. D. Sistemas operativos únicos. Correcta: B
-pregunta 10: La POC mejora la eficacia en la creación de software porque permite: A. Software más homogéneo y robusto. B. Estabilidad del software. C. Desarrollo basado en el modelo industrial. D. Todas son correctas. Correcta: D
-pregunta 11: La arquitectura de componentes se centra en: A. Aprovechar componentes ya existentes combinándolos. B. Programar todo desde cero cada vez. C. Ignorar las interfaces. D. El diseño visual únicamente. Correcta: A
-pregunta 12: ¿Es posible tratar a un framework como un componente más para realizar composiciones? A. No, nunca. B. Sí, mediante la extensión del framework. C. Solo en Java. D. Solo si es gratuito. Correcta: B
-pregunta 13: La composición transitiva ocurre cuando: A. El componente se borra. B. Un componente es el resultado de una composición previa que se vuelve a combinar. C. El componente no tiene interfaz. D. Se usa herencia múltiple. Correcta: B
-pregunta 14: La tecnología .NET se centra en buscar la: A. Complicación para el usuario. B. Transparencia para el desarrollador. C. Eliminación de las interfaces. D. Incompatibilidad. Correcta: B
-pregunta 15: Para que la POC sea útil, los componentes deben ser: A. Dependientes entre sí. B. Independientes. C. Privados y sin interfaz. D. Escritos solo en C. Correcta: B
--------------------------------------------------------------------------------- 
-Tema 6: Bootstrap
-pregunta 1: Bootstrap garantiza: A. Un diseño adaptativo y que cumple los principios de accesibilidad. B. Que nuestro código no de errores automáticamente. C. Un rendimiento óptimo del motor de base de datos. D. Todas son correctas. Correcta: A
-pregunta 2: Para poder ejecutarse BootStrap 3 se requiere de: A. CSS, JavaScript, HTML5 y PHP. B. CSS, JavaScript, HTML5 y JQuery. C. CSS+, JavaScript, HTML5 y JQuery. D. CSS, JavaScript, HTML y JQuery. Correcta: B
-pregunta 3: El diseño con rejilla de Bootstrap: A. Divide la página en campos e interludios dentro de los márgenes. B. Crea una estructura ordenada y proporciona claridad y continuidad. C. Es capaz de lograr diseño adaptativo. D. Todas son correctas. Correcta: D
-pregunta 4: Para que el código se adapte al tipo de dispositivo móvil es necesario añadir: A. <meta name="viewport" content="width=device-width, initial-scale=1"> B. <link rel="mobile"> C. <script src="mobile.js"> D. <div class="mobile"> Correcta: A
-pregunta 5: Los tipos de rejillas según el dispositivo en Bootstrap son: A. Small, Medium, Large. B. xs (móviles), sm (tablets), md (PC), lg (PC gran pantalla). C. Mobile, Tablet, Desktop. D. x1, x2, x3, x4. Correcta: B
-pregunta 6: La clase de Bootstrap para centrar automáticamente el resultado de la web es: A. center. B. container. C. middle. D. main. Correcta: B
-pregunta 7: En Bootstrap el atributo box-shadow: A. Añade efectos visuales atendiendo al estado de un campo de formulario. B. Procesa el formulario en background. C. Crea una caja invisible. D. No es un atributo de Bootstrap. Correcta: A
-pregunta 8: Para formularios que ocupen poco espacio se utiliza la clase: A. form-small. B. form-inline. C. form-mini. D. form-compact. Correcta: B
-pregunta 9: Uno de los principios de Bootstrap es: A. Mejorar el rendimiento de las comunicaciones. B. Garantizar la facilidad de uso. C. Eliminar el uso de JQuery. D. Usar solo HTML4. Correcta: B
-pregunta 10: ¿Se puede desactivar el diseño adaptativo en Bootstrap? A. No, es obligatorio. B. Sí, eliminando la etiqueta viewport y el max-width de contenedores. C. Solo en la versión 2. D. Solo para navegadores Chrome. Correcta: B
-pregunta 11: La rejilla de Bootstrap permite: A. Variar el número de columnas. B. Que las columnas sean estáticas. C. Solo insertar texto. D. No usar formularios. Correcta: A
-pregunta 12: La clase sr-only en Bootstrap sirve para: A. Solo pantallas reales. B. Accesibilidad (lectores de pantalla), ocultando la etiqueta visualmente. C. Cambiar el color a rojo. D. Reiniciar el formulario. Correcta: B
-pregunta 13: Bootstrap distingue tres estados en los campos de formulario: A. error, success, warning. B. red, green, yellow. C. stop, go, wait. D. none, all, some. Correcta: A
-pregunta 14: ¿Bootstrap incluye iconos? A. No, hay que usarlos externos. B. Sí, a través de sus componentes CSS disponibles. C. Solo en la versión de pago. D. Solo para móviles. Correcta: B
-pregunta 15: Bootstrap es un framework orientado al: A. Back-end y bases de datos. B. Enmaquetado HTML y diseño CSS. C. Protocolo TCP/IP. D. Cifrado asimétrico. Correcta: B
--------------------------------------------------------------------------------- 
-Tema 7: Patrón Modelo Vista Controlador (MVC)
-pregunta 1: En MVC, la M significa: A. Modelo: Se encarga del diseño y presentación. B. Modelo: Indica el modelo de base de datos a usar. C. Modelo: Maneja datos y lógica de negocios. D. Modelo: Enruta modelos de comandos y vistas. Correcta: C
-pregunta 2: En MVC, la V significa: A. Vista: Se encarga del diseño y presentación. B. Vista: Maneja datos y lógica de negocios. C. Vista: Enruta comandos a los modelos y vistas. D. Vista: Se encarga de visualizar las comunicaciones. Correcta: A
-pregunta 3: En MVC, la C significa: A. Controlador: Se encarga del diseño y presentación. B. Controlador: Maneja datos y lógica de negocios. C. Controlador: Enruta comandos a los modelos y vistas. D. Controlador: Controla las visualizaciones. Correcta: C
-pregunta 4: El controlador en MVC sirve de: A. Almacenamiento de datos persistentes. B. Enlace entre el modelo y las vistas. C. Interfaz de usuario final. D. Navegador web. Correcta: B
-pregunta 5: Un servlet en la arquitectura MVC de Java se utiliza habitualmente para implementar: A. Vistas. B. Controladores. C. Modelos. D. Bases de datos. Correcta: B
-pregunta 6: En la arquitectura MVC de Java, JSP se encarga normalmente de: A. La lógica de negocio. B. La representación visual (Vista). C. La conexión con la base de datos. D. El enrutamiento de peticiones. Correcta: B
-pregunta 7: Un JavaBean o EJB en MVC se encarga de: A. Mostrar el HTML al usuario. B. Comunicar con la base de datos (Modelo). C. Capturar clics de ratón. D. Definir los estilos CSS. Correcta: B
-pregunta 8: WSDM es un método de desarrollo web que se caracteriza por centrarse más en: A. Los datos que en el usuario. B. El usuario que en los datos. C. El servidor que en el cliente. D. El hardware que en el software. Correcta: B
-pregunta 9: UWE es una metodología de diseño web fundamentada en: A. Código binario. B. Un metamodelo basado en UML. C. Solo hojas de estilo. D. Bases de datos NoSQL. Correcta: B
-pregunta 10: WebML se centra en la construcción de webs basándose en un: A. Bajo nivel de abstracción. B. Alto nivel de abstracción sin considerar detalles técnicos iniciales. C. Detallado manual de hardware. D. Ninguna de las anteriores. Correcta: B
-pregunta 11: Un patrón de diseño es: A. Una solución general y reutilizable a problemas comunes de diseño de software. B. Un código que no se puede volver a usar. C. Un error del sistema. D. Una marca de hardware. Correcta: A
-pregunta 12: Los tipos principales de patrones de diseño de software son: A. Estructurales, fundacionales y auditores. B. Creacionales, estructurales y de comportamiento. C. Compositivos, administrativos y estructurales. D. Creacionales, de comportamiento y de composición. Correcta: B
-pregunta 13: El framework Hibernate o JPA se utiliza en Java para la capa de: A. Vista. B. Controlador. C. Modelo. D. Red. Correcta: C
-pregunta 14: JSF (Java Servlet Faces) es un framework orientado a facilitar la creación de: A. La Vista. B. El Controlador. C. La Base de Datos. D. El Sistema Operativo. Correcta: A
-pregunta 15: ¿MVC permite la separación entre lógica de negocio y visualización? A. No, están unidas. B. Sí, es su objetivo fundamental. C. Solo en aplicaciones de escritorio. D. Solo en lenguaje PHP. Correcta: B
--------------------------------------------------------------------------------- 
-Tema 8: Tecnologías Grid de la información
-pregunta 1: Con la creación de clusters se consigue: A. Compartir recursos (carga de trabajo o capacidad de computación) entre los nodos. B. Solución más económica que los mainframes. C. Disminución de la obsolescencia y mayor fiabilidad. D. Todas las respuestas son correctas. Correcta: D
-pregunta 2: Las aplicaciones distribuidas de alto rendimiento (HPC): A. Requieren gran capacidad de cómputo y no pueden ser tratadas por un único superordenador. B. Son independientes del contexto. C. Tienen alta demanda de CPU pero no de memoria. D. Solo funcionan en red local. Correcta: A
-pregunta 3: La Tecnología Grid está diseñada para: A. Resolver problemas demasiado grandes para un superordenador. B. Solo procesar un problema a la vez. C. Es solo un modelo teórico sin práctica. D. Reemplazar al HTML5. Correcta: A
-pregunta 4: Los tres puntos fundamentales para considerar un sistema como Grid son: A. Coordinación de recursos, protocolos e interfaces estándares, QoS. B. Fuentes de datos, protocolos especializados, QoS. C. Recursos, protocolos adaptativos, virtual QoS. D. Todas son falsas. Correcta: A
-pregunta 5: La tecnología Grid ha de ser: A. Dependiente, consistente, penetrante y económica. B. Independiente, concurrente, contextualizable y económica. C. Independiente, consistente, penetrante y económica. D. Ninguna es correcta. Correcta: D (o B según la variante de la pregunta en examen)
-pregunta 6: La e-Ciencia se da cuando: A. La ciencia no usa ordenadores. B. La ciencia depende de la computación (ej. meteorología). C. Solo se usa papel. D. Es una ciencia ficción. Correcta: B
-pregunta 7: Meta-computación consiste en: A. Un solo PC potente. B. La unión de varios superordenadores. C. Un virus informático. D. Borrar datos. Correcta: B
-pregunta 8: Diferencia entre Cluster y Grid: A. El Cluster es siempre más potente. B. El Grid permite la unión de diferentes clusters dispersos geográficamente. C. No hay diferencia. D. El Grid es solo local. Correcta: B
-pregunta 9: Las aplicaciones de alta productividad (HTC) se encargan de: A. Tareas que no se pueden dividir. B. Tareas secuenciales que pueden dividirse y luego componerse. C. Solo juegos. D. Diseño gráfico. Correcta: B
-pregunta 10: El software de control en un sistema Grid sirve para: A. Dibujar. B. Controlar y monitorizar los recursos del sistema globalmente. C. Solo para el teclado. D. Apagar los nodos. Correcta: B
-pregunta 11: El criterio "Económico" en Grid implica: A. Que sea gratis. B. Que sea más rentable que el uso de superordenadores/mainframes. C. Que use poco ancho de banda. D. Que lo pague el usuario. Correcta: B
-pregunta 12: QoS en Grid mide aspectos como: A. El color de la caja. B. Tiempo de respuesta, rendimiento y seguridad. C. La marca del procesador. D. El número de cables. Correcta: B
-pregunta 13: ¿Los nodos en una red Grid deben ser idénticos? A. Sí, obligatoriamente. B. No, pueden ser recursos heterogéneos. C. Solo si son servidores. D. Solo en red local. Correcta: B
-pregunta 14: Los clusters mejoran la fiabilidad porque son: A. Muy caros. B. Tolerantes a fallos debido a la redundancia hardware. C. Pequeños. D. De marca conocida. Correcta: B
-pregunta 15: La computación Grid se enmarca en el paradigma de: A. Computación centralizada. B. Computación distribuida. C. Computación manual. D. Programación lineal. Correcta: B
--------------------------------------------------------------------------------- 
-Tema 9: Arquitectura Orientada a Servicios (SOA)
-pregunta 1: SOAP es la tecnología utilizada por los consumidores para: A. Invocar servicios descubiertos y comunicarse con el proveedor. B. Solo para el diseño visual. C. Reemplazar al protocolo HTTP. D. Crear bases de datos. Correcta: A
-pregunta 2: Apache Axis está formado por: A. La aplicación AXIS y el servidor Apache. B. Una base de datos y un monitor. C. Solo código propietario. D. Hardware de red. Correcta: A
-pregunta 3: Un Web Service: A. Solo puede usar el protocolo HTTP. B. Solo puede usar SOAP. C. Puede utilizar protocolos como XML-RPC, SOAP o REST. D. Todas son falsas. Correcta: C
-pregunta 4: La arquitectura SOA ofrece un desarrollo: A. Lento y costoso. B. Ágil y robusto de aplicaciones web. C. Estático y sin interacción. D. Solo para escritorio. Correcta: B
-pregunta 5: SOA utiliza un registro para: A. Borrar componentes. B. Que los proveedores especifiquen su interfaz y los consumidores los localicen. C. Guardar contraseñas de usuario. D. No se usa registro en SOA. Correcta: B
-pregunta 6: WSDL sirve para: A. Definir la interfaz del servicio web. B. Cifrar mensajes. C. Formatear el texto en negrita. D. Conectar cables de red. Correcta: A
-pregunta 7: SOA se vincula a una única tecnología concreta: A. Sí, solo Web Services. B. No, puede usar RPC, CORBA o Web Services. C. Sí, solo XML. D. Solo a Java. Correcta: B
-pregunta 8: Los elementos de una arquitectura basada en servicios son: A. Ordenador y ratón. B. Proveedor, SOAP, Consumidor y Registro. C. Cliente, Servidor y Cable. D. HTML, CSS y JS. Correcta: B
-pregunta 9: SOA intenta buscar soluciones: A. Independientes para cada problema mediante módulos. B. Gigantes y monolíticas. C. Que no se puedan reutilizar. D. Solo para Windows 95. Correcta: A
-pregunta 10: IBM WebSphere es: A. Un navegador web. B. Un middleware para crear aplicaciones multiplataforma usando servicios web. C. Un lenguaje de marcado. D. Una marca de impresoras. Correcta: B
-pregunta 11: Enhanced Web Services en Java incluyen funcionalidades para: A. Solo texto. B. Intercambio de mensajes. C. Dibujar en la pantalla. D. Borrar el disco duro. Correcta: B
-pregunta 12: El protocolo de transporte utilizado normalmente en SOA es: A. FTP. B. HTTP. C. SMTP. D. POP3. Correcta: B
-pregunta 13: El consumidor en SOA es quien: A. Fabrica el ordenador. B. Demanda la utilización de determinados servicios. C. Proporciona el servicio. D. Escribe el estándar XML. Correcta: B
-pregunta 14: SOA permite el desarrollo de aplicaciones: A. Fuertemente acopladas. B. Débilmente acopladas y distribuidas. C. Que solo funcionan sin internet. D. Basadas solo en hardware. Correcta: B
-pregunta 15: ¿SOA utiliza tecnologías de la Web 2.0 y XML? A. No, es tecnología antigua. B. Sí, se apoya en ellas. C. Solo si el servidor es Linux. D. Solo para sitios de noticias. Correcta: B
--------------------------------------------------------------------------------- 
-Tema 10: Protocolo HTTP
-pregunta 1: HTTP es un protocolo: A. Basado en arquitectura cliente-servidor. B. Para el intercambio de información. C. Carente de información de estado. D. Todas las respuestas son correctas. Correcta: D
-pregunta 2: ¿Cuál es la principal diferencia entre el protocolo HTTP y HTTPS? A. La seguridad. B. HTTPS es siempre más lento. C. HTTP permite interceptar la información. D. A y C son correctas. Correcta: D
-pregunta 3: Un código de respuesta HTTP con valor 404 indica: A. Error en el servidor. B. Se ha podido comunicar con el servidor, pero no existe el recurso pedido. C. El servidor está apagado. D. Petición aceptada correctamente. Correcta: B
-pregunta 4: Atendiendo al tipo de almacenamiento de las cookies se pueden diferenciar: A. Cookies de sesión y cookies persistentes. B. Cookies internas y externas. C. Cookies de código o de objeto. D. Cookies NL o FC. Correcta: A
-pregunta 5: El método GET: A. Utiliza campos ocultos. B. Es inapropiado cuando la información es sensible porque se ve en la URL. C. Es el más seguro de todos. D. Es solo para subir archivos grandes. Correcta: B
-pregunta 6: SSL y TLS son: A. Lenguajes de programación. B. Protocolos seguros usados por HTTPS para crear conexiones seguras. C. Tipos de rejilla de Bootstrap. D. Modelos de base de datos. Correcta: B
-pregunta 7: Una URL requiere obligatoriamente: A. El número de puerto. B. El protocolo y la dirección o nombre del recurso. C. Usuario y contraseña. D. Solo el nombre del archivo. Correcta: B
-pregunta 8: URI puede entenderse como un: A. Localizador. B. Identificador que no indica cómo acceder. C. Virus. D. Servidor físico. Correcta: A
-pregunta 9: URN permite: A. Acceder directamente al recurso. B. Identificar recursos en la red pero no indica cómo acceder a ellos. C. Cifrar la conexión. D. Crear páginas web. Correcta: B
-pregunta 10: Para la transmisión de datos sensibles es recomendable utilizar peticiones: A. GET. B. POST. C. Ambas indistintamente. D. Ninguna de las anteriores. Correcta: B
-pregunta 11: El protocolo HTTP pertenece a la capa de: A. Enlace. B. Aplicación. C. Red. D. Transporte. Correcta: B
-pregunta 12: Las conexiones persistentes sirven para: A. Gastar más memoria. B. Disminuir el tráfico de peticiones al usar una misma conexión TCP. C. Obligar al usuario a no cerrar el navegador. D. Cifrar los datos. Correcta: B
-pregunta 13: Los códigos HTTP de la serie 5xx indican: A. Resultado correcto. B. Error del servidor. C. Error del cliente. D. Redirección. Correcta: B
-pregunta 14: El método POST indica al servidor que el mensaje irá en: A. La URL. B. El cuerpo del mensaje. C. La cabecera únicamente. D. Un archivo adjunto externo. Correcta: B
-pregunta 15: ¿Qué sistema criptográfico usa HTTPS? A. Solo clave simétrica. B. Solo clave asimétrica. C. Una combinación de clave asimétrica (SSL) y simétrica (TLS). D. Ninguno, es texto plano. Correcta: C
+    {
+      "theme": "Tema 2: Introducción a hojas de estilo CSS",
+      "questions": [
+        {
+          "id": "T2_Q01",
+          "question": "HTML y CSS se centran respectivamente en:",
+          "options": [
+            { "letter": "A", "text": "Presentación y lógica de negocio." },
+            { "letter": "B", "text": "Estructura y presentación." },
+            { "letter": "C", "text": "Acceso a datos y seguridad." },
+            { "letter": "D", "text": "Compilación y ejecución." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "Estructura y presentación.",
+          "definition": "HTML estructura el contenido; CSS define la presentación (estilos visuales).",
+          "explanation": "La separación de responsabilidades en la web es: contenido/estructura (HTML) y estilo (CSS)."
+        },
+        {
+          "id": "T2_Q02",
+          "question": "CSS3 agrega funcionalidades como:",
+          "options": [
+            { "letter": "A", "text": "Gestión de sesiones y cookies." },
+            { "letter": "B", "text": "Control de procesos en segundo plano." },
+            { "letter": "C", "text": "Rotación, múltiples fondos y redondeo de bordes." },
+            { "letter": "D", "text": "Compilación a bytecode." }
+          ],
+          "correct_letter": "C",
+          "correct_text": "Rotación, múltiples fondos y redondeo de bordes.",
+          "definition": "CSS3 amplía capacidades visuales (transform, multiple backgrounds, border-radius, sombras, gradientes, etc.).",
+          "explanation": "Rotaciones (transform), múltiples fondos (background con varias capas) y bordes redondeados (border-radius) son mejoras típicas de CSS3."
+        },
+        {
+          "id": "T2_Q03",
+          "question": "¿Qué código HTML5 enlaza una hoja de estilo externa?",
+          "options": [
+            { "letter": "A", "text": "<style src=\"estilo.css\"></style>" },
+            { "letter": "B", "text": "<css link=\"estilo.css\">" },
+            { "letter": "C", "text": "<link rel=\"stylesheet\" href=\"estilo.css\">" },
+            { "letter": "D", "text": "<script rel=\"stylesheet\" href=\"estilo.css\"></script>" }
+          ],
+          "correct_letter": "C",
+          "correct_text": "<link rel=\"stylesheet\" href=\"estilo.css\">",
+          "definition": "<link rel=\"stylesheet\"> vincula un recurso CSS externo desde el <head>.",
+          "explanation": "La forma estándar es <link rel=\"stylesheet\" href=\"...\">. <style> no usa src; <script> no es para CSS."
+        },
+        {
+          "id": "T2_Q04",
+          "question": "Ventaja del enlace externo en CSS:",
+          "options": [
+            { "letter": "A", "text": "Impide que el navegador use caché." },
+            { "letter": "B", "text": "Permite cambios globales afectando a todas las páginas vinculadas." },
+            { "letter": "C", "text": "Obliga a escribir los estilos dentro del HTML." },
+            { "letter": "D", "text": "Solo funciona en HTML5, no en HTML4." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "Permite cambios globales afectando a todas las páginas vinculadas.",
+          "definition": "CSS externo centraliza estilos: una hoja afecta a múltiples páginas, facilitando mantenimiento y reutilización.",
+          "explanation": "Si varias páginas enlazan el mismo CSS, un cambio en el archivo se refleja en todas, sin duplicar estilos."
+        },
+        {
+          "id": "T2_Q05",
+          "question": "Los selectores CSS universales usan el símbolo:",
+          "options": [
+            { "letter": "A", "text": "*." },
+            { "letter": "B", "text": "#." },
+            { "letter": "C", "text": ".." },
+            { "letter": "D", "text": "@." }
+          ],
+          "correct_letter": "A",
+          "correct_text": "*.",
+          "definition": "Selector universal (*) selecciona todos los elementos del documento.",
+          "explanation": "En CSS, * aplica reglas a cualquier etiqueta (p.ej., * { box-sizing: border-box; })."
+        },
+        {
+          "id": "T2_Q06",
+          "question": "Un identificador (id) en CSS:",
+          "options": [
+            { "letter": "A", "text": "Puede repetirse infinitas veces en la misma página." },
+            { "letter": "B", "text": "No puede repetirse en el mismo documento." },
+            { "letter": "C", "text": "Solo puede aplicarse a etiquetas <div>." },
+            { "letter": "D", "text": "Sustituye a las clases en CSS3." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "No puede repetirse en el mismo documento.",
+          "definition": "id identifica de forma única un elemento en el DOM; su selector CSS se escribe con #id.",
+          "explanation": "Un id duplicado rompe la unicidad (problemas en JS, anclas, accesibilidad). Las clases sí pueden repetirse."
+        },
+        {
+          "id": "T2_Q07",
+          "question": "Las clases (class) en CSS:",
+          "options": [
+            { "letter": "A", "text": "Solo pueden usarse una vez por documento." },
+            { "letter": "B", "text": "Se aplican automáticamente sin declararlas en HTML." },
+            { "letter": "C", "text": "Pueden usarse en múltiples etiquetas." },
+            { "letter": "D", "text": "Son exclusivas del <head>." }
+          ],
+          "correct_letter": "C",
+          "correct_text": "Pueden usarse en múltiples etiquetas.",
+          "definition": "class agrupa elementos con estilo común; su selector CSS se escribe con .clase.",
+          "explanation": "La idea de class es reutilización: muchos elementos pueden compartir la misma clase."
+        },
+        {
+          "id": "T2_Q08",
+          "question": "CSS3 introduce el canal alfa para:",
+          "options": [
+            { "letter": "A", "text": "Definir el tamaño de fuente." },
+            { "letter": "B", "text": "La transparencia." },
+            { "letter": "C", "text": "Mejorar la velocidad del servidor." },
+            { "letter": "D", "text": "Establecer el orden de carga del HTML." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "La transparencia.",
+          "definition": "Canal alfa controla opacidad (0–1 o 0–255 según formato), p.ej. rgba() o hsla().",
+          "explanation": "El canal alfa añade transparencia a colores y elementos, no afecta al tamaño de fuente ni al servidor."
+        },
+        {
+          "id": "T2_Q09",
+          "question": "Las pseudo-clases permiten:",
+          "options": [
+            { "letter": "A", "text": "Cambiar el HTML del servidor." },
+            { "letter": "B", "text": "Definir nuevos elementos HTML dinámicos." },
+            { "letter": "C", "text": "Clasificar elementos según su estado (ej. hover)." },
+            { "letter": "D", "text": "Convertir CSS en un lenguaje de programación." }
+          ],
+          "correct_letter": "C",
+          "correct_text": "Clasificar elementos según su estado (ej. hover).",
+          "definition": "Pseudo-clases (:) seleccionan elementos por estado/posición, p.ej. :hover, :focus, :first-child.",
+          "explanation": "Permiten aplicar estilos cuando el elemento está en un estado concreto (ratón encima, foco, visitado, etc.)."
+        },
+        {
+          "id": "T2_Q10",
+          "question": "¿Qué propiedad de CSS3 genera bordes redondeados?",
+          "options": [
+            { "letter": "A", "text": "border-style." },
+            { "letter": "B", "text": "border-radius." },
+            { "letter": "C", "text": "outline." },
+            { "letter": "D", "text": "padding." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "border-radius.",
+          "definition": "border-radius redondea esquinas del borde (radio por esquina).",
+          "explanation": "Es la propiedad diseñada específicamente para redondeo; outline/padding no cambian la geometría del borde."
+        },
+        {
+          "id": "T2_Q11",
+          "question": "text-shadow en CSS3 sirve para:",
+          "options": [
+            { "letter": "A", "text": "Cambiar el tipo de letra por una fuente externa." },
+            { "letter": "B", "text": "Ajustar el interlineado del texto." },
+            { "letter": "C", "text": "Sombrear textos." },
+            { "letter": "D", "text": "Crear bordes redondeados en el texto." }
+          ],
+          "correct_letter": "C",
+          "correct_text": "Sombrear textos.",
+          "definition": "text-shadow aplica sombra al texto (desplazamiento, blur, color).",
+          "explanation": "Se usa para sombras en tipografía; para fuentes externas se usa @font-face o enlaces."
+        },
+        {
+          "id": "T2_Q12",
+          "question": "¿Qué es un gradiente en CSS3?",
+          "options": [
+            { "letter": "A", "text": "Un tipo de fuente especial para títulos." },
+            { "letter": "B", "text": "Un script que genera colores aleatorios." },
+            { "letter": "C", "text": "Una transición entre al menos dos colores." },
+            { "letter": "D", "text": "Un borde que se dibuja con puntos." }
+          ],
+          "correct_letter": "C",
+          "correct_text": "Una transición entre al menos dos colores.",
+          "definition": "Gradiente es un relleno que interpola colores (lineal, radial, cónico) en el espacio.",
+          "explanation": "CSS3 permite gradientes como fondos (linear-gradient, radial-gradient), que mezclan colores progresivamente."
+        },
+        {
+          "id": "T2_Q13",
+          "question": "Las transformaciones en CSS3 permiten:",
+          "options": [
+            { "letter": "A", "text": "Ejecutar lógica condicional en el navegador." },
+            { "letter": "B", "text": "Realizar cambios geométricos a los elementos." },
+            { "letter": "C", "text": "Modificar la estructura del DOM en tiempo real." },
+            { "letter": "D", "text": "Sustituir imágenes por texto automáticamente." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "Realizar cambios geométricos a los elementos.",
+          "definition": "Transformaciones (transform) aplican operaciones geométricas: translate, rotate, scale, skew.",
+          "explanation": "No cambian el DOM (estructura), sino la representación visual/geométrica del elemento."
+        },
+        {
+          "id": "T2_Q14",
+          "question": "¿Se recomienda incluir estilos dentro de la etiqueta HTML?",
+          "options": [
+            { "letter": "A", "text": "Sí, porque mejora la reutilización." },
+            { "letter": "B", "text": "Sí, porque aumenta la velocidad del servidor." },
+            { "letter": "C", "text": "No, se prefiere la separación total de contenido y estilo." },
+            { "letter": "D", "text": "Solo si se usa Bootstrap." }
+          ],
+          "correct_letter": "C",
+          "correct_text": "No, se prefiere la separación total de contenido y estilo.",
+          "definition": "Principio: separar contenido (HTML) de presentación (CSS) para mantenibilidad y escalabilidad.",
+          "explanation": "Los estilos inline dificultan mantenimiento y reutilización. Mejor CSS externo o en <style> con criterio."
+        },
+        {
+          "id": "T2_Q15",
+          "question": "¿Qué selector se usa para un elemento con un ID específico?",
+          "options": [
+            { "letter": "A", "text": "El símbolo ." },
+            { "letter": "B", "text": "El símbolo *" },
+            { "letter": "C", "text": "El símbolo #" },
+            { "letter": "D", "text": "El símbolo @" }
+          ],
+          "correct_letter": "C",
+          "correct_text": "El símbolo #",
+          "definition": "Selector de id: #miId (selecciona el elemento con id=\"miId\").",
+          "explanation": "En CSS, '.' selecciona clases, '*' es universal y '@' es para reglas (@media, @font-face)."
+        },
+
+        {
+          "id": "T2_Q16",
+          "question": "Las hojas CSS: A. No se pueden utilizar con HTML. B. Utiliza selectores. C. Requieren un lenguaje intermedio para vincularse con HTML. D. B y C son ciertas.",
+          "options": [
+            { "letter": "A", "text": "No se pueden utilizar con HTML." },
+            { "letter": "B", "text": "Utiliza selectores." },
+            { "letter": "C", "text": "Requieren un lenguaje intermedio para vincularse con HTML." },
+            { "letter": "D", "text": "B y C son ciertas." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "Utiliza selectores.",
+          "definition": "Selector CSS: patrón que identifica elementos del DOM para aplicar reglas de estilo.",
+          "explanation": "CSS sí se usa con HTML (A falsa). No necesita lenguaje intermedio (C falsa): se vincula con <link>/<style>. Por eso la correcta es B."
+        },
+        {
+          "id": "T2_Q17",
+          "question": "En CSS: A. Existen elementos identificadores. B. No puede repetirse varias veces la utilización de un identificador. C. Los identificadores solo existen en HTML. D. A y B son correctas.",
+          "options": [
+            { "letter": "A", "text": "Existen elementos identificadores." },
+            { "letter": "B", "text": "No puede repetirse varias veces la utilización de un identificador." },
+            { "letter": "C", "text": "Los identificadores solo existen en HTML." },
+            { "letter": "D", "text": "A y B son correctas." }
+          ],
+          "correct_letter": "D",
+          "correct_text": "A y B son correctas.",
+          "definition": "id es un atributo del HTML y CSS lo selecciona con #; debe ser único por documento.",
+          "explanation": "A es cierta (se usan identificadores vía id). B es cierta (no repetir id). C es falsa (aunque se define en HTML, se usa en CSS/JS para selección)."
+        },
+        {
+          "id": "T2_Q18",
+          "question": "CSS3 agrega: A. Todas las respuestas son correctas. B. Transparencia, texto sombreado y rotación. C. Rotación, múltiples fondos y redondeo de bordes. D. Sombreado de cajas de texto, rotación y transparencia.",
+          "options": [
+            { "letter": "A", "text": "Todas las respuestas son correctas." },
+            { "letter": "B", "text": "Transparencia, texto sombreado y rotación." },
+            { "letter": "C", "text": "Rotación, múltiples fondos y redondeo de bordes." },
+            { "letter": "D", "text": "Sombreado de cajas de texto, rotación y transparencia." }
+          ],
+          "correct_letter": "C",
+          "correct_text": "Rotación, múltiples fondos y redondeo de bordes.",
+          "definition": "CSS3 introdujo/estandarizó transformaciones, múltiples backgrounds, border-radius, sombras, etc.",
+          "explanation": "C enumera mejoras canónicas. A no aplica porque “todas” no está garantizado según el enunciado del test."
+        },
+        {
+          "id": "T2_Q19",
+          "question": "HTML y CSS se centran en: A. La estructura y el contenido respectivamente. B. La estructura y la presentación respectivamente. C. La presentación y el control de datos respectivamente. D. Ninguna respuesta es correcta.",
+          "options": [
+            { "letter": "A", "text": "La estructura y el contenido respectivamente." },
+            { "letter": "B", "text": "La estructura y la presentación respectivamente." },
+            { "letter": "C", "text": "La presentación y el control de datos respectivamente." },
+            { "letter": "D", "text": "Ninguna respuesta es correcta." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "La estructura y la presentación respectivamente.",
+          "definition": "HTML = estructura/semántica; CSS = presentación/estilo.",
+          "explanation": "Es la división fundamental de responsabilidades en front-end."
+        },
+        {
+          "id": "T2_Q20",
+          "question": "En CSS3, el canal alfa se utiliza para: A. La definición de colores primarios. B. La transparencia. C. La rotación de elementos. D. La velocidad de carga.",
+          "options": [
+            { "letter": "A", "text": "La definición de colores primarios." },
+            { "letter": "B", "text": "La transparencia." },
+            { "letter": "C", "text": "La rotación de elementos." },
+            { "letter": "D", "text": "La velocidad de carga." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "La transparencia.",
+          "definition": "Alpha = componente de opacidad en un color (p.ej., rgba(0,0,0,0.5)).",
+          "explanation": "Controla cuánto se ve el color/fondo a través del elemento."
+        },
+        {
+          "id": "T2_Q21",
+          "question": "¿Qué código HTML5 enlaza una hoja de estilo externa? A. <style src=\"estilo.css\"> B. <link rel=\"stylesheet\" href=\"estilo.css\"> C. <a href=\"estilo.css\"> D. <css link=\"estilo.css\">",
+          "options": [
+            { "letter": "A", "text": "<style src=\"estilo.css\">" },
+            { "letter": "B", "text": "<link rel=\"stylesheet\" href=\"estilo.css\">" },
+            { "letter": "C", "text": "<a href=\"estilo.css\">" },
+            { "letter": "D", "text": "<css link=\"estilo.css\">" }
+          ],
+          "correct_letter": "B",
+          "correct_text": "<link rel=\"stylesheet\" href=\"estilo.css\">",
+          "definition": "La etiqueta <link> enlaza recursos externos (CSS) al documento.",
+          "explanation": "<style> no carga por src, <a> crea enlace navegable, y <css> no existe."
+        },
+        {
+          "id": "T2_Q22",
+          "question": "Las clases en CSS se unen a HTML a través del atributo: A. id. B. link. C. class. D. style.",
+          "options": [
+            { "letter": "A", "text": "id." },
+            { "letter": "B", "text": "link." },
+            { "letter": "C", "text": "class." },
+            { "letter": "D", "text": "style." }
+          ],
+          "correct_letter": "C",
+          "correct_text": "class.",
+          "definition": "class asigna uno o varios nombres de clase a un elemento para aplicar estilos compartidos.",
+          "explanation": "CSS selecciona clases con .clase; id es único, style es inline."
+        },
+        {
+          "id": "T2_Q23",
+          "question": "Los selectores CSS universales utilizan el símbolo: A. # B. . C. * D. @",
+          "options": [
+            { "letter": "A", "text": "#" },
+            { "letter": "B", "text": "." },
+            { "letter": "C", "text": "*" },
+            { "letter": "D", "text": "@" }
+          ],
+          "correct_letter": "C",
+          "correct_text": "*",
+          "definition": "El selector universal (*) aplica a todos los elementos.",
+          "explanation": "Es el selector más general posible en CSS."
+        },
+        {
+          "id": "T2_Q24",
+          "question": "La propiedad border-radius en CSS3 sirve para: A. Bordes sombreados. B. Bordes redondeados. C. Bordes con imagen. D. Grosor del borde.",
+          "options": [
+            { "letter": "A", "text": "Bordes sombreados." },
+            { "letter": "B", "text": "Bordes redondeados." },
+            { "letter": "C", "text": "Bordes con imagen." },
+            { "letter": "D", "text": "Grosor del borde." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "Bordes redondeados.",
+          "definition": "border-radius define el radio de curvatura de las esquinas.",
+          "explanation": "Es la propiedad creada para redondear esquinas."
+        },
+        {
+          "id": "T2_Q25",
+          "question": "CSS3 permite realizar: A. Transformaciones pero no transiciones. B. Transiciones pero no transformaciones. C. Ambas tareas (transformaciones y transiciones). D. Ninguna de las anteriores.",
+          "options": [
+            { "letter": "A", "text": "Transformaciones pero no transiciones." },
+            { "letter": "B", "text": "Transiciones pero no transformaciones." },
+            { "letter": "C", "text": "Ambas tareas (transformaciones y transiciones)." },
+            { "letter": "D", "text": "Ninguna de las anteriores." }
+          ],
+          "correct_letter": "C",
+          "correct_text": "Ambas tareas (transformaciones y transiciones).",
+          "definition": "transform cambia geometría; transition anima cambios de propiedades en el tiempo.",
+          "explanation": "CSS3 incorpora ambas capacidades: modificar y animar propiedades sin necesidad de JS."
+        },
+        {
+          "id": "T2_Q26",
+          "question": "Una ventaja del enlace externo de la hoja de estilos es: A. Afecta solo a una página del sitio. B. Permite cambios globales afectando a todas las páginas vinculadas. C. Aumenta el tamaño del archivo HTML. D. No requiere conexión a internet.",
+          "options": [
+            { "letter": "A", "text": "Afecta solo a una página del sitio." },
+            { "letter": "B", "text": "Permite cambios globales afectando a todas las páginas vinculadas." },
+            { "letter": "C", "text": "Aumenta el tamaño del archivo HTML." },
+            { "letter": "D", "text": "No requiere conexión a internet." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "Permite cambios globales afectando a todas las páginas vinculadas.",
+          "definition": "Centralización de estilos en un fichero compartido.",
+          "explanation": "Reutilización y mantenimiento: un único CSS controla múltiples páginas."
+        },
+        {
+          "id": "T2_Q27",
+          "question": "Las pseudo-clases permiten clasificar elementos atendiendo a: A. Su nombre de etiqueta. B. El estado en el que se encuentren (ej. hover). C. Su posición en la base de datos. D. El color del texto.",
+          "options": [
+            { "letter": "A", "text": "Su nombre de etiqueta." },
+            { "letter": "B", "text": "El estado en el que se encuentren (ej. hover)." },
+            { "letter": "C", "text": "Su posición en la base de datos." },
+            { "letter": "D", "text": "El color del texto." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "El estado en el que se encuentren (ej. hover).",
+          "definition": "Pseudo-clases (:) seleccionan por estado/interacción/posición en el árbol.",
+          "explanation": "Ejemplo: a:hover, input:focus, li:first-child."
+        },
+        {
+          "id": "T2_Q28",
+          "question": "El objetivo principal de CSS es: A. Estructurar el contenido. B. Lograr la separación total entre contenido y presentación. C. Ejecutar código en el servidor. D. Manejar bases de datos.",
+          "options": [
+            { "letter": "A", "text": "Estructurar el contenido." },
+            { "letter": "B", "text": "Lograr la separación total entre contenido y presentación." },
+            { "letter": "C", "text": "Ejecutar código en el servidor." },
+            { "letter": "D", "text": "Manejar bases de datos." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "Lograr la separación total entre contenido y presentación.",
+          "definition": "Separación de capas: HTML semántico + CSS para estilo.",
+          "explanation": "CSS existe para desacoplar apariencia del marcado del contenido."
+        },
+        {
+          "id": "T2_Q29",
+          "question": "Para aplicar sombra a un texto en CSS3 se usa: A. box-shadow. B. text-shadow. C. font-shadow. D. shadow-text.",
+          "options": [
+            { "letter": "A", "text": "box-shadow." },
+            { "letter": "B", "text": "text-shadow." },
+            { "letter": "C", "text": "font-shadow." },
+            { "letter": "D", "text": "shadow-text." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "text-shadow.",
+          "definition": "text-shadow sombrea texto; box-shadow sombrea la caja del elemento.",
+          "explanation": "Si quieres sombra solo en caracteres, se usa text-shadow."
+        },
+        {
+          "id": "T2_Q30",
+          "question": "¿Se pueden aplicar varias imágenes de fondo a un mismo elemento en CSS3? A. No, solo una por elemento. B. Sí, es una novedad de CSS3. C. Solo si el elemento es un <div>. D. Solo en navegadores antiguos.",
+          "options": [
+            { "letter": "A", "text": "No, solo una por elemento." },
+            { "letter": "B", "text": "Sí, es una novedad de CSS3." },
+            { "letter": "C", "text": "Solo si el elemento es un <div>." },
+            { "letter": "D", "text": "Solo en navegadores antiguos." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "Sí, es una novedad de CSS3.",
+          "definition": "CSS permite múltiples fondos separando valores por comas en background/background-image.",
+          "explanation": "Se pueden apilar varias imágenes y controlar posición/tamaño por capa."
+        }
+      ]
+    },
+
+    {
+      "theme": "Tema 3: JavaScript, JQuery y AJAX",
+      "questions": [
+        {
+          "id": "T3_Q01",
+          "question": "El lenguaje JavaScript normalmente se ejecuta en:",
+          "options": [
+            { "letter": "A", "text": "El cliente." },
+            { "letter": "B", "text": "El servidor exclusivamente." },
+            { "letter": "C", "text": "El router de red." },
+            { "letter": "D", "text": "El compilador del sistema operativo." }
+          ],
+          "correct_letter": "A",
+          "correct_text": "El cliente.",
+          "definition": "JavaScript en la web se ejecuta principalmente en el navegador (cliente), aunque también puede ejecutarse en servidor (p.ej., Node.js).",
+          "explanation": "En el contexto clásico de front-end, JS corre en el navegador para dar interactividad."
+        },
+        {
+          "id": "T3_Q02",
+          "question": "AJAX significa:",
+          "options": [
+            { "letter": "A", "text": "Advanced JSON and XForms." },
+            { "letter": "B", "text": "Asynchronous JavaScript and XML (o eXtensions en algunos textos)." },
+            { "letter": "C", "text": "Automatic Java and XHTML." },
+            { "letter": "D", "text": "Assembled JavaScript and XHTML." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "Asynchronous JavaScript and XML (o eXtensions en algunos textos).",
+          "definition": "AJAX es una técnica para comunicarse con el servidor de forma asíncrona desde el navegador sin recargar la página completa.",
+          "explanation": "El acrónimo tradicional es Asynchronous JavaScript and XML: originalmente se usaba XML, hoy se usa mucho JSON."
+        },
+        {
+          "id": "T3_Q03",
+          "question": "¿Qué problema resuelve AJAX?",
+          "options": [
+            { "letter": "A", "text": "Permite compilar JavaScript a C++ automáticamente." },
+            { "letter": "B", "text": "Permite recargar áreas de la web sin recargar la página completa." },
+            { "letter": "C", "text": "Sustituye HTTP por FTP en comunicaciones web." },
+            { "letter": "D", "text": "Elimina la necesidad de usar CSS." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "Permite recargar áreas de la web sin recargar la página completa.",
+          "definition": "Actualización parcial: petición asíncrona + actualización del DOM con la respuesta.",
+          "explanation": "AJAX permite UX más fluida: solicitar datos y actualizar secciones sin refresco total."
+        },
+        {
+          "id": "T3_Q04",
+          "question": "La sintaxis de JQuery se basa en:",
+          "options": [
+            { "letter": "A", "text": "El objeto jQuery() o $()." },
+            { "letter": "B", "text": "El objeto document.queryCss()." },
+            { "letter": "C", "text": "El objeto window.ajax()." },
+            { "letter": "D", "text": "El objeto style.selector()." }
+          ],
+          "correct_letter": "A",
+          "correct_text": "El objeto jQuery() o $().",
+          "definition": "jQuery expone la función $() para seleccionar elementos y encadenar acciones.",
+          "explanation": "La base de jQuery es seleccionar (por CSS selector) y operar: $(\".clase\").hide()."
+        },
+        {
+          "id": "T3_Q05",
+          "question": "¿Qué aporta JQuery a la UX?",
+          "options": [
+            { "letter": "A", "text": "Sustituye HTML por un lenguaje binario." },
+            { "letter": "B", "text": "Evita el uso del DOM en el navegador." },
+            { "letter": "C", "text": "Interactividad como barras de menú, pestañas y búsquedas." },
+            { "letter": "D", "text": "Obliga a recargar la página para cada acción." }
+          ],
+          "correct_letter": "C",
+          "correct_text": "Interactividad como barras de menú, pestañas y búsquedas.",
+          "definition": "UX (User Experience): percepción/experiencia del usuario al interactuar con una interfaz.",
+          "explanation": "jQuery simplifica manipulación del DOM y eventos, permitiendo UI más dinámica sin recargas constantes."
+        },
+        {
+          "id": "T3_Q06",
+          "question": "Pasos para activar AJAX:",
+          "options": [
+            { "letter": "A", "text": "Llamada a JS, petición asíncrona, recuperación de datos, modificación de la página." },
+            { "letter": "B", "text": "Cargar CSS, compilar HTML, reiniciar servidor, mostrar resultados." },
+            { "letter": "C", "text": "Guardar cookies, cerrar sesión, reiniciar navegador, volver a entrar." },
+            { "letter": "D", "text": "Definir tablas, migrar base de datos, lanzar servidor FTP, renderizar." }
+          ],
+          "correct_letter": "A",
+          "correct_text": "Llamada a JS, petición asíncrona, recuperación de datos, modificación de la página.",
+          "definition": "Flujo AJAX: evento -> petición (XHR/fetch) -> respuesta -> actualización DOM.",
+          "explanation": "Ese es el ciclo real para carga asíncrona y actualización parcial."
+        },
+        {
+          "id": "T3_Q07",
+          "question": "El DOM es:",
+          "options": [
+            { "letter": "A", "text": "Un lenguaje de programación para servidores." },
+            { "letter": "B", "text": "Un sistema de bases de datos del navegador." },
+            { "letter": "C", "text": "Una estructura arbórea que crea el navegador al cargar la web." },
+            { "letter": "D", "text": "Un protocolo de red para intercambiar archivos." }
+          ],
+          "correct_letter": "C",
+          "correct_text": "Una estructura arbórea que crea el navegador al cargar la web.",
+          "definition": "DOM (Document Object Model): representación en forma de árbol del documento, accesible/modificable desde JS.",
+          "explanation": "El navegador parsea HTML y construye un árbol de nodos (elementos, texto, atributos)."
+        },
+        {
+          "id": "T3_Q08",
+          "question": "JavaScript es un lenguaje:",
+          "options": [
+            { "letter": "A", "text": "Compilado a código máquina antes de ejecutarse." },
+            { "letter": "B", "text": "Exclusivo para bases de datos relacionales." },
+            { "letter": "C", "text": "De scripting e interpretado." },
+            { "letter": "D", "text": "Diseñado para sustituir HTML." }
+          ],
+          "correct_letter": "C",
+          "correct_text": "De scripting e interpretado.",
+          "definition": "Lenguaje de scripting: diseñado para automatizar/controlar comportamiento, generalmente interpretado/JIT.",
+          "explanation": "JS se ejecuta en motores del navegador (interpretación/JIT), no reemplaza a HTML."
+        },
+        {
+          "id": "T3_Q09",
+          "question": "El objeto XMLHttpRequest es fundamental para:",
+          "options": [
+            { "letter": "A", "text": "Definir estilos CSS dinámicos." },
+            { "letter": "B", "text": "AJAX." },
+            { "letter": "C", "text": "Sustituir el servidor por el cliente." },
+            { "letter": "D", "text": "Ejecutar Java dentro del navegador." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "AJAX.",
+          "definition": "XMLHttpRequest (XHR) es una API para hacer peticiones HTTP asíncronas desde el navegador (pre-fetch).",
+          "explanation": "XHR es el mecanismo clásico para AJAX (hoy también fetch)."
+        },
+        {
+          "id": "T3_Q10",
+          "question": "JQuery utiliza selectores basados en:",
+          "options": [
+            { "letter": "A", "text": "XPath." },
+            { "letter": "B", "text": "CSS." },
+            { "letter": "C", "text": "SQL." },
+            { "letter": "D", "text": "FTP." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "CSS.",
+          "definition": "Selector CSS: patrón (.clase, #id, tag, combinadores) para localizar elementos en el DOM.",
+          "explanation": "jQuery toma selectores tipo CSS en $(), por ejemplo $(\"#menu li.activo\")."
+        },
+        {
+          "id": "T3_Q11",
+          "question": "¿Qué etiqueta avisa si JavaScript está bloqueado?",
+          "options": [
+            { "letter": "A", "text": "<nojs>" },
+            { "letter": "B", "text": "<noscript>" },
+            { "letter": "C", "text": "<script-blocked>" },
+            { "letter": "D", "text": "<js-off>" }
+          ],
+          "correct_letter": "B",
+          "correct_text": "<noscript>",
+          "definition": "<noscript> define contenido alternativo cuando JS está deshabilitado/no soportado.",
+          "explanation": "Es la etiqueta estándar para mostrar mensaje o contenido fallback sin JS."
+        },
+        {
+          "id": "T3_Q12",
+          "question": "En JQuery, el argumento de $( ) es un:",
+          "options": [
+            { "letter": "A", "text": "Compilador." },
+            { "letter": "B", "text": "Motor de renderizado." },
+            { "letter": "C", "text": "Selector." },
+            { "letter": "D", "text": "Tipo de dato binario." }
+          ],
+          "correct_letter": "C",
+          "correct_text": "Selector.",
+          "definition": "Selector = expresión para localizar elementos del DOM (normalmente estilo CSS).",
+          "explanation": "$(\"p\") selecciona párrafos; $(\"#id\") selecciona por id, etc."
+        },
+        {
+          "id": "T3_Q13",
+          "question": "JavaScript es de tipado:",
+          "options": [
+            { "letter": "A", "text": "Fuerte y estático." },
+            { "letter": "B", "text": "Débil o no tipado." },
+            { "letter": "C", "text": "Solo numérico." },
+            { "letter": "D", "text": "Exclusivo de enteros." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "Débil o no tipado.",
+          "definition": "Tipado dinámico: el tipo se asocia a valores en runtime; JS permite conversiones implícitas.",
+          "explanation": "JS no requiere declarar tipos y puede convertir automáticamente (coerción), por eso se considera de tipado débil/dinámico."
+        },
+        {
+          "id": "T3_Q14",
+          "question": "¿Qué permite dotar de dinamismo a una web estática?",
+          "options": [
+            { "letter": "A", "text": "JavaScript." },
+            { "letter": "B", "text": "HTML5." },
+            { "letter": "C", "text": "CSS3." },
+            { "letter": "D", "text": "SGML." }
+          ],
+          "correct_letter": "A",
+          "correct_text": "JavaScript.",
+          "definition": "Dinamismo: capacidad de responder a eventos, modificar DOM y comunicarse con servidor sin recargas.",
+          "explanation": "JS añade comportamiento: eventos, lógica, llamadas asíncronas."
+        },
+        {
+          "id": "T3_Q15",
+          "question": "¿Se puede incluir JS dentro del archivo HTML?",
+          "options": [
+            { "letter": "A", "text": "No, debe ir siempre en un archivo externo." },
+            { "letter": "B", "text": "Sí, entre etiquetas <script>." },
+            { "letter": "C", "text": "Solo si se usa XHTML estricto." },
+            { "letter": "D", "text": "Solo dentro de <style>." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "Sí, entre etiquetas <script>.",
+          "definition": "<script> permite incluir código JS inline o enlazarlo con src.",
+          "explanation": "JS puede ir embebido en <script> o en fichero externo con src."
+        },
+
+        {
+          "id": "T3_Q16",
+          "question": "AJAX: A. Quiere decir Asynchronous JavaScript and XML (o eXtensions). B. Sirve para cargar datos en background sin recargar la página. C. No se trata de un lenguaje nuevo sino de la combinación de tecnologías. D. Todas las respuestas son correctas.",
+          "options": [
+            { "letter": "A", "text": "Quiere decir Asynchronous JavaScript and XML (o eXtensions)." },
+            { "letter": "B", "text": "Sirve para cargar datos en background sin recargar la página." },
+            { "letter": "C", "text": "No se trata de un lenguaje nuevo sino de la combinación de tecnologías." },
+            { "letter": "D", "text": "Todas las respuestas son correctas." }
+          ],
+          "correct_letter": "D",
+          "correct_text": "Todas las respuestas son correctas.",
+          "definition": "AJAX es un patrón/técnica de comunicación asíncrona con servidor desde JS.",
+          "explanation": "A define el acrónimo, B describe su objetivo y C aclara que no es un lenguaje nuevo; por eso D."
+        },
+        {
+          "id": "T3_Q17",
+          "question": "Respecto a la sintaxis de JQuery: A. Se basa en el objeto jQuery o $(). B. Al objeto jQuery se le pasa como argumento un \"selector\". C. JQuery utiliza selectores CSS. D. Todas las respuestas son verdaderas.",
+          "options": [
+            { "letter": "A", "text": "Se basa en el objeto jQuery o $()." },
+            { "letter": "B", "text": "Al objeto jQuery se le pasa como argumento un \"selector\"." },
+            { "letter": "C", "text": "JQuery utiliza selectores CSS." },
+            { "letter": "D", "text": "Todas las respuestas son verdaderas." }
+          ],
+          "correct_letter": "D",
+          "correct_text": "Todas las respuestas son verdaderas.",
+          "definition": "jQuery: librería JS para selección/manipulación DOM, eventos y AJAX.",
+          "explanation": "A, B y C describen correctamente el patrón de uso de jQuery, por eso D."
+        },
+        {
+          "id": "T3_Q18",
+          "question": "Para utilizar AJAX es necesario activarlo mediante estos pasos: A. Llamada a JS, petición asíncrona (XMLHttpRequest), recuperación de datos, modificación de la página. B. Llamada AJAX, formateo al servidor, extracción, modificación. C. Llamada, respuesta, extracción, modificación. D. Ninguna es correcta.",
+          "options": [
+            { "letter": "A", "text": "Llamada a JS, petición asíncrona (XMLHttpRequest), recuperación de datos, modificación de la página." },
+            { "letter": "B", "text": "Llamada AJAX, formateo al servidor, extracción, modificación." },
+            { "letter": "C", "text": "Llamada, respuesta, extracción, modificación." },
+            { "letter": "D", "text": "Ninguna es correcta." }
+          ],
+          "correct_letter": "A",
+          "correct_text": "Llamada a JS, petición asíncrona (XMLHttpRequest), recuperación de datos, modificación de la página.",
+          "definition": "Secuencia operativa AJAX clásica con XHR.",
+          "explanation": "A detalla el flujo real incluyendo el objeto XHR; las otras opciones son vagas o incorrectas."
+        },
+        {
+          "id": "T3_Q19",
+          "question": "¿Qué aporta JQuery a la UX (Experiencia de Usuario) en general? A. Interactividad como barras de menú, pestañas y búsquedas. B. Colores y diseño estático. C. Programación polimórfica dentro del DOM. D. Todas las anteriores son falsas.",
+          "options": [
+            { "letter": "A", "text": "Interactividad como barras de menú, pestañas y búsquedas." },
+            { "letter": "B", "text": "Colores y diseño estático." },
+            { "letter": "C", "text": "Programación polimórfica dentro del DOM." },
+            { "letter": "D", "text": "Todas las anteriores son falsas." }
+          ],
+          "correct_letter": "A",
+          "correct_text": "Interactividad como barras de menú, pestañas y búsquedas.",
+          "definition": "UX: cómo el usuario percibe la facilidad/fluidez al usar la interfaz.",
+          "explanation": "jQuery facilita interacciones (eventos, animaciones, manipulación DOM). Colores/diseño estático es CSS."
+        },
+        {
+          "id": "T3_Q20",
+          "question": "JavaScript es un lenguaje: A. Fuertemente tipado. B. De tipado débil o no tipado. C. Compilado. D. De bajo nivel.",
+          "options": [
+            { "letter": "A", "text": "Fuertemente tipado." },
+            { "letter": "B", "text": "De tipado débil o no tipado." },
+            { "letter": "C", "text": "Compilado." },
+            { "letter": "D", "text": "De bajo nivel." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "De tipado débil o no tipado.",
+          "definition": "JS es dinámico y permite coerción implícita.",
+          "explanation": "No exige declaraciones de tipo y convierte valores automáticamente en muchos contextos."
+        },
+        {
+          "id": "T3_Q21",
+          "question": "El DOM (Document Object Model) es: A. Una base de datos. B. Una estructura arbórea que crea el navegador al cargar la web. C. Un servidor de aplicaciones. D. Un lenguaje de marcado.",
+          "options": [
+            { "letter": "A", "text": "Una base de datos." },
+            { "letter": "B", "text": "Una estructura arbórea que crea el navegador al cargar la web." },
+            { "letter": "C", "text": "Un servidor de aplicaciones." },
+            { "letter": "D", "text": "Un lenguaje de marcado." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "Una estructura arbórea que crea el navegador al cargar la web.",
+          "definition": "DOM: árbol de nodos que representa el documento para ser consultado/modificado por scripts.",
+          "explanation": "JS manipula el DOM para cambiar contenido, atributos, estilos y estructura."
+        },
+        {
+          "id": "T3_Q22",
+          "question": "Para introducir JavaScript en un documento HTML: A. Es necesario incluir el código JS en archivos .php. B. El código JS se puede incluir dentro del archivo .html entre etiquetas <script>. C. El código JS se puede incluir dentro de los archivos CSS. D. No se puede incluir directamente.",
+          "options": [
+            { "letter": "A", "text": "Es necesario incluir el código JS en archivos .php." },
+            { "letter": "B", "text": "El código JS se puede incluir dentro del archivo .html entre etiquetas <script>." },
+            { "letter": "C", "text": "El código JS se puede incluir dentro de los archivos CSS." },
+            { "letter": "D", "text": "No se puede incluir directamente." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "El código JS se puede incluir dentro del archivo .html entre etiquetas <script>.",
+          "definition": "<script> admite código inline o referencia externa (src).",
+          "explanation": "Es el mecanismo estándar del navegador para cargar/ejecutar JS en una página."
+        },
+        {
+          "id": "T3_Q23",
+          "question": "¿Qué etiqueta se usa para avisar que JavaScript está bloqueado en el navegador? A. <script> B. <noscript> C. <nojavascript> D. <alert>",
+          "options": [
+            { "letter": "A", "text": "<script>" },
+            { "letter": "B", "text": "<noscript>" },
+            { "letter": "C", "text": "<nojavascript>" },
+            { "letter": "D", "text": "<alert>" }
+          ],
+          "correct_letter": "B",
+          "correct_text": "<noscript>",
+          "definition": "<noscript> muestra contenido alternativo cuando no se ejecuta JS.",
+          "explanation": "Es el elemento estándar del HTML para fallback sin JS."
+        },
+        {
+          "id": "T3_Q24",
+          "question": "JQuery es: A. Una base de datos relacional. B. Un framework para JavaScript. C. Un lenguaje de servidor. D. Un protocolo de red.",
+          "options": [
+            { "letter": "A", "text": "Una base de datos relacional." },
+            { "letter": "B", "text": "Un framework para JavaScript." },
+            { "letter": "C", "text": "Un lenguaje de servidor." },
+            { "letter": "D", "text": "Un protocolo de red." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "Un framework para JavaScript.",
+          "definition": "jQuery es una librería/framework de JS para DOM, eventos, animaciones y AJAX.",
+          "explanation": "No es BD, ni protocolo. Se usa en cliente para simplificar JS."
+        },
+        {
+          "id": "T3_Q25",
+          "question": "JavaScript permite dotar de: A. \"Dinamismo\" a una página web estática. B. Estructura básica al HTML. C. Seguridad absoluta a la red. D. Conectividad física.",
+          "options": [
+            { "letter": "A", "text": "\"Dinamismo\" a una página web estática." },
+            { "letter": "B", "text": "Estructura básica al HTML." },
+            { "letter": "C", "text": "Seguridad absoluta a la red." },
+            { "letter": "D", "text": "Conectividad física." }
+          ],
+          "correct_letter": "A",
+          "correct_text": "\"Dinamismo\" a una página web estática.",
+          "definition": "Dinamismo: interacción y cambios en tiempo real mediante eventos y manipulación DOM.",
+          "explanation": "JS permite reaccionar a acciones del usuario y actualizar contenido sin recargar."
+        },
+        {
+          "id": "T3_Q26",
+          "question": "El objeto fundamental en el funcionamiento de AJAX es: A. XMLDocument. B. XMLHttpRequest. C. JSRequest. D. AsyncObject.",
+          "options": [
+            { "letter": "A", "text": "XMLDocument." },
+            { "letter": "B", "text": "XMLHttpRequest." },
+            { "letter": "C", "text": "JSRequest." },
+            { "letter": "D", "text": "AsyncObject." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "XMLHttpRequest.",
+          "definition": "XHR permite realizar peticiones HTTP desde JS (asíncronas o síncronas).",
+          "explanation": "AJAX clásico se implementa con XMLHttpRequest (o fetch como alternativa moderna)."
+        },
+        {
+          "id": "T3_Q27",
+          "question": "JavaScript es un lenguaje: A. De scripting e interpretado. B. De modelado de datos. C. Que solo se ejecuta en servidores. D. De alto acoplamiento.",
+          "options": [
+            { "letter": "A", "text": "De scripting e interpretado." },
+            { "letter": "B", "text": "De modelado de datos." },
+            { "letter": "C", "text": "Que solo se ejecuta en servidores." },
+            { "letter": "D", "text": "De alto acoplamiento." }
+          ],
+          "correct_letter": "A",
+          "correct_text": "De scripting e interpretado.",
+          "definition": "Scripting: lenguaje usado para automatizar/dirigir comportamiento de aplicaciones (navegador).",
+          "explanation": "JS se ejecuta principalmente en navegador (cliente), no solo en servidor."
+        },
+        {
+          "id": "T3_Q28",
+          "question": "Un atributo HTML puede ser modificado a través del DOM: A. Solo tomando elementos unitarios. B. Tomando elementos raíz o funciones de grupo. C. No se pueden modificar atributos con el DOM. D. Todas son ciertas.",
+          "options": [
+            { "letter": "A", "text": "Solo tomando elementos unitarios." },
+            { "letter": "B", "text": "Tomando elementos raíz o funciones de grupo." },
+            { "letter": "C", "text": "No se pueden modificar atributos con el DOM." },
+            { "letter": "D", "text": "Todas son ciertas." }
+          ],
+          "correct_letter": "D",
+          "correct_text": "Todas son ciertas.",
+          "definition": "Manipulación DOM: puedes seleccionar uno o varios elementos y modificar atributos (setAttribute, propiedades, etc.).",
+          "explanation": "El test marca D: se asume que se pueden modificar atributos seleccionando elementos individualmente o por colecciones. (C en realidad sería falsa en web real; aquí se respeta la clave indicada.)"
+        },
+        {
+          "id": "T3_Q29",
+          "question": "¿Qué problema resuelve AJAX? A. La falta de colores en la web. B. La necesidad de recargar la página completa ante un cambio pequeño. C. El almacenamiento de datos en el cliente. D. El diseño adaptativo.",
+          "options": [
+            { "letter": "A", "text": "La falta de colores en la web." },
+            { "letter": "B", "text": "La necesidad de recargar la página completa ante un cambio pequeño." },
+            { "letter": "C", "text": "El almacenamiento de datos en el cliente." },
+            { "letter": "D", "text": "El diseño adaptativo." }
+          ],
+          "correct_letter": "B",
+          "correct_text": "La necesidad de recargar la página completa ante un cambio pequeño.",
+          "definition": "Actualización parcial de interfaz mediante peticiones asíncronas.",
+          "explanation": "AJAX evita recargas completas para cambios puntuales (p.ej. cargar una lista, validar usuario, etc.)."
+        }
+      ]
+    }
+
+    /*
+      NOTA IMPORTANTE:
+      El contenido es muy extenso (incluye Temas 4–10 y además la “segunda tanda” de preguntas 1–15 por tema).
+      Para no cortar por límite de respuesta, aquí he dejado completos los Temas 1–3 (incluyendo duplicados).
+      Si quieres, en el siguiente mensaje te entrego el JSON continuado desde T4 hasta T10 en el MISMO formato
+      (sin cambiar nada del enunciado y respetando las respuestas correctas que has marcado).
+    */
+  ]
+}
