@@ -1,1300 +1,2410 @@
 {
-  "title": "Banco de preguntas (Temas 1–10)",
-  "version": "1.0",
-  "format": {
-    "theme_object": {
-      "theme": "string",
-      "questions": "array<Question>"
-    },
-    "question_object": {
-      "id": "string",
-      "question": "string",
-      "options": [
-        { "letter": "A", "text": "string" },
-        { "letter": "B", "text": "string" },
-        { "letter": "C", "text": "string" },
-        { "letter": "D", "text": "string" }
-      ],
-      "correct_letter": "A|B|C|D",
-      "correct_text": "string",
-      "definition": "string",
-      "explanation": "string"
-    }
+  "settings": {
+    "show_progress": true,
+    "shuffle_options": true,
+    "show_explanation": true,
+    "shuffle_questions": true
   },
-  "themes": [
+  "questions": [
     {
-      "theme": "Tema 1: Lenguaje de marcado HTML5",
-      "questions": [
-        {
-          "id": "T1_Q01",
-          "question": "¿De qué estándar surge el lenguaje HTML?",
-          "options": [
-            { "letter": "A", "text": "XML, como una versión simplificada para la web." },
-            { "letter": "B", "text": "SGML, como estándar general de marcado." },
-            { "letter": "C", "text": "Markdown, como lenguaje ligero de marcado." },
-            { "letter": "D", "text": "La especificación ECMAScript del W3C." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "SGML, como estándar general de marcado.",
-          "definition": "SGML (Standard Generalized Markup Language) es un metaestándar de marcado del que derivan lenguajes como HTML; define reglas para crear lenguajes de marcado.",
-          "explanation": "HTML se definió originalmente como una aplicación de SGML (HTML 2.0/4.01 se describen como aplicaciones SGML). Por eso su origen conceptual y normativo está en SGML, no en XML (que llegó después como simplificación)."
-        },
-        {
-          "id": "T1_Q02",
-          "question": "Un documento HTML:",
-          "options": [
-            { "letter": "A", "text": "Se limita a etiquetas HTML y no admite integración con otros lenguajes." },
-            { "letter": "B", "text": "Solo puede incluir JavaScript, pero no CSS." },
-            { "letter": "C", "text": "Combina HTML con otros lenguajes." },
-            { "letter": "D", "text": "Es un documento de texto plano sin estructura." }
-          ],
-          "correct_letter": "C",
-          "correct_text": "Combina HTML con otros lenguajes.",
-          "definition": "HTML estructura el contenido, y puede integrarse con CSS (presentación) y JavaScript (comportamiento), además de incluir recursos externos (imágenes, fuentes, etc.).",
-          "explanation": "En la práctica un documento web usa HTML como base, enlaza CSS (con <link> o <style>) y JavaScript (con <script>), por lo que no se limita solo a etiquetas HTML."
-        },
-        {
-          "id": "T1_Q03",
-          "question": "Mejoras de HTML5 respecto a HTML:",
-          "options": [
-            { "letter": "A", "text": "Incorpora tag para definir diálogos y conversaciones." },
-            { "letter": "B", "text": "Elimina por completo los formularios, sustituyéndolos por JSON." },
-            { "letter": "C", "text": "Impide el uso de multimedia sin plugins externos." },
-            { "letter": "D", "text": "Sustituye CSS por atributos de estilo obligatorios." }
-          ],
-          "correct_letter": "A",
-          "correct_text": "Incorpora tag para definir diálogos y conversaciones.",
-          "definition": "<dialog> es un elemento de HTML que representa un cuadro de diálogo o componente interactivo modal/no modal.",
-          "explanation": "HTML5 añade elementos semánticos y de interfaz como <dialog>. Las otras opciones son falsas: HTML5 amplía formularios, facilita multimedia nativa (<audio>, <video>) y no sustituye CSS."
-        },
-        {
-          "id": "T1_Q04",
-          "question": "La etiqueta <img> sirve para:",
-          "options": [
-            { "letter": "A", "text": "Crear un contenedor para imágenes como si fuera un <div>." },
-            { "letter": "B", "text": "Insertar una imagen." },
-            { "letter": "C", "text": "Insertar un vídeo en formato MP4." },
-            { "letter": "D", "text": "Definir un mapa del sitio para buscadores." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "Insertar una imagen.",
-          "definition": "<img> es un elemento vacío que inserta una imagen en el documento mediante atributos como src y alt.",
-          "explanation": "<img> referencia un recurso gráfico (src) y proporciona texto alternativo (alt). Para vídeo se usa <video>, y no es un contenedor."
-        },
-        {
-          "id": "T1_Q05",
-          "question": "En un formulario HTML, el campo action:",
-          "options": [
-            { "letter": "A", "text": "Define el método de envío (GET o POST)." },
-            { "letter": "B", "text": "Indica la página a la que se envían los datos." },
-            { "letter": "C", "text": "Indica el tipo MIME del formulario." },
-            { "letter": "D", "text": "Bloquea el envío hasta validar con CSS." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "Indica la página a la que se envían los datos.",
-          "definition": "action es el atributo del <form> que define la URL destino (endpoint) que recibirá los datos del formulario.",
-          "explanation": "method define GET/POST; action define el destino (ruta/URL) del envío. El tipo MIME lo define enctype."
-        },
-        {
-          "id": "T1_Q06",
-          "question": "La etiqueta <head> permite:",
-          "options": [
-            { "letter": "A", "text": "Insertar el contenido visible principal de la página." },
-            { "letter": "B", "text": "Introducir metadatos sobre el documento." },
-            { "letter": "C", "text": "Incluir únicamente enlaces de navegación." },
-            { "letter": "D", "text": "Definir el pie de página del documento." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "Introducir metadatos sobre el documento.",
-          "definition": "<head> contiene metadatos y recursos: <meta>, <title>, <link>, <style>, <script> (normalmente), etc.",
-          "explanation": "El contenido visible va en <body>. En <head> se definen título, codificación, viewport, enlaces a CSS/JS, descripción, etc."
-        },
-        {
-          "id": "T1_Q07",
-          "question": "Las etiquetas semánticas de HTML5 buscan:",
-          "options": [
-            { "letter": "A", "text": "Eliminar el uso de JavaScript en la web." },
-            { "letter": "B", "text": "Sustituir la necesidad de usar <div> para identificar cada bloque." },
-            { "letter": "C", "text": "Convertir HTML en un lenguaje de programación completo." },
-            { "letter": "D", "text": "Obligar a usar tablas para el diseño." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "Sustituir la necesidad de usar <div> para identificar cada bloque.",
-          "definition": "Etiquetas semánticas como <header>, <nav>, <main>, <section>, <article>, <aside>, <footer> aportan significado estructural al documento.",
-          "explanation": "Su objetivo es expresar la estructura y el significado del contenido, mejorando accesibilidad, SEO y mantenibilidad, reduciendo el “divitis”."
-        },
-        {
-          "id": "T1_Q08",
-          "question": "Para representar contenido en un párrafo se usa:",
-          "options": [
-            { "letter": "A", "text": "<p>." },
-            { "letter": "B", "text": "<span>." },
-            { "letter": "C", "text": "<br>." },
-            { "letter": "D", "text": "<h1>." }
-          ],
-          "correct_letter": "A",
-          "correct_text": "<p>.",
-          "definition": "<p> define un párrafo (bloque de texto). <span> es inline; <br> es salto de línea; <h1> es encabezado.",
-          "explanation": "El elemento semántico correcto para un párrafo es <p>, porque delimita un bloque textual con sentido."
-        },
-        {
-          "id": "T1_Q09",
-          "question": "¿Qué etiqueta define una lista no ordenada?",
-          "options": [
-            { "letter": "A", "text": "<ol>." },
-            { "letter": "B", "text": "<ul>." },
-            { "letter": "C", "text": "<li>." },
-            { "letter": "D", "text": "<dl>." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "<ul>.",
-          "definition": "<ul> define una lista no ordenada; <ol> ordenada; <li> ítem; <dl> lista de definiciones.",
-          "explanation": "Una lista no ordenada se representa con <ul> y sus elementos con <li>."
-        },
-        {
-          "id": "T1_Q10",
-          "question": "Los lenguajes de marcado se centran en:",
-          "options": [
-            { "letter": "A", "text": "La compilación del código a binario." },
-            { "letter": "B", "text": "La estructuración del contenido." },
-            { "letter": "C", "text": "El acceso directo a memoria y punteros." },
-            { "letter": "D", "text": "El control de procesos del sistema operativo." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "La estructuración del contenido.",
-          "definition": "Un lenguaje de marcado usa “marcas” (etiquetas) para describir la estructura y el significado del contenido, no para ejecutar lógica.",
-          "explanation": "HTML/XML describen estructura/semántica. Compilación, memoria o procesos son de lenguajes de programación o del SO."
-        },
-        {
-          "id": "T1_Q11",
-          "question": "XHTML se diferencia de HTML en que:",
-          "options": [
-            { "letter": "A", "text": "Permite omitir siempre el cierre de etiquetas." },
-            { "letter": "B", "text": "No sigue ninguna regla de sintaxis estricta." },
-            { "letter": "C", "text": "No posee un conjunto de etiquetas predefinido." },
-            { "letter": "D", "text": "Es un lenguaje de hojas de estilo." }
-          ],
-          "correct_letter": "C",
-          "correct_text": "No posee un conjunto de etiquetas predefinido.",
-          "definition": "XHTML es HTML expresado como XML: exige sintaxis XML (bien formado). En XML no existe un conjunto único fijo de etiquetas; el vocabulario puede definirse por esquema/DTD.",
-          "explanation": "La idea evaluada aquí es “XHTML/HTML sobre XML”: XML es extensible y no trae un conjunto cerrado universal de etiquetas. A diferencia de HTML, cuyo vocabulario está definido por especificación."
-        },
-        {
-          "id": "T1_Q12",
-          "question": "¿Es obligatorio cerrar las etiquetas en HTML5?",
-          "options": [
-            { "letter": "A", "text": "No, nunca se cierran etiquetas en HTML5." },
-            { "letter": "B", "text": "Solo se cierran etiquetas si llevan atributos." },
-            { "letter": "C", "text": "Sí, para mantener la intención declarativa y el rigor estructural." },
-            { "letter": "D", "text": "Solo se cierran en documentos JSON-LD." }
-          ],
-          "correct_letter": "C",
-          "correct_text": "Sí, para mantener la intención declarativa y el rigor estructural.",
-          "definition": "Buenas prácticas HTML: cerrar correctamente los elementos que lo requieren y anidar de forma coherente; algunos elementos vacíos no llevan cierre (p.ej., <img>).",
-          "explanation": "Aunque el parser HTML es tolerante, la práctica correcta es cerrar las etiquetas no vacías y respetar el anidamiento, porque mejora la validez, accesibilidad y evita errores de estructura."
-        },
-        {
-          "id": "T1_Q13",
-          "question": "¿Qué elemento de HTML5 se usa para dibujos y gráficos?",
-          "options": [
-            { "letter": "A", "text": "<svg>." },
-            { "letter": "B", "text": "<img>." },
-            { "letter": "C", "text": "<canvas>." },
-            { "letter": "D", "text": "<style>." }
-          ],
-          "correct_letter": "C",
-          "correct_text": "<canvas>.",
-          "definition": "<canvas> define una superficie de dibujo en bitmap controlada por scripts (normalmente JavaScript) para renderizado 2D/3D.",
-          "explanation": "<canvas> se diseñó para dibujo dinámico (gráficos, juegos, visualizaciones). <svg> también sirve para gráficos vectoriales, pero la opción correcta indicada es canvas."
-        },
-        {
-          "id": "T1_Q14",
-          "question": "El atributo method en formularios suele aceptar:",
-          "options": [
-            { "letter": "A", "text": "PUT y DELETE." },
-            { "letter": "B", "text": "FTP y SMTP." },
-            { "letter": "C", "text": "GET y POST." },
-            { "letter": "D", "text": "TCP y UDP." }
-          ],
-          "correct_letter": "C",
-          "correct_text": "GET y POST.",
-          "definition": "method en <form> define el método HTTP del envío; en HTML clásico los más usados/soportados directamente son GET y POST.",
-          "explanation": "Los formularios estándar usan GET (parámetros en URL) o POST (datos en cuerpo). PUT/DELETE no son valores típicos del atributo method en HTML clásico sin técnicas adicionales."
-        },
-        {
-          "id": "T1_Q15",
-          "question": "¿Qué etiqueta de HTML5 define un bloque de contenido independiente (como un post)?",
-          "options": [
-            { "letter": "A", "text": "<section>." },
-            { "letter": "B", "text": "<div>." },
-            { "letter": "C", "text": "<article>." },
-            { "letter": "D", "text": "<aside>." }
-          ],
-          "correct_letter": "C",
-          "correct_text": "<article>.",
-          "definition": "<article> representa una unidad de contenido autocontenida e independiente (post, noticia, entrada, comentario).",
-          "explanation": "Un post/blog entry es un contenido reutilizable/independiente, por lo que semánticamente encaja con <article>."
-        },
-
-        {
-          "id": "T1_Q16",
-          "question": "Un documento HTML: A. Únicamente permite la utilización de lenguaje HTML. B. Combina HTML con otros lenguajes. C. Puede utilizar cualquier conjunto de etiquetas. D. Todas son ciertas.",
-          "options": [
-            { "letter": "A", "text": "Únicamente permite la utilización de lenguaje HTML." },
-            { "letter": "B", "text": "Combina HTML con otros lenguajes." },
-            { "letter": "C", "text": "Puede utilizar cualquier conjunto de etiquetas." },
-            { "letter": "D", "text": "Todas son ciertas." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "Combina HTML con otros lenguajes.",
-          "definition": "En desarrollo web, HTML se complementa con CSS y JavaScript, además de poder integrarse con plantillas del servidor.",
-          "explanation": "A es falsa (se integra con CSS/JS), C es falsa en HTML (vocabulario definido), por lo que D no puede ser correcta."
-        },
-        {
-          "id": "T1_Q17",
-          "question": "El lenguaje HTML: A. Surge del estándar SGML. B. Posee un conjunto de etiquetas determinado. C. Es un estándar para la creación de páginas web. D. B y C son ciertas.",
-          "options": [
-            { "letter": "A", "text": "Surge del estándar SGML." },
-            { "letter": "B", "text": "Posee un conjunto de etiquetas determinado." },
-            { "letter": "C", "text": "Es un estándar para la creación de páginas web." },
-            { "letter": "D", "text": "B y C son ciertas." }
-          ],
-          "correct_letter": "D",
-          "correct_text": "B y C son ciertas.",
-          "definition": "HTML es un estándar de marcado con vocabulario definido (elementos/atributos) para estructurar documentos web.",
-          "explanation": "B y C son verdaderas: HTML define un conjunto de elementos y es el estándar base para páginas web. (A es históricamente cierta, pero aquí la opción correcta marcada es D)."
-        },
-        {
-          "id": "T1_Q18",
-          "question": "Los lenguajes de marcado: A. Permiten definir la apariencia visual de un documento. B. Se centran en la estructuración del contenido. C. Ponen marcas en un documento. D. A y C son ciertas.",
-          "options": [
-            { "letter": "A", "text": "Permiten definir la apariencia visual de un documento." },
-            { "letter": "B", "text": "Se centran en la estructuración del contenido." },
-            { "letter": "C", "text": "Ponen marcas en un documento." },
-            { "letter": "D", "text": "A y C son ciertas." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "Se centran en la estructuración del contenido.",
-          "definition": "Lenguaje de marcado: describe estructura/semántica con marcas (tags), separando contenido de presentación.",
-          "explanation": "La presentación corresponde a CSS. Aunque usan marcas (C), el foco del lenguaje de marcado es estructurar el contenido (B)."
-        },
-        {
-          "id": "T1_Q19",
-          "question": "XHTML: A. Es una variante de HTML. B. Se basa en XML. C. No posee un conjunto de etiquetas predefinido. D. Todas son ciertas.",
-          "options": [
-            { "letter": "A", "text": "Es una variante de HTML." },
-            { "letter": "B", "text": "Se basa en XML." },
-            { "letter": "C", "text": "No posee un conjunto de etiquetas predefinido." },
-            { "letter": "D", "text": "Todas son ciertas." }
-          ],
-          "correct_letter": "D",
-          "correct_text": "Todas son ciertas.",
-          "definition": "XHTML es HTML serializado como XML, sometido a reglas de bien formado; se apoya en el enfoque extensible de XML.",
-          "explanation": "A y B son correctas por definición. En el marco del examen, se considera C correcta por la extensibilidad/vocabulario de XML, por lo que D agrupa las afirmaciones como verdaderas."
-        },
-        {
-          "id": "T1_Q20",
-          "question": "Los formularios: A. HTML no soporta formularios. B. Permiten el envío de información al servidor. C. Pueden utilizarse con otros lenguajes. D. B y C son ciertas.",
-          "options": [
-            { "letter": "A", "text": "HTML no soporta formularios." },
-            { "letter": "B", "text": "Permiten el envío de información al servidor." },
-            { "letter": "C", "text": "Pueden utilizarse con otros lenguajes." },
-            { "letter": "D", "text": "B y C son ciertas." }
-          ],
-          "correct_letter": "D",
-          "correct_text": "B y C son ciertas.",
-          "definition": "Un formulario HTML (<form>) captura datos y los envía a un endpoint para procesamiento (servidor o APIs).",
-          "explanation": "A es falsa (HTML sí soporta formularios). B es verdadera (envío de datos). C es verdadera (se procesan con lenguajes/servidor), por eso D."
-        },
-        {
-          "id": "T1_Q21",
-          "question": "HTML 5: A. Varía la sintaxis de HTML. B. No se puede utilizar con el protocolo http. C. Incorpora funcionalidades nuevas para aplicaciones web. D. Todas son ciertas.",
-          "options": [
-            { "letter": "A", "text": "Varía la sintaxis de HTML." },
-            { "letter": "B", "text": "No se puede utilizar con el protocolo http." },
-            { "letter": "C", "text": "Incorpora funcionalidades nuevas para aplicaciones web." },
-            { "letter": "D", "text": "Todas son ciertas." }
-          ],
-          "correct_letter": "C",
-          "correct_text": "Incorpora funcionalidades nuevas para aplicaciones web.",
-          "definition": "HTML5 introduce nuevos elementos semánticos, APIs (storage, multimedia, canvas) y mejoras en formularios.",
-          "explanation": "B es falsa (se usa sobre HTTP/HTTPS). A no es la idea central (HTML5 amplía y define parsing). C es el cambio clave: nuevas capacidades para apps web."
-        },
-        {
-          "id": "T1_Q22",
-          "question": "HTML 5: A. No se basa en el estándar SGML. B. Utiliza XML. C. Define mejor la semántica de la web. D. Todas son ciertas.",
-          "options": [
-            { "letter": "A", "text": "No se basa en el estándar SGML." },
-            { "letter": "B", "text": "Utiliza XML." },
-            { "letter": "C", "text": "Define mejor la semántica de la web." },
-            { "letter": "D", "text": "Todas son ciertas." }
-          ],
-          "correct_letter": "C",
-          "correct_text": "Define mejor la semántica de la web.",
-          "definition": "Semántica web en HTML5: uso de elementos con significado estructural (<main>, <article>, <nav>, etc.).",
-          "explanation": "HTML5 potencia la semántica con nuevas etiquetas. No “usa XML” (eso sería XHTML), por tanto D no puede ser correcta."
-        },
-        {
-          "id": "T1_Q23",
-          "question": "Alguna de las mejoras de HTML5 respecto a HTML son: A. Incorpora tag para definir diálogos y conversaciones entre varias personas. B. Incorpora AJAX. C. Es compatible con todos los navegadores. D. Todas las respuestas son correctas.",
-          "options": [
-            { "letter": "A", "text": "Incorpora tag para definir diálogos y conversaciones entre varias personas." },
-            { "letter": "B", "text": "Incorpora AJAX." },
-            { "letter": "C", "text": "Es compatible con todos los navegadores." },
-            { "letter": "D", "text": "Todas las respuestas son correctas." }
-          ],
-          "correct_letter": "A",
-          "correct_text": "Incorpora tag para definir diálogos y conversaciones entre varias personas.",
-          "definition": "HTML5 añade elementos nuevos (p.ej., <dialog>) y APIs; AJAX no es parte de HTML como tal, sino técnica con JS.",
-          "explanation": "AJAX no lo “incorpora” HTML5; es una técnica JavaScript. La compatibilidad total con todos los navegadores no es absoluta. La mejora clara listada es la incorporación de etiquetas nuevas como <dialog>."
-        },
-        {
-          "id": "T1_Q24",
-          "question": "En un formulario HTML: A. El campo «action» define la dirección del servidor para validar los datos. B. El campo «action» indica la página a la que se envían los datos del formulario. C. No se permiten combinar botones con otros elementos. D. Hay que definir los campos en un archivo .form.",
-          "options": [
-            { "letter": "A", "text": "El campo «action» define la dirección del servidor para validar los datos." },
-            { "letter": "B", "text": "El campo «action» indica la página a la que se envían los datos del formulario." },
-            { "letter": "C", "text": "No se permiten combinar botones con otros elementos." },
-            { "letter": "D", "text": "Hay que definir los campos en un archivo .form." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "El campo «action» indica la página a la que se envían los datos del formulario.",
-          "definition": "action define la URL destino; la validación puede ocurrir en cliente (JS) o servidor, pero no la define action.",
-          "explanation": "La descripción precisa es B: action es el endpoint receptor de los datos. A es imprecisa (no necesariamente “validar”). C y D son falsas."
-        },
-        {
-          "id": "T1_Q25",
-          "question": "La etiqueta <img>: A. Permite insertar una tabla. B. Permite insertar una imagen. C. Se introduce con HTML 5. D. No se puede utilizar para entornos móviles.",
-          "options": [
-            { "letter": "A", "text": "Permite insertar una tabla." },
-            { "letter": "B", "text": "Permite insertar una imagen." },
-            { "letter": "C", "text": "Se introduce con HTML 5." },
-            { "letter": "D", "text": "No se puede utilizar para entornos móviles." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "Permite insertar una imagen.",
-          "definition": "<img> inserta imágenes desde los inicios de HTML; es compatible con móvil y responsive con CSS.",
-          "explanation": "B describe la función real. No es exclusiva de HTML5 y se usa perfectamente en móviles."
-        },
-        {
-          "id": "T1_Q26",
-          "question": "La etiqueta <head> de un documento web: A. Es obligatoria. B. Permite introducir metadatos sobre el documento web. C. Puede contener elementos visualizables como listas o tablas. D. Se elimina en HTML 5.",
-          "options": [
-            { "letter": "A", "text": "Es obligatoria." },
-            { "letter": "B", "text": "Permite introducir metadatos sobre el documento web." },
-            { "letter": "C", "text": "Puede contener elementos visualizables como listas o tablas." },
-            { "letter": "D", "text": "Se elimina en HTML 5." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "Permite introducir metadatos sobre el documento web.",
-          "definition": "<head> agrupa metadatos y recursos no visibles directamente: título, meta, enlaces a CSS, scripts, etc.",
-          "explanation": "La función principal evaluada es B. C es incorrecta (contenido visible debe ir en <body>) y D es falsa."
-        },
-        {
-          "id": "T1_Q27",
-          "question": "Dado el siguiente código HTML: Alternativa A: <x><y><z>… </z></y></x> Alternativa B: <x><y><z>… </x></y></z> A. Tanto la alternativa A como la B son correctas. B. La alternativa B es correcta porque el anidamiento implica que se cierren primero las tags que primero se abren. C. La alternativa A es correcta porque el anidamiento implica que se cierren las tags en dicho orden. D. No se pueden anidar tags.",
-          "options": [
-            { "letter": "A", "text": "Tanto la alternativa A como la B son correctas." },
-            { "letter": "B", "text": "La alternativa B es correcta porque el anidamiento implica que se cierren primero las tags que primero se abren." },
-            { "letter": "C", "text": "La alternativa A es correcta porque el anidamiento implica que se cierren las tags en dicho orden." },
-            { "letter": "D", "text": "No se pueden anidar tags." }
-          ],
-          "correct_letter": "C",
-          "correct_text": "La alternativa A es correcta porque el anidamiento implica que se cierren las tags en dicho orden.",
-          "definition": "Regla de anidamiento: las etiquetas deben cerrarse en orden LIFO (la última que se abre es la primera que se cierra).",
-          "explanation": "La alternativa A respeta el anidamiento correcto (<z> cierra antes que <y> y <x>). La B rompe la estructura, cerrando <x> antes de <z>."
-        },
-        {
-          "id": "T1_Q28",
-          "question": "¿Qué es el HTML? A. Un lenguaje de programación. B. Un lenguaje de marcado. C. Un motor de base de datos. D. Un protocolo de transferencia.",
-          "options": [
-            { "letter": "A", "text": "Un lenguaje de programación." },
-            { "letter": "B", "text": "Un lenguaje de marcado." },
-            { "letter": "C", "text": "Un motor de base de datos." },
-            { "letter": "D", "text": "Un protocolo de transferencia." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "Un lenguaje de marcado.",
-          "definition": "HTML (HyperText Markup Language) describe estructura y semántica de documentos web mediante etiquetas.",
-          "explanation": "HTML no ejecuta lógica general como un lenguaje de programación; etiqueta y estructura contenido."
-        },
-        {
-          "id": "T1_Q29",
-          "question": "¿Cuál de estas es una etiqueta semántica nueva en HTML5? A. <div> B. <article> C. <b> D. <font>",
-          "options": [
-            { "letter": "A", "text": "<div>" },
-            { "letter": "B", "text": "<article>" },
-            { "letter": "C", "text": "<b>" },
-            { "letter": "D", "text": "<font>" }
-          ],
-          "correct_letter": "B",
-          "correct_text": "<article>",
-          "definition": "<article> identifica contenido autónomo (entrada, noticia).",
-          "explanation": "<div> es genérica, <b> es formato inline, <font> está obsoleta; <article> es semántica propia de HTML5."
-        },
-        {
-          "id": "T1_Q30",
-          "question": "Para representar contenido en un párrafo se usa la etiqueta: A. <paragraph> B. <p> C. <text> D. <div>",
-          "options": [
-            { "letter": "A", "text": "<paragraph>" },
-            { "letter": "B", "text": "<p>" },
-            { "letter": "C", "text": "<text>" },
-            { "letter": "D", "text": "<div>" }
-          ],
-          "correct_letter": "B",
-          "correct_text": "<p>",
-          "definition": "<p> define un párrafo (bloque de texto).",
-          "explanation": "La etiqueta estándar para párrafos es <p>; el resto no son etiquetas válidas (paragraph/text) o son genéricas (<div>)."
-        }
-      ]
+      "id": "q1",
+      "type": "single_choice",
+      "question": "¿De qué estándar surge el lenguaje HTML?",
+      "options": [
+        "XML, como una versión simplificada para la web.",
+        "SGML, como estándar general de marcado.",
+        "Markdown, como lenguaje ligero de marcado.",
+        "La especificación ECMAScript del W3C."
+      ],
+      "correct_answer": "SGML, como estándar general de marcado.",
+      "meta": {
+        "tema": "Tema 1: Lenguaje de marcado HTML5",
+        "correct_letter": "B"
+      }
     },
-
     {
-      "theme": "Tema 2: Introducción a hojas de estilo CSS",
-      "questions": [
-        {
-          "id": "T2_Q01",
-          "question": "HTML y CSS se centran respectivamente en:",
-          "options": [
-            { "letter": "A", "text": "Presentación y lógica de negocio." },
-            { "letter": "B", "text": "Estructura y presentación." },
-            { "letter": "C", "text": "Acceso a datos y seguridad." },
-            { "letter": "D", "text": "Compilación y ejecución." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "Estructura y presentación.",
-          "definition": "HTML estructura el contenido; CSS define la presentación (estilos visuales).",
-          "explanation": "La separación de responsabilidades en la web es: contenido/estructura (HTML) y estilo (CSS)."
-        },
-        {
-          "id": "T2_Q02",
-          "question": "CSS3 agrega funcionalidades como:",
-          "options": [
-            { "letter": "A", "text": "Gestión de sesiones y cookies." },
-            { "letter": "B", "text": "Control de procesos en segundo plano." },
-            { "letter": "C", "text": "Rotación, múltiples fondos y redondeo de bordes." },
-            { "letter": "D", "text": "Compilación a bytecode." }
-          ],
-          "correct_letter": "C",
-          "correct_text": "Rotación, múltiples fondos y redondeo de bordes.",
-          "definition": "CSS3 amplía capacidades visuales (transform, multiple backgrounds, border-radius, sombras, gradientes, etc.).",
-          "explanation": "Rotaciones (transform), múltiples fondos (background con varias capas) y bordes redondeados (border-radius) son mejoras típicas de CSS3."
-        },
-        {
-          "id": "T2_Q03",
-          "question": "¿Qué código HTML5 enlaza una hoja de estilo externa?",
-          "options": [
-            { "letter": "A", "text": "<style src=\"estilo.css\"></style>" },
-            { "letter": "B", "text": "<css link=\"estilo.css\">" },
-            { "letter": "C", "text": "<link rel=\"stylesheet\" href=\"estilo.css\">" },
-            { "letter": "D", "text": "<script rel=\"stylesheet\" href=\"estilo.css\"></script>" }
-          ],
-          "correct_letter": "C",
-          "correct_text": "<link rel=\"stylesheet\" href=\"estilo.css\">",
-          "definition": "<link rel=\"stylesheet\"> vincula un recurso CSS externo desde el <head>.",
-          "explanation": "La forma estándar es <link rel=\"stylesheet\" href=\"...\">. <style> no usa src; <script> no es para CSS."
-        },
-        {
-          "id": "T2_Q04",
-          "question": "Ventaja del enlace externo en CSS:",
-          "options": [
-            { "letter": "A", "text": "Impide que el navegador use caché." },
-            { "letter": "B", "text": "Permite cambios globales afectando a todas las páginas vinculadas." },
-            { "letter": "C", "text": "Obliga a escribir los estilos dentro del HTML." },
-            { "letter": "D", "text": "Solo funciona en HTML5, no en HTML4." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "Permite cambios globales afectando a todas las páginas vinculadas.",
-          "definition": "CSS externo centraliza estilos: una hoja afecta a múltiples páginas, facilitando mantenimiento y reutilización.",
-          "explanation": "Si varias páginas enlazan el mismo CSS, un cambio en el archivo se refleja en todas, sin duplicar estilos."
-        },
-        {
-          "id": "T2_Q05",
-          "question": "Los selectores CSS universales usan el símbolo:",
-          "options": [
-            { "letter": "A", "text": "*." },
-            { "letter": "B", "text": "#." },
-            { "letter": "C", "text": ".." },
-            { "letter": "D", "text": "@." }
-          ],
-          "correct_letter": "A",
-          "correct_text": "*.",
-          "definition": "Selector universal (*) selecciona todos los elementos del documento.",
-          "explanation": "En CSS, * aplica reglas a cualquier etiqueta (p.ej., * { box-sizing: border-box; })."
-        },
-        {
-          "id": "T2_Q06",
-          "question": "Un identificador (id) en CSS:",
-          "options": [
-            { "letter": "A", "text": "Puede repetirse infinitas veces en la misma página." },
-            { "letter": "B", "text": "No puede repetirse en el mismo documento." },
-            { "letter": "C", "text": "Solo puede aplicarse a etiquetas <div>." },
-            { "letter": "D", "text": "Sustituye a las clases en CSS3." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "No puede repetirse en el mismo documento.",
-          "definition": "id identifica de forma única un elemento en el DOM; su selector CSS se escribe con #id.",
-          "explanation": "Un id duplicado rompe la unicidad (problemas en JS, anclas, accesibilidad). Las clases sí pueden repetirse."
-        },
-        {
-          "id": "T2_Q07",
-          "question": "Las clases (class) en CSS:",
-          "options": [
-            { "letter": "A", "text": "Solo pueden usarse una vez por documento." },
-            { "letter": "B", "text": "Se aplican automáticamente sin declararlas en HTML." },
-            { "letter": "C", "text": "Pueden usarse en múltiples etiquetas." },
-            { "letter": "D", "text": "Son exclusivas del <head>." }
-          ],
-          "correct_letter": "C",
-          "correct_text": "Pueden usarse en múltiples etiquetas.",
-          "definition": "class agrupa elementos con estilo común; su selector CSS se escribe con .clase.",
-          "explanation": "La idea de class es reutilización: muchos elementos pueden compartir la misma clase."
-        },
-        {
-          "id": "T2_Q08",
-          "question": "CSS3 introduce el canal alfa para:",
-          "options": [
-            { "letter": "A", "text": "Definir el tamaño de fuente." },
-            { "letter": "B", "text": "La transparencia." },
-            { "letter": "C", "text": "Mejorar la velocidad del servidor." },
-            { "letter": "D", "text": "Establecer el orden de carga del HTML." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "La transparencia.",
-          "definition": "Canal alfa controla opacidad (0–1 o 0–255 según formato), p.ej. rgba() o hsla().",
-          "explanation": "El canal alfa añade transparencia a colores y elementos, no afecta al tamaño de fuente ni al servidor."
-        },
-        {
-          "id": "T2_Q09",
-          "question": "Las pseudo-clases permiten:",
-          "options": [
-            { "letter": "A", "text": "Cambiar el HTML del servidor." },
-            { "letter": "B", "text": "Definir nuevos elementos HTML dinámicos." },
-            { "letter": "C", "text": "Clasificar elementos según su estado (ej. hover)." },
-            { "letter": "D", "text": "Convertir CSS en un lenguaje de programación." }
-          ],
-          "correct_letter": "C",
-          "correct_text": "Clasificar elementos según su estado (ej. hover).",
-          "definition": "Pseudo-clases (:) seleccionan elementos por estado/posición, p.ej. :hover, :focus, :first-child.",
-          "explanation": "Permiten aplicar estilos cuando el elemento está en un estado concreto (ratón encima, foco, visitado, etc.)."
-        },
-        {
-          "id": "T2_Q10",
-          "question": "¿Qué propiedad de CSS3 genera bordes redondeados?",
-          "options": [
-            { "letter": "A", "text": "border-style." },
-            { "letter": "B", "text": "border-radius." },
-            { "letter": "C", "text": "outline." },
-            { "letter": "D", "text": "padding." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "border-radius.",
-          "definition": "border-radius redondea esquinas del borde (radio por esquina).",
-          "explanation": "Es la propiedad diseñada específicamente para redondeo; outline/padding no cambian la geometría del borde."
-        },
-        {
-          "id": "T2_Q11",
-          "question": "text-shadow en CSS3 sirve para:",
-          "options": [
-            { "letter": "A", "text": "Cambiar el tipo de letra por una fuente externa." },
-            { "letter": "B", "text": "Ajustar el interlineado del texto." },
-            { "letter": "C", "text": "Sombrear textos." },
-            { "letter": "D", "text": "Crear bordes redondeados en el texto." }
-          ],
-          "correct_letter": "C",
-          "correct_text": "Sombrear textos.",
-          "definition": "text-shadow aplica sombra al texto (desplazamiento, blur, color).",
-          "explanation": "Se usa para sombras en tipografía; para fuentes externas se usa @font-face o enlaces."
-        },
-        {
-          "id": "T2_Q12",
-          "question": "¿Qué es un gradiente en CSS3?",
-          "options": [
-            { "letter": "A", "text": "Un tipo de fuente especial para títulos." },
-            { "letter": "B", "text": "Un script que genera colores aleatorios." },
-            { "letter": "C", "text": "Una transición entre al menos dos colores." },
-            { "letter": "D", "text": "Un borde que se dibuja con puntos." }
-          ],
-          "correct_letter": "C",
-          "correct_text": "Una transición entre al menos dos colores.",
-          "definition": "Gradiente es un relleno que interpola colores (lineal, radial, cónico) en el espacio.",
-          "explanation": "CSS3 permite gradientes como fondos (linear-gradient, radial-gradient), que mezclan colores progresivamente."
-        },
-        {
-          "id": "T2_Q13",
-          "question": "Las transformaciones en CSS3 permiten:",
-          "options": [
-            { "letter": "A", "text": "Ejecutar lógica condicional en el navegador." },
-            { "letter": "B", "text": "Realizar cambios geométricos a los elementos." },
-            { "letter": "C", "text": "Modificar la estructura del DOM en tiempo real." },
-            { "letter": "D", "text": "Sustituir imágenes por texto automáticamente." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "Realizar cambios geométricos a los elementos.",
-          "definition": "Transformaciones (transform) aplican operaciones geométricas: translate, rotate, scale, skew.",
-          "explanation": "No cambian el DOM (estructura), sino la representación visual/geométrica del elemento."
-        },
-        {
-          "id": "T2_Q14",
-          "question": "¿Se recomienda incluir estilos dentro de la etiqueta HTML?",
-          "options": [
-            { "letter": "A", "text": "Sí, porque mejora la reutilización." },
-            { "letter": "B", "text": "Sí, porque aumenta la velocidad del servidor." },
-            { "letter": "C", "text": "No, se prefiere la separación total de contenido y estilo." },
-            { "letter": "D", "text": "Solo si se usa Bootstrap." }
-          ],
-          "correct_letter": "C",
-          "correct_text": "No, se prefiere la separación total de contenido y estilo.",
-          "definition": "Principio: separar contenido (HTML) de presentación (CSS) para mantenibilidad y escalabilidad.",
-          "explanation": "Los estilos inline dificultan mantenimiento y reutilización. Mejor CSS externo o en <style> con criterio."
-        },
-        {
-          "id": "T2_Q15",
-          "question": "¿Qué selector se usa para un elemento con un ID específico?",
-          "options": [
-            { "letter": "A", "text": "El símbolo ." },
-            { "letter": "B", "text": "El símbolo *" },
-            { "letter": "C", "text": "El símbolo #" },
-            { "letter": "D", "text": "El símbolo @" }
-          ],
-          "correct_letter": "C",
-          "correct_text": "El símbolo #",
-          "definition": "Selector de id: #miId (selecciona el elemento con id=\"miId\").",
-          "explanation": "En CSS, '.' selecciona clases, '*' es universal y '@' es para reglas (@media, @font-face)."
-        },
-
-        {
-          "id": "T2_Q16",
-          "question": "Las hojas CSS: A. No se pueden utilizar con HTML. B. Utiliza selectores. C. Requieren un lenguaje intermedio para vincularse con HTML. D. B y C son ciertas.",
-          "options": [
-            { "letter": "A", "text": "No se pueden utilizar con HTML." },
-            { "letter": "B", "text": "Utiliza selectores." },
-            { "letter": "C", "text": "Requieren un lenguaje intermedio para vincularse con HTML." },
-            { "letter": "D", "text": "B y C son ciertas." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "Utiliza selectores.",
-          "definition": "Selector CSS: patrón que identifica elementos del DOM para aplicar reglas de estilo.",
-          "explanation": "CSS sí se usa con HTML (A falsa). No necesita lenguaje intermedio (C falsa): se vincula con <link>/<style>. Por eso la correcta es B."
-        },
-        {
-          "id": "T2_Q17",
-          "question": "En CSS: A. Existen elementos identificadores. B. No puede repetirse varias veces la utilización de un identificador. C. Los identificadores solo existen en HTML. D. A y B son correctas.",
-          "options": [
-            { "letter": "A", "text": "Existen elementos identificadores." },
-            { "letter": "B", "text": "No puede repetirse varias veces la utilización de un identificador." },
-            { "letter": "C", "text": "Los identificadores solo existen en HTML." },
-            { "letter": "D", "text": "A y B son correctas." }
-          ],
-          "correct_letter": "D",
-          "correct_text": "A y B son correctas.",
-          "definition": "id es un atributo del HTML y CSS lo selecciona con #; debe ser único por documento.",
-          "explanation": "A es cierta (se usan identificadores vía id). B es cierta (no repetir id). C es falsa (aunque se define en HTML, se usa en CSS/JS para selección)."
-        },
-        {
-          "id": "T2_Q18",
-          "question": "CSS3 agrega: A. Todas las respuestas son correctas. B. Transparencia, texto sombreado y rotación. C. Rotación, múltiples fondos y redondeo de bordes. D. Sombreado de cajas de texto, rotación y transparencia.",
-          "options": [
-            { "letter": "A", "text": "Todas las respuestas son correctas." },
-            { "letter": "B", "text": "Transparencia, texto sombreado y rotación." },
-            { "letter": "C", "text": "Rotación, múltiples fondos y redondeo de bordes." },
-            { "letter": "D", "text": "Sombreado de cajas de texto, rotación y transparencia." }
-          ],
-          "correct_letter": "C",
-          "correct_text": "Rotación, múltiples fondos y redondeo de bordes.",
-          "definition": "CSS3 introdujo/estandarizó transformaciones, múltiples backgrounds, border-radius, sombras, etc.",
-          "explanation": "C enumera mejoras canónicas. A no aplica porque “todas” no está garantizado según el enunciado del test."
-        },
-        {
-          "id": "T2_Q19",
-          "question": "HTML y CSS se centran en: A. La estructura y el contenido respectivamente. B. La estructura y la presentación respectivamente. C. La presentación y el control de datos respectivamente. D. Ninguna respuesta es correcta.",
-          "options": [
-            { "letter": "A", "text": "La estructura y el contenido respectivamente." },
-            { "letter": "B", "text": "La estructura y la presentación respectivamente." },
-            { "letter": "C", "text": "La presentación y el control de datos respectivamente." },
-            { "letter": "D", "text": "Ninguna respuesta es correcta." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "La estructura y la presentación respectivamente.",
-          "definition": "HTML = estructura/semántica; CSS = presentación/estilo.",
-          "explanation": "Es la división fundamental de responsabilidades en front-end."
-        },
-        {
-          "id": "T2_Q20",
-          "question": "En CSS3, el canal alfa se utiliza para: A. La definición de colores primarios. B. La transparencia. C. La rotación de elementos. D. La velocidad de carga.",
-          "options": [
-            { "letter": "A", "text": "La definición de colores primarios." },
-            { "letter": "B", "text": "La transparencia." },
-            { "letter": "C", "text": "La rotación de elementos." },
-            { "letter": "D", "text": "La velocidad de carga." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "La transparencia.",
-          "definition": "Alpha = componente de opacidad en un color (p.ej., rgba(0,0,0,0.5)).",
-          "explanation": "Controla cuánto se ve el color/fondo a través del elemento."
-        },
-        {
-          "id": "T2_Q21",
-          "question": "¿Qué código HTML5 enlaza una hoja de estilo externa? A. <style src=\"estilo.css\"> B. <link rel=\"stylesheet\" href=\"estilo.css\"> C. <a href=\"estilo.css\"> D. <css link=\"estilo.css\">",
-          "options": [
-            { "letter": "A", "text": "<style src=\"estilo.css\">" },
-            { "letter": "B", "text": "<link rel=\"stylesheet\" href=\"estilo.css\">" },
-            { "letter": "C", "text": "<a href=\"estilo.css\">" },
-            { "letter": "D", "text": "<css link=\"estilo.css\">" }
-          ],
-          "correct_letter": "B",
-          "correct_text": "<link rel=\"stylesheet\" href=\"estilo.css\">",
-          "definition": "La etiqueta <link> enlaza recursos externos (CSS) al documento.",
-          "explanation": "<style> no carga por src, <a> crea enlace navegable, y <css> no existe."
-        },
-        {
-          "id": "T2_Q22",
-          "question": "Las clases en CSS se unen a HTML a través del atributo: A. id. B. link. C. class. D. style.",
-          "options": [
-            { "letter": "A", "text": "id." },
-            { "letter": "B", "text": "link." },
-            { "letter": "C", "text": "class." },
-            { "letter": "D", "text": "style." }
-          ],
-          "correct_letter": "C",
-          "correct_text": "class.",
-          "definition": "class asigna uno o varios nombres de clase a un elemento para aplicar estilos compartidos.",
-          "explanation": "CSS selecciona clases con .clase; id es único, style es inline."
-        },
-        {
-          "id": "T2_Q23",
-          "question": "Los selectores CSS universales utilizan el símbolo: A. # B. . C. * D. @",
-          "options": [
-            { "letter": "A", "text": "#" },
-            { "letter": "B", "text": "." },
-            { "letter": "C", "text": "*" },
-            { "letter": "D", "text": "@" }
-          ],
-          "correct_letter": "C",
-          "correct_text": "*",
-          "definition": "El selector universal (*) aplica a todos los elementos.",
-          "explanation": "Es el selector más general posible en CSS."
-        },
-        {
-          "id": "T2_Q24",
-          "question": "La propiedad border-radius en CSS3 sirve para: A. Bordes sombreados. B. Bordes redondeados. C. Bordes con imagen. D. Grosor del borde.",
-          "options": [
-            { "letter": "A", "text": "Bordes sombreados." },
-            { "letter": "B", "text": "Bordes redondeados." },
-            { "letter": "C", "text": "Bordes con imagen." },
-            { "letter": "D", "text": "Grosor del borde." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "Bordes redondeados.",
-          "definition": "border-radius define el radio de curvatura de las esquinas.",
-          "explanation": "Es la propiedad creada para redondear esquinas."
-        },
-        {
-          "id": "T2_Q25",
-          "question": "CSS3 permite realizar: A. Transformaciones pero no transiciones. B. Transiciones pero no transformaciones. C. Ambas tareas (transformaciones y transiciones). D. Ninguna de las anteriores.",
-          "options": [
-            { "letter": "A", "text": "Transformaciones pero no transiciones." },
-            { "letter": "B", "text": "Transiciones pero no transformaciones." },
-            { "letter": "C", "text": "Ambas tareas (transformaciones y transiciones)." },
-            { "letter": "D", "text": "Ninguna de las anteriores." }
-          ],
-          "correct_letter": "C",
-          "correct_text": "Ambas tareas (transformaciones y transiciones).",
-          "definition": "transform cambia geometría; transition anima cambios de propiedades en el tiempo.",
-          "explanation": "CSS3 incorpora ambas capacidades: modificar y animar propiedades sin necesidad de JS."
-        },
-        {
-          "id": "T2_Q26",
-          "question": "Una ventaja del enlace externo de la hoja de estilos es: A. Afecta solo a una página del sitio. B. Permite cambios globales afectando a todas las páginas vinculadas. C. Aumenta el tamaño del archivo HTML. D. No requiere conexión a internet.",
-          "options": [
-            { "letter": "A", "text": "Afecta solo a una página del sitio." },
-            { "letter": "B", "text": "Permite cambios globales afectando a todas las páginas vinculadas." },
-            { "letter": "C", "text": "Aumenta el tamaño del archivo HTML." },
-            { "letter": "D", "text": "No requiere conexión a internet." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "Permite cambios globales afectando a todas las páginas vinculadas.",
-          "definition": "Centralización de estilos en un fichero compartido.",
-          "explanation": "Reutilización y mantenimiento: un único CSS controla múltiples páginas."
-        },
-        {
-          "id": "T2_Q27",
-          "question": "Las pseudo-clases permiten clasificar elementos atendiendo a: A. Su nombre de etiqueta. B. El estado en el que se encuentren (ej. hover). C. Su posición en la base de datos. D. El color del texto.",
-          "options": [
-            { "letter": "A", "text": "Su nombre de etiqueta." },
-            { "letter": "B", "text": "El estado en el que se encuentren (ej. hover)." },
-            { "letter": "C", "text": "Su posición en la base de datos." },
-            { "letter": "D", "text": "El color del texto." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "El estado en el que se encuentren (ej. hover).",
-          "definition": "Pseudo-clases (:) seleccionan por estado/interacción/posición en el árbol.",
-          "explanation": "Ejemplo: a:hover, input:focus, li:first-child."
-        },
-        {
-          "id": "T2_Q28",
-          "question": "El objetivo principal de CSS es: A. Estructurar el contenido. B. Lograr la separación total entre contenido y presentación. C. Ejecutar código en el servidor. D. Manejar bases de datos.",
-          "options": [
-            { "letter": "A", "text": "Estructurar el contenido." },
-            { "letter": "B", "text": "Lograr la separación total entre contenido y presentación." },
-            { "letter": "C", "text": "Ejecutar código en el servidor." },
-            { "letter": "D", "text": "Manejar bases de datos." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "Lograr la separación total entre contenido y presentación.",
-          "definition": "Separación de capas: HTML semántico + CSS para estilo.",
-          "explanation": "CSS existe para desacoplar apariencia del marcado del contenido."
-        },
-        {
-          "id": "T2_Q29",
-          "question": "Para aplicar sombra a un texto en CSS3 se usa: A. box-shadow. B. text-shadow. C. font-shadow. D. shadow-text.",
-          "options": [
-            { "letter": "A", "text": "box-shadow." },
-            { "letter": "B", "text": "text-shadow." },
-            { "letter": "C", "text": "font-shadow." },
-            { "letter": "D", "text": "shadow-text." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "text-shadow.",
-          "definition": "text-shadow sombrea texto; box-shadow sombrea la caja del elemento.",
-          "explanation": "Si quieres sombra solo en caracteres, se usa text-shadow."
-        },
-        {
-          "id": "T2_Q30",
-          "question": "¿Se pueden aplicar varias imágenes de fondo a un mismo elemento en CSS3? A. No, solo una por elemento. B. Sí, es una novedad de CSS3. C. Solo si el elemento es un <div>. D. Solo en navegadores antiguos.",
-          "options": [
-            { "letter": "A", "text": "No, solo una por elemento." },
-            { "letter": "B", "text": "Sí, es una novedad de CSS3." },
-            { "letter": "C", "text": "Solo si el elemento es un <div>." },
-            { "letter": "D", "text": "Solo en navegadores antiguos." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "Sí, es una novedad de CSS3.",
-          "definition": "CSS permite múltiples fondos separando valores por comas en background/background-image.",
-          "explanation": "Se pueden apilar varias imágenes y controlar posición/tamaño por capa."
-        }
-      ]
+      "id": "q2",
+      "type": "single_choice",
+      "question": "Un documento HTML:",
+      "options": [
+        "Se limita a etiquetas HTML y no admite integración con otros lenguajes.",
+        "Solo puede incluir JavaScript, pero no CSS.",
+        "Combina HTML con otros lenguajes.",
+        "Es un documento de texto plano sin estructura."
+      ],
+      "correct_answer": "Combina HTML con otros lenguajes.",
+      "meta": {
+        "tema": "Tema 1: Lenguaje de marcado HTML5",
+        "correct_letter": "C"
+      }
     },
-
     {
-      "theme": "Tema 3: JavaScript, JQuery y AJAX",
-      "questions": [
-        {
-          "id": "T3_Q01",
-          "question": "El lenguaje JavaScript normalmente se ejecuta en:",
-          "options": [
-            { "letter": "A", "text": "El cliente." },
-            { "letter": "B", "text": "El servidor exclusivamente." },
-            { "letter": "C", "text": "El router de red." },
-            { "letter": "D", "text": "El compilador del sistema operativo." }
-          ],
-          "correct_letter": "A",
-          "correct_text": "El cliente.",
-          "definition": "JavaScript en la web se ejecuta principalmente en el navegador (cliente), aunque también puede ejecutarse en servidor (p.ej., Node.js).",
-          "explanation": "En el contexto clásico de front-end, JS corre en el navegador para dar interactividad."
-        },
-        {
-          "id": "T3_Q02",
-          "question": "AJAX significa:",
-          "options": [
-            { "letter": "A", "text": "Advanced JSON and XForms." },
-            { "letter": "B", "text": "Asynchronous JavaScript and XML (o eXtensions en algunos textos)." },
-            { "letter": "C", "text": "Automatic Java and XHTML." },
-            { "letter": "D", "text": "Assembled JavaScript and XHTML." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "Asynchronous JavaScript and XML (o eXtensions en algunos textos).",
-          "definition": "AJAX es una técnica para comunicarse con el servidor de forma asíncrona desde el navegador sin recargar la página completa.",
-          "explanation": "El acrónimo tradicional es Asynchronous JavaScript and XML: originalmente se usaba XML, hoy se usa mucho JSON."
-        },
-        {
-          "id": "T3_Q03",
-          "question": "¿Qué problema resuelve AJAX?",
-          "options": [
-            { "letter": "A", "text": "Permite compilar JavaScript a C++ automáticamente." },
-            { "letter": "B", "text": "Permite recargar áreas de la web sin recargar la página completa." },
-            { "letter": "C", "text": "Sustituye HTTP por FTP en comunicaciones web." },
-            { "letter": "D", "text": "Elimina la necesidad de usar CSS." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "Permite recargar áreas de la web sin recargar la página completa.",
-          "definition": "Actualización parcial: petición asíncrona + actualización del DOM con la respuesta.",
-          "explanation": "AJAX permite UX más fluida: solicitar datos y actualizar secciones sin refresco total."
-        },
-        {
-          "id": "T3_Q04",
-          "question": "La sintaxis de JQuery se basa en:",
-          "options": [
-            { "letter": "A", "text": "El objeto jQuery() o $()." },
-            { "letter": "B", "text": "El objeto document.queryCss()." },
-            { "letter": "C", "text": "El objeto window.ajax()." },
-            { "letter": "D", "text": "El objeto style.selector()." }
-          ],
-          "correct_letter": "A",
-          "correct_text": "El objeto jQuery() o $().",
-          "definition": "jQuery expone la función $() para seleccionar elementos y encadenar acciones.",
-          "explanation": "La base de jQuery es seleccionar (por CSS selector) y operar: $(\".clase\").hide()."
-        },
-        {
-          "id": "T3_Q05",
-          "question": "¿Qué aporta JQuery a la UX?",
-          "options": [
-            { "letter": "A", "text": "Sustituye HTML por un lenguaje binario." },
-            { "letter": "B", "text": "Evita el uso del DOM en el navegador." },
-            { "letter": "C", "text": "Interactividad como barras de menú, pestañas y búsquedas." },
-            { "letter": "D", "text": "Obliga a recargar la página para cada acción." }
-          ],
-          "correct_letter": "C",
-          "correct_text": "Interactividad como barras de menú, pestañas y búsquedas.",
-          "definition": "UX (User Experience): percepción/experiencia del usuario al interactuar con una interfaz.",
-          "explanation": "jQuery simplifica manipulación del DOM y eventos, permitiendo UI más dinámica sin recargas constantes."
-        },
-        {
-          "id": "T3_Q06",
-          "question": "Pasos para activar AJAX:",
-          "options": [
-            { "letter": "A", "text": "Llamada a JS, petición asíncrona, recuperación de datos, modificación de la página." },
-            { "letter": "B", "text": "Cargar CSS, compilar HTML, reiniciar servidor, mostrar resultados." },
-            { "letter": "C", "text": "Guardar cookies, cerrar sesión, reiniciar navegador, volver a entrar." },
-            { "letter": "D", "text": "Definir tablas, migrar base de datos, lanzar servidor FTP, renderizar." }
-          ],
-          "correct_letter": "A",
-          "correct_text": "Llamada a JS, petición asíncrona, recuperación de datos, modificación de la página.",
-          "definition": "Flujo AJAX: evento -> petición (XHR/fetch) -> respuesta -> actualización DOM.",
-          "explanation": "Ese es el ciclo real para carga asíncrona y actualización parcial."
-        },
-        {
-          "id": "T3_Q07",
-          "question": "El DOM es:",
-          "options": [
-            { "letter": "A", "text": "Un lenguaje de programación para servidores." },
-            { "letter": "B", "text": "Un sistema de bases de datos del navegador." },
-            { "letter": "C", "text": "Una estructura arbórea que crea el navegador al cargar la web." },
-            { "letter": "D", "text": "Un protocolo de red para intercambiar archivos." }
-          ],
-          "correct_letter": "C",
-          "correct_text": "Una estructura arbórea que crea el navegador al cargar la web.",
-          "definition": "DOM (Document Object Model): representación en forma de árbol del documento, accesible/modificable desde JS.",
-          "explanation": "El navegador parsea HTML y construye un árbol de nodos (elementos, texto, atributos)."
-        },
-        {
-          "id": "T3_Q08",
-          "question": "JavaScript es un lenguaje:",
-          "options": [
-            { "letter": "A", "text": "Compilado a código máquina antes de ejecutarse." },
-            { "letter": "B", "text": "Exclusivo para bases de datos relacionales." },
-            { "letter": "C", "text": "De scripting e interpretado." },
-            { "letter": "D", "text": "Diseñado para sustituir HTML." }
-          ],
-          "correct_letter": "C",
-          "correct_text": "De scripting e interpretado.",
-          "definition": "Lenguaje de scripting: diseñado para automatizar/controlar comportamiento, generalmente interpretado/JIT.",
-          "explanation": "JS se ejecuta en motores del navegador (interpretación/JIT), no reemplaza a HTML."
-        },
-        {
-          "id": "T3_Q09",
-          "question": "El objeto XMLHttpRequest es fundamental para:",
-          "options": [
-            { "letter": "A", "text": "Definir estilos CSS dinámicos." },
-            { "letter": "B", "text": "AJAX." },
-            { "letter": "C", "text": "Sustituir el servidor por el cliente." },
-            { "letter": "D", "text": "Ejecutar Java dentro del navegador." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "AJAX.",
-          "definition": "XMLHttpRequest (XHR) es una API para hacer peticiones HTTP asíncronas desde el navegador (pre-fetch).",
-          "explanation": "XHR es el mecanismo clásico para AJAX (hoy también fetch)."
-        },
-        {
-          "id": "T3_Q10",
-          "question": "JQuery utiliza selectores basados en:",
-          "options": [
-            { "letter": "A", "text": "XPath." },
-            { "letter": "B", "text": "CSS." },
-            { "letter": "C", "text": "SQL." },
-            { "letter": "D", "text": "FTP." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "CSS.",
-          "definition": "Selector CSS: patrón (.clase, #id, tag, combinadores) para localizar elementos en el DOM.",
-          "explanation": "jQuery toma selectores tipo CSS en $(), por ejemplo $(\"#menu li.activo\")."
-        },
-        {
-          "id": "T3_Q11",
-          "question": "¿Qué etiqueta avisa si JavaScript está bloqueado?",
-          "options": [
-            { "letter": "A", "text": "<nojs>" },
-            { "letter": "B", "text": "<noscript>" },
-            { "letter": "C", "text": "<script-blocked>" },
-            { "letter": "D", "text": "<js-off>" }
-          ],
-          "correct_letter": "B",
-          "correct_text": "<noscript>",
-          "definition": "<noscript> define contenido alternativo cuando JS está deshabilitado/no soportado.",
-          "explanation": "Es la etiqueta estándar para mostrar mensaje o contenido fallback sin JS."
-        },
-        {
-          "id": "T3_Q12",
-          "question": "En JQuery, el argumento de $( ) es un:",
-          "options": [
-            { "letter": "A", "text": "Compilador." },
-            { "letter": "B", "text": "Motor de renderizado." },
-            { "letter": "C", "text": "Selector." },
-            { "letter": "D", "text": "Tipo de dato binario." }
-          ],
-          "correct_letter": "C",
-          "correct_text": "Selector.",
-          "definition": "Selector = expresión para localizar elementos del DOM (normalmente estilo CSS).",
-          "explanation": "$(\"p\") selecciona párrafos; $(\"#id\") selecciona por id, etc."
-        },
-        {
-          "id": "T3_Q13",
-          "question": "JavaScript es de tipado:",
-          "options": [
-            { "letter": "A", "text": "Fuerte y estático." },
-            { "letter": "B", "text": "Débil o no tipado." },
-            { "letter": "C", "text": "Solo numérico." },
-            { "letter": "D", "text": "Exclusivo de enteros." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "Débil o no tipado.",
-          "definition": "Tipado dinámico: el tipo se asocia a valores en runtime; JS permite conversiones implícitas.",
-          "explanation": "JS no requiere declarar tipos y puede convertir automáticamente (coerción), por eso se considera de tipado débil/dinámico."
-        },
-        {
-          "id": "T3_Q14",
-          "question": "¿Qué permite dotar de dinamismo a una web estática?",
-          "options": [
-            { "letter": "A", "text": "JavaScript." },
-            { "letter": "B", "text": "HTML5." },
-            { "letter": "C", "text": "CSS3." },
-            { "letter": "D", "text": "SGML." }
-          ],
-          "correct_letter": "A",
-          "correct_text": "JavaScript.",
-          "definition": "Dinamismo: capacidad de responder a eventos, modificar DOM y comunicarse con servidor sin recargas.",
-          "explanation": "JS añade comportamiento: eventos, lógica, llamadas asíncronas."
-        },
-        {
-          "id": "T3_Q15",
-          "question": "¿Se puede incluir JS dentro del archivo HTML?",
-          "options": [
-            { "letter": "A", "text": "No, debe ir siempre en un archivo externo." },
-            { "letter": "B", "text": "Sí, entre etiquetas <script>." },
-            { "letter": "C", "text": "Solo si se usa XHTML estricto." },
-            { "letter": "D", "text": "Solo dentro de <style>." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "Sí, entre etiquetas <script>.",
-          "definition": "<script> permite incluir código JS inline o enlazarlo con src.",
-          "explanation": "JS puede ir embebido en <script> o en fichero externo con src."
-        },
-
-        {
-          "id": "T3_Q16",
-          "question": "AJAX: A. Quiere decir Asynchronous JavaScript and XML (o eXtensions). B. Sirve para cargar datos en background sin recargar la página. C. No se trata de un lenguaje nuevo sino de la combinación de tecnologías. D. Todas las respuestas son correctas.",
-          "options": [
-            { "letter": "A", "text": "Quiere decir Asynchronous JavaScript and XML (o eXtensions)." },
-            { "letter": "B", "text": "Sirve para cargar datos en background sin recargar la página." },
-            { "letter": "C", "text": "No se trata de un lenguaje nuevo sino de la combinación de tecnologías." },
-            { "letter": "D", "text": "Todas las respuestas son correctas." }
-          ],
-          "correct_letter": "D",
-          "correct_text": "Todas las respuestas son correctas.",
-          "definition": "AJAX es un patrón/técnica de comunicación asíncrona con servidor desde JS.",
-          "explanation": "A define el acrónimo, B describe su objetivo y C aclara que no es un lenguaje nuevo; por eso D."
-        },
-        {
-          "id": "T3_Q17",
-          "question": "Respecto a la sintaxis de JQuery: A. Se basa en el objeto jQuery o $(). B. Al objeto jQuery se le pasa como argumento un \"selector\". C. JQuery utiliza selectores CSS. D. Todas las respuestas son verdaderas.",
-          "options": [
-            { "letter": "A", "text": "Se basa en el objeto jQuery o $()." },
-            { "letter": "B", "text": "Al objeto jQuery se le pasa como argumento un \"selector\"." },
-            { "letter": "C", "text": "JQuery utiliza selectores CSS." },
-            { "letter": "D", "text": "Todas las respuestas son verdaderas." }
-          ],
-          "correct_letter": "D",
-          "correct_text": "Todas las respuestas son verdaderas.",
-          "definition": "jQuery: librería JS para selección/manipulación DOM, eventos y AJAX.",
-          "explanation": "A, B y C describen correctamente el patrón de uso de jQuery, por eso D."
-        },
-        {
-          "id": "T3_Q18",
-          "question": "Para utilizar AJAX es necesario activarlo mediante estos pasos: A. Llamada a JS, petición asíncrona (XMLHttpRequest), recuperación de datos, modificación de la página. B. Llamada AJAX, formateo al servidor, extracción, modificación. C. Llamada, respuesta, extracción, modificación. D. Ninguna es correcta.",
-          "options": [
-            { "letter": "A", "text": "Llamada a JS, petición asíncrona (XMLHttpRequest), recuperación de datos, modificación de la página." },
-            { "letter": "B", "text": "Llamada AJAX, formateo al servidor, extracción, modificación." },
-            { "letter": "C", "text": "Llamada, respuesta, extracción, modificación." },
-            { "letter": "D", "text": "Ninguna es correcta." }
-          ],
-          "correct_letter": "A",
-          "correct_text": "Llamada a JS, petición asíncrona (XMLHttpRequest), recuperación de datos, modificación de la página.",
-          "definition": "Secuencia operativa AJAX clásica con XHR.",
-          "explanation": "A detalla el flujo real incluyendo el objeto XHR; las otras opciones son vagas o incorrectas."
-        },
-        {
-          "id": "T3_Q19",
-          "question": "¿Qué aporta JQuery a la UX (Experiencia de Usuario) en general? A. Interactividad como barras de menú, pestañas y búsquedas. B. Colores y diseño estático. C. Programación polimórfica dentro del DOM. D. Todas las anteriores son falsas.",
-          "options": [
-            { "letter": "A", "text": "Interactividad como barras de menú, pestañas y búsquedas." },
-            { "letter": "B", "text": "Colores y diseño estático." },
-            { "letter": "C", "text": "Programación polimórfica dentro del DOM." },
-            { "letter": "D", "text": "Todas las anteriores son falsas." }
-          ],
-          "correct_letter": "A",
-          "correct_text": "Interactividad como barras de menú, pestañas y búsquedas.",
-          "definition": "UX: cómo el usuario percibe la facilidad/fluidez al usar la interfaz.",
-          "explanation": "jQuery facilita interacciones (eventos, animaciones, manipulación DOM). Colores/diseño estático es CSS."
-        },
-        {
-          "id": "T3_Q20",
-          "question": "JavaScript es un lenguaje: A. Fuertemente tipado. B. De tipado débil o no tipado. C. Compilado. D. De bajo nivel.",
-          "options": [
-            { "letter": "A", "text": "Fuertemente tipado." },
-            { "letter": "B", "text": "De tipado débil o no tipado." },
-            { "letter": "C", "text": "Compilado." },
-            { "letter": "D", "text": "De bajo nivel." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "De tipado débil o no tipado.",
-          "definition": "JS es dinámico y permite coerción implícita.",
-          "explanation": "No exige declaraciones de tipo y convierte valores automáticamente en muchos contextos."
-        },
-        {
-          "id": "T3_Q21",
-          "question": "El DOM (Document Object Model) es: A. Una base de datos. B. Una estructura arbórea que crea el navegador al cargar la web. C. Un servidor de aplicaciones. D. Un lenguaje de marcado.",
-          "options": [
-            { "letter": "A", "text": "Una base de datos." },
-            { "letter": "B", "text": "Una estructura arbórea que crea el navegador al cargar la web." },
-            { "letter": "C", "text": "Un servidor de aplicaciones." },
-            { "letter": "D", "text": "Un lenguaje de marcado." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "Una estructura arbórea que crea el navegador al cargar la web.",
-          "definition": "DOM: árbol de nodos que representa el documento para ser consultado/modificado por scripts.",
-          "explanation": "JS manipula el DOM para cambiar contenido, atributos, estilos y estructura."
-        },
-        {
-          "id": "T3_Q22",
-          "question": "Para introducir JavaScript en un documento HTML: A. Es necesario incluir el código JS en archivos .php. B. El código JS se puede incluir dentro del archivo .html entre etiquetas <script>. C. El código JS se puede incluir dentro de los archivos CSS. D. No se puede incluir directamente.",
-          "options": [
-            { "letter": "A", "text": "Es necesario incluir el código JS en archivos .php." },
-            { "letter": "B", "text": "El código JS se puede incluir dentro del archivo .html entre etiquetas <script>." },
-            { "letter": "C", "text": "El código JS se puede incluir dentro de los archivos CSS." },
-            { "letter": "D", "text": "No se puede incluir directamente." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "El código JS se puede incluir dentro del archivo .html entre etiquetas <script>.",
-          "definition": "<script> admite código inline o referencia externa (src).",
-          "explanation": "Es el mecanismo estándar del navegador para cargar/ejecutar JS en una página."
-        },
-        {
-          "id": "T3_Q23",
-          "question": "¿Qué etiqueta se usa para avisar que JavaScript está bloqueado en el navegador? A. <script> B. <noscript> C. <nojavascript> D. <alert>",
-          "options": [
-            { "letter": "A", "text": "<script>" },
-            { "letter": "B", "text": "<noscript>" },
-            { "letter": "C", "text": "<nojavascript>" },
-            { "letter": "D", "text": "<alert>" }
-          ],
-          "correct_letter": "B",
-          "correct_text": "<noscript>",
-          "definition": "<noscript> muestra contenido alternativo cuando no se ejecuta JS.",
-          "explanation": "Es el elemento estándar del HTML para fallback sin JS."
-        },
-        {
-          "id": "T3_Q24",
-          "question": "JQuery es: A. Una base de datos relacional. B. Un framework para JavaScript. C. Un lenguaje de servidor. D. Un protocolo de red.",
-          "options": [
-            { "letter": "A", "text": "Una base de datos relacional." },
-            { "letter": "B", "text": "Un framework para JavaScript." },
-            { "letter": "C", "text": "Un lenguaje de servidor." },
-            { "letter": "D", "text": "Un protocolo de red." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "Un framework para JavaScript.",
-          "definition": "jQuery es una librería/framework de JS para DOM, eventos, animaciones y AJAX.",
-          "explanation": "No es BD, ni protocolo. Se usa en cliente para simplificar JS."
-        },
-        {
-          "id": "T3_Q25",
-          "question": "JavaScript permite dotar de: A. \"Dinamismo\" a una página web estática. B. Estructura básica al HTML. C. Seguridad absoluta a la red. D. Conectividad física.",
-          "options": [
-            { "letter": "A", "text": "\"Dinamismo\" a una página web estática." },
-            { "letter": "B", "text": "Estructura básica al HTML." },
-            { "letter": "C", "text": "Seguridad absoluta a la red." },
-            { "letter": "D", "text": "Conectividad física." }
-          ],
-          "correct_letter": "A",
-          "correct_text": "\"Dinamismo\" a una página web estática.",
-          "definition": "Dinamismo: interacción y cambios en tiempo real mediante eventos y manipulación DOM.",
-          "explanation": "JS permite reaccionar a acciones del usuario y actualizar contenido sin recargar."
-        },
-        {
-          "id": "T3_Q26",
-          "question": "El objeto fundamental en el funcionamiento de AJAX es: A. XMLDocument. B. XMLHttpRequest. C. JSRequest. D. AsyncObject.",
-          "options": [
-            { "letter": "A", "text": "XMLDocument." },
-            { "letter": "B", "text": "XMLHttpRequest." },
-            { "letter": "C", "text": "JSRequest." },
-            { "letter": "D", "text": "AsyncObject." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "XMLHttpRequest.",
-          "definition": "XHR permite realizar peticiones HTTP desde JS (asíncronas o síncronas).",
-          "explanation": "AJAX clásico se implementa con XMLHttpRequest (o fetch como alternativa moderna)."
-        },
-        {
-          "id": "T3_Q27",
-          "question": "JavaScript es un lenguaje: A. De scripting e interpretado. B. De modelado de datos. C. Que solo se ejecuta en servidores. D. De alto acoplamiento.",
-          "options": [
-            { "letter": "A", "text": "De scripting e interpretado." },
-            { "letter": "B", "text": "De modelado de datos." },
-            { "letter": "C", "text": "Que solo se ejecuta en servidores." },
-            { "letter": "D", "text": "De alto acoplamiento." }
-          ],
-          "correct_letter": "A",
-          "correct_text": "De scripting e interpretado.",
-          "definition": "Scripting: lenguaje usado para automatizar/dirigir comportamiento de aplicaciones (navegador).",
-          "explanation": "JS se ejecuta principalmente en navegador (cliente), no solo en servidor."
-        },
-        {
-          "id": "T3_Q28",
-          "question": "Un atributo HTML puede ser modificado a través del DOM: A. Solo tomando elementos unitarios. B. Tomando elementos raíz o funciones de grupo. C. No se pueden modificar atributos con el DOM. D. Todas son ciertas.",
-          "options": [
-            { "letter": "A", "text": "Solo tomando elementos unitarios." },
-            { "letter": "B", "text": "Tomando elementos raíz o funciones de grupo." },
-            { "letter": "C", "text": "No se pueden modificar atributos con el DOM." },
-            { "letter": "D", "text": "Todas son ciertas." }
-          ],
-          "correct_letter": "D",
-          "correct_text": "Todas son ciertas.",
-          "definition": "Manipulación DOM: puedes seleccionar uno o varios elementos y modificar atributos (setAttribute, propiedades, etc.).",
-          "explanation": "El test marca D: se asume que se pueden modificar atributos seleccionando elementos individualmente o por colecciones. (C en realidad sería falsa en web real; aquí se respeta la clave indicada.)"
-        },
-        {
-          "id": "T3_Q29",
-          "question": "¿Qué problema resuelve AJAX? A. La falta de colores en la web. B. La necesidad de recargar la página completa ante un cambio pequeño. C. El almacenamiento de datos en el cliente. D. El diseño adaptativo.",
-          "options": [
-            { "letter": "A", "text": "La falta de colores en la web." },
-            { "letter": "B", "text": "La necesidad de recargar la página completa ante un cambio pequeño." },
-            { "letter": "C", "text": "El almacenamiento de datos en el cliente." },
-            { "letter": "D", "text": "El diseño adaptativo." }
-          ],
-          "correct_letter": "B",
-          "correct_text": "La necesidad de recargar la página completa ante un cambio pequeño.",
-          "definition": "Actualización parcial de interfaz mediante peticiones asíncronas.",
-          "explanation": "AJAX evita recargas completas para cambios puntuales (p.ej. cargar una lista, validar usuario, etc.)."
-        }
-      ]
+      "id": "q3",
+      "type": "single_choice",
+      "question": "Mejoras de HTML5 respecto a HTML:",
+      "options": [
+        "Incorpora tag para definir diálogos y conversaciones.",
+        "Elimina por completo los formularios, sustituyéndolos por JSON.",
+        "Impide el uso de multimedia sin plugins externos.",
+        "Sustituye CSS por atributos de estilo obligatorios."
+      ],
+      "correct_answer": "Incorpora tag para definir diálogos y conversaciones.",
+      "meta": {
+        "tema": "Tema 1: Lenguaje de marcado HTML5",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q4",
+      "type": "single_choice",
+      "question": "La etiqueta <img> sirve para:",
+      "options": [
+        "Crear un contenedor para imágenes como si fuera un <div>.",
+        "Insertar una imagen.",
+        "Insertar un vídeo en formato MP4.",
+        "Definir un mapa del sitio para buscadores."
+      ],
+      "correct_answer": "Insertar una imagen.",
+      "meta": {
+        "tema": "Tema 1: Lenguaje de marcado HTML5",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q5",
+      "type": "single_choice",
+      "question": "En un formulario HTML, el campo action:",
+      "options": [
+        "Define el método de envío (GET o POST).",
+        "Indica la página a la que se envían los datos.",
+        "Indica el tipo MIME del formulario.",
+        "Bloquea el envío hasta validar con CSS."
+      ],
+      "correct_answer": "Indica la página a la que se envían los datos.",
+      "meta": {
+        "tema": "Tema 1: Lenguaje de marcado HTML5",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "single_choice",
+      "question": "La etiqueta <head> permite:",
+      "options": [
+        "Insertar el contenido visible principal de la página.",
+        "Introducir metadatos sobre el documento.",
+        "Incluir únicamente enlaces de navegación.",
+        "Definir el pie de página del documento."
+      ],
+      "correct_answer": "Introducir metadatos sobre el documento.",
+      "meta": {
+        "tema": "Tema 1: Lenguaje de marcado HTML5",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q7",
+      "type": "single_choice",
+      "question": "Las etiquetas semánticas de HTML5 buscan:",
+      "options": [
+        "Eliminar el uso de JavaScript en la web.",
+        "Sustituir la necesidad de usar <div> para identificar cada bloque.",
+        "Convertir HTML en un lenguaje de programación completo.",
+        "Obligar a usar tablas para el diseño."
+      ],
+      "correct_answer": "Sustituir la necesidad de usar <div> para identificar cada bloque.",
+      "meta": {
+        "tema": "Tema 1: Lenguaje de marcado HTML5",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q8",
+      "type": "single_choice",
+      "question": "Para representar contenido en un párrafo se usa:",
+      "options": [
+        "<p>.",
+        "<span>.",
+        "<br>.",
+        "<h1>."
+      ],
+      "correct_answer": "<p>.",
+      "meta": {
+        "tema": "Tema 1: Lenguaje de marcado HTML5",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q9",
+      "type": "single_choice",
+      "question": "¿Qué etiqueta define una lista no ordenada?",
+      "options": [
+        "<ol>.",
+        "<ul>.",
+        "<li>.",
+        "<dl>."
+      ],
+      "correct_answer": "<ul>.",
+      "meta": {
+        "tema": "Tema 1: Lenguaje de marcado HTML5",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "single_choice",
+      "question": "Los lenguajes de marcado se centran en:",
+      "options": [
+        "La compilación del código a binario.",
+        "La estructuración del contenido.",
+        "El acceso directo a memoria y punteros.",
+        "El control de procesos del sistema operativo."
+      ],
+      "correct_answer": "La estructuración del contenido.",
+      "meta": {
+        "tema": "Tema 1: Lenguaje de marcado HTML5",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q11",
+      "type": "single_choice",
+      "question": "XHTML se diferencia de HTML en que:",
+      "options": [
+        "Permite omitir siempre el cierre de etiquetas.",
+        "No sigue ninguna regla de sintaxis estricta.",
+        "No posee un conjunto de etiquetas predefinido.",
+        "Es un lenguaje de hojas de estilo."
+      ],
+      "correct_answer": "No posee un conjunto de etiquetas predefinido.",
+      "meta": {
+        "tema": "Tema 1: Lenguaje de marcado HTML5",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q12",
+      "type": "single_choice",
+      "question": "¿Es obligatorio cerrar las etiquetas en HTML5?",
+      "options": [
+        "No, nunca se cierran etiquetas en HTML5.",
+        "Solo se cierran etiquetas si llevan atributos.",
+        "Sí, para mantener la intención declarativa y el rigor estructural.",
+        "Solo se cierran en documentos JSON-LD."
+      ],
+      "correct_answer": "Sí, para mantener la intención declarativa y el rigor estructural.",
+      "meta": {
+        "tema": "Tema 1: Lenguaje de marcado HTML5",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q13",
+      "type": "single_choice",
+      "question": "¿Qué elemento de HTML5 se usa para dibujos y gráficos?",
+      "options": [
+        "<svg>.",
+        "<img>.",
+        "<canvas>.",
+        "<style>."
+      ],
+      "correct_answer": "<canvas>.",
+      "meta": {
+        "tema": "Tema 1: Lenguaje de marcado HTML5",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q14",
+      "type": "single_choice",
+      "question": "El atributo method en formularios suele aceptar:",
+      "options": [
+        "PUT y DELETE.",
+        "FTP y SMTP.",
+        "GET y POST.",
+        "TCP y UDP."
+      ],
+      "correct_answer": "GET y POST.",
+      "meta": {
+        "tema": "Tema 1: Lenguaje de marcado HTML5",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q15",
+      "type": "single_choice",
+      "question": "¿Qué etiqueta de HTML5 define un bloque de contenido independiente (como un post)?",
+      "options": [
+        "<section>.",
+        "<div>.",
+        "<article>.",
+        "<aside>."
+      ],
+      "correct_answer": "<article>.",
+      "meta": {
+        "tema": "Tema 1: Lenguaje de marcado HTML5",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q16",
+      "type": "single_choice",
+      "question": "HTML y CSS se centran respectivamente en:",
+      "options": [
+        "Presentación y lógica de negocio.",
+        "Estructura y presentación.",
+        "Acceso a datos y seguridad.",
+        "Compilación y ejecución."
+      ],
+      "correct_answer": "Estructura y presentación.",
+      "meta": {
+        "tema": "Tema 2: Introducción a hojas de estilo CSS",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q17",
+      "type": "single_choice",
+      "question": "CSS3 agrega funcionalidades como:",
+      "options": [
+        "Gestión de sesiones y cookies.",
+        "Control de procesos en segundo plano.",
+        "Rotación, múltiples fondos y redondeo de bordes.",
+        "Compilación a bytecode."
+      ],
+      "correct_answer": "Rotación, múltiples fondos y redondeo de bordes.",
+      "meta": {
+        "tema": "Tema 2: Introducción a hojas de estilo CSS",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q18",
+      "type": "single_choice",
+      "question": "¿Qué código HTML5 enlaza una hoja de estilo externa?",
+      "options": [
+        "<style src=\"estilo.css\"></style>",
+        "<css link=\"estilo.css\">",
+        "<link rel=\"stylesheet\" href=\"estilo.css\">",
+        "<script rel=\"stylesheet\" href=\"estilo.css\"></script>"
+      ],
+      "correct_answer": "<link rel=\"stylesheet\" href=\"estilo.css\">",
+      "meta": {
+        "tema": "Tema 2: Introducción a hojas de estilo CSS",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q19",
+      "type": "single_choice",
+      "question": "Ventaja del enlace externo en CSS:",
+      "options": [
+        "Impide que el navegador use caché.",
+        "Permite cambios globales afectando a todas las páginas vinculadas.",
+        "Obliga a escribir los estilos dentro del HTML.",
+        "Solo funciona en HTML5, no en HTML4."
+      ],
+      "correct_answer": "Permite cambios globales afectando a todas las páginas vinculadas.",
+      "meta": {
+        "tema": "Tema 2: Introducción a hojas de estilo CSS",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q20",
+      "type": "single_choice",
+      "question": "Los selectores CSS universales usan el símbolo:",
+      "options": [
+        "*.",
+        "#.",
+        "..",
+        "@."
+      ],
+      "correct_answer": "*.",
+      "meta": {
+        "tema": "Tema 2: Introducción a hojas de estilo CSS",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q21",
+      "type": "single_choice",
+      "question": "Un identificador (id) en CSS:",
+      "options": [
+        "Puede repetirse infinitas veces en la misma página.",
+        "No puede repetirse en el mismo documento.",
+        "Solo puede aplicarse a etiquetas <div>.",
+        "Sustituye a las clases en CSS3."
+      ],
+      "correct_answer": "No puede repetirse en el mismo documento.",
+      "meta": {
+        "tema": "Tema 2: Introducción a hojas de estilo CSS",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q22",
+      "type": "single_choice",
+      "question": "Las clases (class) en CSS:",
+      "options": [
+        "Solo pueden usarse una vez por documento.",
+        "Se aplican automáticamente sin declararlas en HTML.",
+        "Pueden usarse en múltiples etiquetas.",
+        "Son exclusivas del <head>."
+      ],
+      "correct_answer": "Pueden usarse en múltiples etiquetas.",
+      "meta": {
+        "tema": "Tema 2: Introducción a hojas de estilo CSS",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q23",
+      "type": "single_choice",
+      "question": "CSS3 introduce el canal alfa para:",
+      "options": [
+        "Definir el tamaño de fuente.",
+        "La transparencia.",
+        "Mejorar la velocidad del servidor.",
+        "Establecer el orden de carga del HTML."
+      ],
+      "correct_answer": "La transparencia.",
+      "meta": {
+        "tema": "Tema 2: Introducción a hojas de estilo CSS",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q24",
+      "type": "single_choice",
+      "question": "Las pseudo-clases permiten:",
+      "options": [
+        "Cambiar el HTML del servidor.",
+        "Definir nuevos elementos HTML dinámicos.",
+        "Clasificar elementos según su estado (ej. hover).",
+        "Convertir CSS en un lenguaje de programación."
+      ],
+      "correct_answer": "Clasificar elementos según su estado (ej. hover).",
+      "meta": {
+        "tema": "Tema 2: Introducción a hojas de estilo CSS",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q25",
+      "type": "single_choice",
+      "question": "¿Qué propiedad de CSS3 genera bordes redondeados?",
+      "options": [
+        "border-style.",
+        "border-radius.",
+        "outline.",
+        "padding."
+      ],
+      "correct_answer": "border-radius.",
+      "meta": {
+        "tema": "Tema 2: Introducción a hojas de estilo CSS",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q26",
+      "type": "single_choice",
+      "question": "text-shadow en CSS3 sirve para:",
+      "options": [
+        "Cambiar el tipo de letra por una fuente externa.",
+        "Ajustar el interlineado del texto.",
+        "Sombrear textos.",
+        "Crear bordes redondeados en el texto."
+      ],
+      "correct_answer": "Sombrear textos.",
+      "meta": {
+        "tema": "Tema 2: Introducción a hojas de estilo CSS",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q27",
+      "type": "single_choice",
+      "question": "¿Qué es un gradiente en CSS3?",
+      "options": [
+        "Un tipo de fuente especial para títulos.",
+        "Un script que genera colores aleatorios.",
+        "Una transición entre al menos dos colores.",
+        "Un borde que se dibuja con puntos."
+      ],
+      "correct_answer": "Una transición entre al menos dos colores.",
+      "meta": {
+        "tema": "Tema 2: Introducción a hojas de estilo CSS",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q28",
+      "type": "single_choice",
+      "question": "Las transformaciones en CSS3 permiten:",
+      "options": [
+        "Ejecutar lógica condicional en el navegador.",
+        "Realizar cambios geométricos a los elementos.",
+        "Modificar la estructura del DOM en tiempo real.",
+        "Sustituir imágenes por texto automáticamente."
+      ],
+      "correct_answer": "Realizar cambios geométricos a los elementos.",
+      "meta": {
+        "tema": "Tema 2: Introducción a hojas de estilo CSS",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q29",
+      "type": "single_choice",
+      "question": "¿Se recomienda incluir estilos dentro de la etiqueta HTML?",
+      "options": [
+        "Sí, porque mejora la reutilización.",
+        "Sí, porque aumenta la velocidad del servidor.",
+        "No, se prefiere la separación total de contenido y estilo.",
+        "Solo si se usa Bootstrap."
+      ],
+      "correct_answer": "No, se prefiere la separación total de contenido y estilo.",
+      "meta": {
+        "tema": "Tema 2: Introducción a hojas de estilo CSS",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q30",
+      "type": "single_choice",
+      "question": "¿Qué selector se usa para un elemento con un ID específico?",
+      "options": [
+        "El símbolo .",
+        "El símbolo *",
+        "El símbolo #",
+        "El símbolo @"
+      ],
+      "correct_answer": "El símbolo #",
+      "meta": {
+        "tema": "Tema 2: Introducción a hojas de estilo CSS",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q31",
+      "type": "single_choice",
+      "question": "El lenguaje JavaScript normalmente se ejecuta en:",
+      "options": [
+        "El cliente.",
+        "El servidor exclusivamente.",
+        "El router de red.",
+        "El compilador del sistema operativo."
+      ],
+      "correct_answer": "El cliente.",
+      "meta": {
+        "tema": "Tema 3: JavaScript, JQuery y AJAX",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q32",
+      "type": "single_choice",
+      "question": "AJAX significa:",
+      "options": [
+        "Advanced JSON and XForms.",
+        "Asynchronous JavaScript and XML (o eXtensions en algunos textos).",
+        "Automatic Java and XHTML.",
+        "Assembled JavaScript and XHTML."
+      ],
+      "correct_answer": "Asynchronous JavaScript and XML (o eXtensions en algunos textos).",
+      "meta": {
+        "tema": "Tema 3: JavaScript, JQuery y AJAX",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q33",
+      "type": "single_choice",
+      "question": "¿Qué problema resuelve AJAX?",
+      "options": [
+        "Permite compilar JavaScript a C++ automáticamente.",
+        "Permite recargar áreas de la web sin recargar la página completa.",
+        "Sustituye HTTP por FTP en comunicaciones web.",
+        "Elimina la necesidad de usar CSS."
+      ],
+      "correct_answer": "Permite recargar áreas de la web sin recargar la página completa.",
+      "meta": {
+        "tema": "Tema 3: JavaScript, JQuery y AJAX",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q34",
+      "type": "single_choice",
+      "question": "La sintaxis de JQuery se basa en:",
+      "options": [
+        "El objeto jQuery() o $().",
+        "El objeto document.queryCss().",
+        "El objeto window.ajax().",
+        "El objeto style.selector()."
+      ],
+      "correct_answer": "El objeto jQuery() o $().",
+      "meta": {
+        "tema": "Tema 3: JavaScript, JQuery y AJAX",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q35",
+      "type": "single_choice",
+      "question": "¿Qué aporta JQuery a la UX?",
+      "options": [
+        "Sustituye HTML por un lenguaje binario.",
+        "Evita el uso del DOM en el navegador.",
+        "Interactividad como barras de menú, pestañas y búsquedas.",
+        "Obliga a recargar la página para cada acción."
+      ],
+      "correct_answer": "Interactividad como barras de menú, pestañas y búsquedas.",
+      "meta": {
+        "tema": "Tema 3: JavaScript, JQuery y AJAX",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q36",
+      "type": "single_choice",
+      "question": "Pasos para activar AJAX:",
+      "options": [
+        "Llamada a JS, petición asíncrona, recuperación de datos, modificación de la página.",
+        "Cargar CSS, compilar HTML, reiniciar servidor, mostrar resultados.",
+        "Guardar cookies, cerrar sesión, reiniciar navegador, volver a entrar.",
+        "Definir tablas, migrar base de datos, lanzar servidor FTP, renderizar."
+      ],
+      "correct_answer": "Llamada a JS, petición asíncrona, recuperación de datos, modificación de la página.",
+      "meta": {
+        "tema": "Tema 3: JavaScript, JQuery y AJAX",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q37",
+      "type": "single_choice",
+      "question": "El DOM es:",
+      "options": [
+        "Un lenguaje de programación para servidores.",
+        "Un sistema de bases de datos del navegador.",
+        "Una estructura arbórea que crea el navegador al cargar la web.",
+        "Un protocolo de red para intercambiar archivos."
+      ],
+      "correct_answer": "Una estructura arbórea que crea el navegador al cargar la web.",
+      "meta": {
+        "tema": "Tema 3: JavaScript, JQuery y AJAX",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q38",
+      "type": "single_choice",
+      "question": "JavaScript es un lenguaje:",
+      "options": [
+        "Compilado a código máquina antes de ejecutarse.",
+        "Exclusivo para bases de datos relacionales.",
+        "De scripting e interpretado.",
+        "Diseñado para sustituir HTML."
+      ],
+      "correct_answer": "De scripting e interpretado.",
+      "meta": {
+        "tema": "Tema 3: JavaScript, JQuery y AJAX",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q39",
+      "type": "single_choice",
+      "question": "El objeto XMLHttpRequest es fundamental para:",
+      "options": [
+        "Definir estilos CSS dinámicos.",
+        "AJAX.",
+        "Sustituir el servidor por el cliente.",
+        "Ejecutar Java dentro del navegador."
+      ],
+      "correct_answer": "AJAX.",
+      "meta": {
+        "tema": "Tema 3: JavaScript, JQuery y AJAX",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q40",
+      "type": "single_choice",
+      "question": "JQuery utiliza selectores basados en:",
+      "options": [
+        "XPath.",
+        "CSS.",
+        "SQL.",
+        "FTP."
+      ],
+      "correct_answer": "CSS.",
+      "meta": {
+        "tema": "Tema 3: JavaScript, JQuery y AJAX",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q41",
+      "type": "single_choice",
+      "question": "¿Qué etiqueta avisa si JavaScript está bloqueado?",
+      "options": [
+        "<nojs>",
+        "<noscript>",
+        "<script-blocked>",
+        "<js-off>"
+      ],
+      "correct_answer": "<noscript>",
+      "meta": {
+        "tema": "Tema 3: JavaScript, JQuery y AJAX",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q42",
+      "type": "single_choice",
+      "question": "En JQuery, el argumento de $( ) es un:",
+      "options": [
+        "Compilador.",
+        "Motor de renderizado.",
+        "Selector.",
+        "Tipo de dato binario."
+      ],
+      "correct_answer": "Selector.",
+      "meta": {
+        "tema": "Tema 3: JavaScript, JQuery y AJAX",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q43",
+      "type": "single_choice",
+      "question": "JavaScript es de tipado:",
+      "options": [
+        "Fuerte y estático.",
+        "Débil o no tipado.",
+        "Solo numérico.",
+        "Exclusivo de enteros."
+      ],
+      "correct_answer": "Débil o no tipado.",
+      "meta": {
+        "tema": "Tema 3: JavaScript, JQuery y AJAX",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q44",
+      "type": "single_choice",
+      "question": "¿Qué permite dotar de dinamismo a una web estática?",
+      "options": [
+        "JavaScript.",
+        "HTML5.",
+        "CSS3.",
+        "SGML."
+      ],
+      "correct_answer": "JavaScript.",
+      "meta": {
+        "tema": "Tema 3: JavaScript, JQuery y AJAX",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q45",
+      "type": "single_choice",
+      "question": "¿Se puede incluir JS dentro del archivo HTML?",
+      "options": [
+        "No, debe ir siempre en un archivo externo.",
+        "Sí, entre etiquetas <script>.",
+        "Solo si se usa XHTML estricto.",
+        "Solo dentro de <style>."
+      ],
+      "correct_answer": "Sí, entre etiquetas <script>.",
+      "meta": {
+        "tema": "Tema 3: JavaScript, JQuery y AJAX",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q46",
+      "type": "single_choice",
+      "question": "Un componente es:",
+      "options": [
+        "Un único objeto sin interfaces.",
+        "Una colección de objetos que proporcionan servicios a diferentes sistemas.",
+        "Un archivo HTML con estilos embebidos.",
+        "Un script que solo se ejecuta en cliente."
+      ],
+      "correct_answer": "Una colección de objetos que proporcionan servicios a diferentes sistemas.",
+      "meta": {
+        "tema": "Tema 4: Programación Orientada a Componentes (POC)",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q47",
+      "type": "single_choice",
+      "question": "Estados de creación de un componente:",
+      "options": [
+        "Diseño, compilación, ejecución y depuración.",
+        "Construcción, despliegue, borrado y reinicio.",
+        "Análisis, prueba, mantenimiento y retirada.",
+        "Especificación, implementación, objeto y contratos."
+      ],
+      "correct_answer": "Especificación, implementación, objeto y contratos.",
+      "meta": {
+        "tema": "Tema 4: Programación Orientada a Componentes (POC)",
+        "correct_letter": "D"
+      }
+    },
+    {
+      "id": "q48",
+      "type": "single_choice",
+      "question": "Ventaja principal de la POC:",
+      "options": [
+        "Reutilización de código.",
+        "Sustituir completamente la POO.",
+        "Evitar el uso de interfaces.",
+        "Obligar a la herencia múltiple."
+      ],
+      "correct_answer": "Reutilización de código.",
+      "meta": {
+        "tema": "Tema 4: Programación Orientada a Componentes (POC)",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q49",
+      "type": "single_choice",
+      "question": "Diferencia entre objeto y componente:",
+      "options": [
+        "Un componente no puede reutilizarse.",
+        "Un objeto siempre se ejecuta en red y un componente no.",
+        "El componente es una entidad autónoma que exporta rendimiento y usa interfaces abiertas.",
+        "Un componente no tiene contratos ni interfaces."
+      ],
+      "correct_answer": "El componente es una entidad autónoma que exporta rendimiento y usa interfaces abiertas.",
+      "meta": {
+        "tema": "Tema 4: Programación Orientada a Componentes (POC)",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q50",
+      "type": "single_choice",
+      "question": "Reutilización de \"caja negra\" significa:",
+      "options": [
+        "No se conoce la implementación interna, solo su interfaz.",
+        "Se conoce todo el código fuente y se modifica libremente.",
+        "Se reutiliza copiando y pegando el código en cada proyecto.",
+        "Solo se reutilizan variables globales."
+      ],
+      "correct_answer": "No se conoce la implementación interna, solo su interfaz.",
+      "meta": {
+        "tema": "Tema 4: Programación Orientada a Componentes (POC)",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q51",
+      "type": "single_choice",
+      "question": "La POC es una variante de:",
+      "options": [
+        "Programación estructurada.",
+        "Programación funcional.",
+        "La Programación Orientada a Objetos (POO).",
+        "Programación lógica."
+      ],
+      "correct_answer": "La Programación Orientada a Objetos (POO).",
+      "meta": {
+        "tema": "Tema 4: Programación Orientada a Componentes (POC)",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q52",
+      "type": "single_choice",
+      "question": "La interfaz de un componente es:",
+      "options": [
+        "Un archivo de configuración sin relación con el cliente.",
+        "El nexo de unión entre el cliente y la implementación.",
+        "Un conjunto de estilos CSS.",
+        "Un protocolo de red."
+      ],
+      "correct_answer": "El nexo de unión entre el cliente y la implementación.",
+      "meta": {
+        "tema": "Tema 4: Programación Orientada a Componentes (POC)",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q53",
+      "type": "single_choice",
+      "question": "Componentes con estado:",
+      "options": [
+        "Aquellos que no guardan datos nunca.",
+        "Aquellos que solo tienen métodos estáticos.",
+        "Aquellos que almacenan datos de manera local (ej. un contador).",
+        "Aquellos que solo funcionan en bases de datos."
+      ],
+      "correct_answer": "Aquellos que almacenan datos de manera local (ej. un contador).",
+      "meta": {
+        "tema": "Tema 4: Programación Orientada a Componentes (POC)",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q54",
+      "type": "single_choice",
+      "question": "¿Qué lenguaje permite la creación clara de componentes?",
+      "options": [
+        "Java y Ada95.",
+        "HTML y CSS.",
+        "SQL y XML.",
+        "Python y Bash."
+      ],
+      "correct_answer": "Java y Ada95.",
+      "meta": {
+        "tema": "Tema 4: Programación Orientada a Componentes (POC)",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q55",
+      "type": "single_choice",
+      "question": "Un contrato de uso establece:",
+      "options": [
+        "La funcionalidad a través de su interfaz.",
+        "La estética visual del componente.",
+        "La velocidad de descarga de la web.",
+        "El tipo de navegador obligatorio."
+      ],
+      "correct_answer": "La funcionalidad a través de su interfaz.",
+      "meta": {
+        "tema": "Tema 4: Programación Orientada a Componentes (POC)",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q56",
+      "type": "single_choice",
+      "question": "La POC utiliza principalmente:",
+      "options": [
+        "La herencia en lugar de la composición.",
+        "La recursividad como base del diseño.",
+        "La composición en lugar de la herencia.",
+        "El acoplamiento fuerte como objetivo."
+      ],
+      "correct_answer": "La composición en lugar de la herencia.",
+      "meta": {
+        "tema": "Tema 4: Programación Orientada a Componentes (POC)",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q57",
+      "type": "single_choice",
+      "question": "Los componentes pueden ejecutarse de forma:",
+      "options": [
+        "Solo local.",
+        "Local o distribuida.",
+        "Solo en cliente.",
+        "Solo en servidor."
+      ],
+      "correct_answer": "Local o distribuida.",
+      "meta": {
+        "tema": "Tema 4: Programación Orientada a Componentes (POC)",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q58",
+      "type": "single_choice",
+      "question": "¿Es necesaria la fase de instalación de un componente?",
+      "options": [
+        "No, los componentes no requieren registro.",
+        "Solo si el componente usa CSS3.",
+        "Sí, para registrarlo en el sistema y que las aplicaciones lo usen.",
+        "Solo en aplicaciones móviles."
+      ],
+      "correct_answer": "Sí, para registrarlo en el sistema y que las aplicaciones lo usen.",
+      "meta": {
+        "tema": "Tema 4: Programación Orientada a Componentes (POC)",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q59",
+      "type": "single_choice",
+      "question": "La fase de especificación debe ser:",
+      "options": [
+        "Independiente de la plataforma de desarrollo.",
+        "Dependiente del lenguaje de programación del cliente.",
+        "Exclusiva para Windows.",
+        "Obligatoria en HTML."
+      ],
+      "correct_answer": "Independiente de la plataforma de desarrollo.",
+      "meta": {
+        "tema": "Tema 4: Programación Orientada a Componentes (POC)",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q60",
+      "type": "single_choice",
+      "question": "Bajo acoplamiento en componentes implica:",
+      "options": [
+        "Mayor dependencia y menos flexibilidad.",
+        "Menor dependencia entre módulos.",
+        "Herencia obligatoria entre módulos.",
+        "Uso exclusivo de variables globales."
+      ],
+      "correct_answer": "Menor dependencia entre módulos.",
+      "meta": {
+        "tema": "Tema 4: Programación Orientada a Componentes (POC)",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q61",
+      "type": "single_choice",
+      "question": "La arquitectura de componentes busca:",
+      "options": [
+        "Evitar cualquier reutilización de código.",
+        "Sustituir el ciclo de vida del software por prototipos.",
+        "Desarrollos más robustos, homogéneos y escalables.",
+        "Obligar a usar un único lenguaje de programación."
+      ],
+      "correct_answer": "Desarrollos más robustos, homogéneos y escalables.",
+      "meta": {
+        "tema": "Tema 5: Arquitectura de componentes",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q62",
+      "type": "single_choice",
+      "question": "CORBA se centra en:",
+      "options": [
+        "Facilitar el uso de componentes remotos mediante POO.",
+        "Sustituir HTTP por SMTP.",
+        "Eliminar el uso de middleware en redes.",
+        "Crear únicamente páginas estáticas HTML."
+      ],
+      "correct_answer": "Facilitar el uso de componentes remotos mediante POO.",
+      "meta": {
+        "tema": "Tema 5: Arquitectura de componentes",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q63",
+      "type": "single_choice",
+      "question": "DCOM permite:",
+      "options": [
+        "Ejecutar CSS en el servidor.",
+        "Diseñar interfaces gráficas con HTML5.",
+        "Desarrollar componentes distribuidos.",
+        "Sustituir Java por JavaScript."
+      ],
+      "correct_answer": "Desarrollar componentes distribuidos.",
+      "meta": {
+        "tema": "Tema 5: Arquitectura de componentes",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q64",
+      "type": "single_choice",
+      "question": "Enterprise JavaBeans (EJB) utiliza un modelo:",
+      "options": [
+        "Peer-to-peer.",
+        "Monolítico sin capas.",
+        "Cliente-Servidor.",
+        "Exclusivo de escritorio."
+      ],
+      "correct_answer": "Cliente-Servidor.",
+      "meta": {
+        "tema": "Tema 5: Arquitectura de componentes",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q65",
+      "type": "single_choice",
+      "question": "Composición simple en POC ocurre cuando:",
+      "options": [
+        "Solo se usan componentes propios sin frameworks.",
+        "Se combinan componentes de un framework con otros.",
+        "Se elimina toda dependencia y no hay interfaces.",
+        "Los componentes se copian dentro del mismo archivo."
+      ],
+      "correct_answer": "Se combinan componentes de un framework con otros.",
+      "meta": {
+        "tema": "Tema 5: Arquitectura de componentes",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q66",
+      "type": "single_choice",
+      "question": "La arquitectura software detalla estructuras con un:",
+      "options": [
+        "Alto nivel de abstracción.",
+        "Bajo nivel de ensamblador.",
+        "Nivel de microcódigo.",
+        "Nivel de hardware físico."
+      ],
+      "correct_answer": "Alto nivel de abstracción.",
+      "meta": {
+        "tema": "Tema 5: Arquitectura de componentes",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q67",
+      "type": "single_choice",
+      "question": "¿Qué tecnología busca transparencia para el desarrollador?",
+      "options": [
+        "CORBA.",
+        ".NET.",
+        "HTML5.",
+        "CSS3."
+      ],
+      "correct_answer": ".NET.",
+      "meta": {
+        "tema": "Tema 5: Arquitectura de componentes",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q68",
+      "type": "single_choice",
+      "question": "La composición heterogénea implica:",
+      "options": [
+        "Componer solo dentro del mismo lenguaje.",
+        "Eliminar frameworks y usar solo componentes puros.",
+        "Componer componentes a través de diferentes frameworks.",
+        "Ejecutar componentes solo localmente."
+      ],
+      "correct_answer": "Componer componentes a través de diferentes frameworks.",
+      "meta": {
+        "tema": "Tema 5: Arquitectura de componentes",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q69",
+      "type": "single_choice",
+      "question": "¿Es posible tratar a un framework como un componente?",
+      "options": [
+        "No, un framework nunca puede encapsularse.",
+        "Solo si se reescribe en ensamblador.",
+        "Sí, mediante la extensión del framework.",
+        "Solo en arquitecturas monolíticas."
+      ],
+      "correct_answer": "Sí, mediante la extensión del framework.",
+      "meta": {
+        "tema": "Tema 5: Arquitectura de componentes",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q70",
+      "type": "single_choice",
+      "question": "Composición transitiva es:",
+      "options": [
+        "La composición que se hace en un único paso y termina ahí.",
+        "El resultado de una composición previa que se vuelve a combinar.",
+        "La composición exclusiva de componentes gráficos.",
+        "La eliminación de interfaces para simplificar."
+      ],
+      "correct_answer": "El resultado de una composición previa que se vuelve a combinar.",
+      "meta": {
+        "tema": "Tema 5: Arquitectura de componentes",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q71",
+      "type": "single_choice",
+      "question": "Para lograr reutilización es necesario crear:",
+      "options": [
+        "Repositorios de imágenes.",
+        "Repositorios de componentes.",
+        "Repositorios de usuarios.",
+        "Repositorios de conexiones HTTP."
+      ],
+      "correct_answer": "Repositorios de componentes.",
+      "meta": {
+        "tema": "Tema 5: Arquitectura de componentes",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q72",
+      "type": "single_choice",
+      "question": "La arquitectura basada en componentes enfatiza:",
+      "options": [
+        "La herencia y el acoplamiento fuerte.",
+        "La descomposición en componentes funcionales con interfaces definidas.",
+        "El uso exclusivo de variables globales.",
+        "La ausencia total de contratos."
+      ],
+      "correct_answer": "La descomposición en componentes funcionales con interfaces definidas.",
+      "meta": {
+        "tema": "Tema 5: Arquitectura de componentes",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q73",
+      "type": "single_choice",
+      "question": "¿Qué aporta la arquitectura de componentes al ciclo industrial?",
+      "options": [
+        "Mayor eficiencia.",
+        "Mayor dependencia entre módulos.",
+        "Menor reutilización.",
+        "Sustitución de pruebas por despliegue directo."
+      ],
+      "correct_answer": "Mayor eficiencia.",
+      "meta": {
+        "tema": "Tema 5: Arquitectura de componentes",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q74",
+      "type": "single_choice",
+      "question": "La arquitectura ayuda a prever:",
+      "options": [
+        "El color final del diseño.",
+        "Cambios en el software.",
+        "La marca del navegador del usuario.",
+        "El tipo de teclado del programador."
+      ],
+      "correct_answer": "Cambios en el software.",
+      "meta": {
+        "tema": "Tema 5: Arquitectura de componentes",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q75",
+      "type": "single_choice",
+      "question": "¿Los componentes deben ser dependientes entre sí?",
+      "options": [
+        "Sí, porque mejora el control.",
+        "Sí, porque evita interfaces.",
+        "No, la fuerza de la arquitectura reside en su independencia e interfaz.",
+        "Solo en sistemas distribuidos."
+      ],
+      "correct_answer": "No, la fuerza de la arquitectura reside en su independencia e interfaz.",
+      "meta": {
+        "tema": "Tema 5: Arquitectura de componentes",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q76",
+      "type": "single_choice",
+      "question": "Bootstrap garantiza:",
+      "options": [
+        "Un diseño adaptativo y principios de accesibilidad.",
+        "La ejecución de Java en el navegador sin servidor.",
+        "La compilación automática de CSS a HTML.",
+        "La eliminación de JavaScript en interfaces web."
+      ],
+      "correct_answer": "Un diseño adaptativo y principios de accesibilidad.",
+      "meta": {
+        "tema": "Tema 6: Bootstrap",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q77",
+      "type": "single_choice",
+      "question": "Requisitos para ejecutar Bootstrap 3:",
+      "options": [
+        "Solo HTML y CSS.",
+        "CSS, JS, HTML5 y JQuery.",
+        "PHP, MySQL y Apache.",
+        "XML, XSLT y XPath."
+      ],
+      "correct_answer": "CSS, JS, HTML5 y JQuery.",
+      "meta": {
+        "tema": "Tema 6: Bootstrap",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q78",
+      "type": "single_choice",
+      "question": "El diseño con rejilla de Bootstrap:",
+      "options": [
+        "Obliga a usar tablas HTML para maquetar.",
+        "Elimina el uso de contenedores en la web.",
+        "Sustituye CSS por JavaScript para el layout.",
+        "Crea una estructura ordenada y proporciona continuidad."
+      ],
+      "correct_answer": "Crea una estructura ordenada y proporciona continuidad.",
+      "meta": {
+        "tema": "Tema 6: Bootstrap",
+        "correct_letter": "D"
+      }
+    },
+    {
+      "id": "q79",
+      "type": "single_choice",
+      "question": "Etiqueta necesaria para el diseño adaptativo en móviles:",
+      "options": [
+        "<meta name=\"mobile\" content=\"true\">",
+        "<meta charset=\"UTF-8\">",
+        "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+        "<meta http-equiv=\"refresh\" content=\"30\">"
+      ],
+      "correct_answer": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+      "meta": {
+        "tema": "Tema 6: Bootstrap",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q80",
+      "type": "single_choice",
+      "question": "Tipos de rejillas según dispositivo:",
+      "options": [
+        "tv, console, pc, mobile.",
+        "xs (móviles), sm (tablets), md (PC), lg (PC gran pantalla).",
+        "small, medium, large, xlarge.",
+        "1col, 2col, 3col, 4col."
+      ],
+      "correct_answer": "xs (móviles), sm (tablets), md (PC), lg (PC gran pantalla).",
+      "meta": {
+        "tema": "Tema 6: Bootstrap",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q81",
+      "type": "single_choice",
+      "question": "Clase para centrar la web automáticamente:",
+      "options": [
+        "row-center",
+        "container",
+        "align-web",
+        "center-blocks"
+      ],
+      "correct_answer": "container",
+      "meta": {
+        "tema": "Tema 6: Bootstrap",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q82",
+      "type": "single_choice",
+      "question": "Bootstrap es un framework orientado a:",
+      "options": [
+        "Enmaquetado HTML y diseño CSS.",
+        "Bases de datos distribuidas.",
+        "Control de procesos del sistema operativo.",
+        "Compilación de Java en servidor."
+      ],
+      "correct_answer": "Enmaquetado HTML y diseño CSS.",
+      "meta": {
+        "tema": "Tema 6: Bootstrap",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q83",
+      "type": "single_choice",
+      "question": "Atributo box-shadow en Bootstrap:",
+      "options": [
+        "Añade efectos visuales según el estado de un campo.",
+        "Cambia el método HTTP de un formulario.",
+        "Define el tamaño de la rejilla responsive.",
+        "Crea enlaces de navegación semánticos."
+      ],
+      "correct_answer": "Añade efectos visuales según el estado de un campo.",
+      "meta": {
+        "tema": "Tema 6: Bootstrap",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q84",
+      "type": "single_choice",
+      "question": "Para formularios que ocupen poco espacio se usa la clase:",
+      "options": [
+        "form-compact",
+        "form-inline",
+        "form-small",
+        "form-grid"
+      ],
+      "correct_answer": "form-inline",
+      "meta": {
+        "tema": "Tema 6: Bootstrap",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q85",
+      "type": "single_choice",
+      "question": "¿Cómo se desactiva el diseño adaptativo?",
+      "options": [
+        "Eliminando los archivos CSS.",
+        "Desactivando JavaScript del navegador.",
+        "Eliminando la etiqueta viewport y el max-width de contenedores.",
+        "Cambiando <div> por <span>."
+      ],
+      "correct_answer": "Eliminando la etiqueta viewport y el max-width de contenedores.",
+      "meta": {
+        "tema": "Tema 6: Bootstrap",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q86",
+      "type": "single_choice",
+      "question": "Bootstrap distingue tres estados en formularios:",
+      "options": [
+        "error-only, success-only, warning-only.",
+        "has-error, has-success y has-warning.",
+        "form-red, form-green, form-yellow.",
+        "state-0, state-1, state-2."
+      ],
+      "correct_answer": "has-error, has-success y has-warning.",
+      "meta": {
+        "tema": "Tema 6: Bootstrap",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q87",
+      "type": "single_choice",
+      "question": "La clase sr-only sirve para:",
+      "options": [
+        "Aumentar el tamaño del texto en móviles.",
+        "Ocultar elementos para mejorar rendimiento.",
+        "Accesibilidad, ocultando etiquetas visualmente pero no para lectores.",
+        "Crear sombras en texto automáticamente."
+      ],
+      "correct_answer": "Accesibilidad, ocultando etiquetas visualmente pero no para lectores.",
+      "meta": {
+        "tema": "Tema 6: Bootstrap",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q88",
+      "type": "single_choice",
+      "question": "¿Bootstrap incluye iconos?",
+      "options": [
+        "No, requiere librerías externas obligatorias.",
+        "Sí, pero solo si se usa React.",
+        "Sí, tiene un amplio número de componentes CSS disponibles.",
+        "Solo soporta iconos SVG personalizados."
+      ],
+      "correct_answer": "Sí, tiene un amplio número de componentes CSS disponibles.",
+      "meta": {
+        "tema": "Tema 6: Bootstrap",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q89",
+      "type": "single_choice",
+      "question": "La rejilla de Bootstrap divide la página en:",
+      "options": [
+        "Filas sin columnas.",
+        "Columnas sin filas.",
+        "Campos e interludios dentro de márgenes.",
+        "Un único contenedor fijo sin divisiones."
+      ],
+      "correct_answer": "Campos e interludios dentro de márgenes.",
+      "meta": {
+        "tema": "Tema 6: Bootstrap",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q90",
+      "type": "single_choice",
+      "question": "Bootstrap es capaz de lograr diseño adaptativo en:",
+      "options": [
+        "Solo móviles.",
+        "Solo PC.",
+        "Solo tablets.",
+        "PC, Tablet y Smartphones."
+      ],
+      "correct_answer": "PC, Tablet y Smartphones.",
+      "meta": {
+        "tema": "Tema 6: Bootstrap",
+        "correct_letter": "D"
+      }
+    },
+    {
+      "id": "q91",
+      "type": "single_choice",
+      "question": "En MVC, la M significa:",
+      "options": [
+        "Módulo: controla la navegación de la web.",
+        "Monitor: supervisa las peticiones HTTP.",
+        "Modelo: Maneja datos y lógica de negocios.",
+        "Motor: renderiza la interfaz de usuario."
+      ],
+      "correct_answer": "Modelo: Maneja datos y lógica de negocios.",
+      "meta": {
+        "tema": "Tema 7: Patrón Modelo Vista Controlador (MVC)",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q92",
+      "type": "single_choice",
+      "question": "En MVC, la V significa:",
+      "options": [
+        "Vista: Se encarga del diseño y presentación.",
+        "Validación: comprueba reglas de negocio.",
+        "Versión: gestiona cambios del código.",
+        "Variable: contiene datos temporales."
+      ],
+      "correct_answer": "Vista: Se encarga del diseño y presentación.",
+      "meta": {
+        "tema": "Tema 7: Patrón Modelo Vista Controlador (MVC)",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q93",
+      "type": "single_choice",
+      "question": "En MVC, la C significa:",
+      "options": [
+        "Cliente: ejecuta la aplicación.",
+        "Conector: une capas de persistencia.",
+        "Controlador: Enruta comandos a modelos y vistas.",
+        "Compilador: transforma el código a binario."
+      ],
+      "correct_answer": "Controlador: Enruta comandos a modelos y vistas.",
+      "meta": {
+        "tema": "Tema 7: Patrón Modelo Vista Controlador (MVC)",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q94",
+      "type": "single_choice",
+      "question": "El controlador en MVC actúa como:",
+      "options": [
+        "Enlace entre el modelo y la vista ante eventos de usuario.",
+        "Motor de base de datos relacional.",
+        "Sustituto de la vista para mostrar HTML.",
+        "Sistema de archivos para recursos estáticos."
+      ],
+      "correct_answer": "Enlace entre el modelo y la vista ante eventos de usuario.",
+      "meta": {
+        "tema": "Tema 7: Patrón Modelo Vista Controlador (MVC)",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q95",
+      "type": "single_choice",
+      "question": "En la implementación Java de MVC, el Servlet suele ser:",
+      "options": [
+        "La Vista.",
+        "El Controlador.",
+        "El Modelo.",
+        "El navegador del cliente."
+      ],
+      "correct_answer": "El Controlador.",
+      "meta": {
+        "tema": "Tema 7: Patrón Modelo Vista Controlador (MVC)",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q96",
+      "type": "single_choice",
+      "question": "En la implementación Java de MVC, el JSP suele ser:",
+      "options": [
+        "La Vista.",
+        "El Controlador.",
+        "El Modelo.",
+        "El servidor de aplicaciones."
+      ],
+      "correct_answer": "La Vista.",
+      "meta": {
+        "tema": "Tema 7: Patrón Modelo Vista Controlador (MVC)",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q97",
+      "type": "single_choice",
+      "question": "En la implementación Java de MVC, el JavaBean o EJB es:",
+      "options": [
+        "El Controlador (recibe eventos).",
+        "La Vista (renderiza HTML).",
+        "El Modelo (comunica con BD).",
+        "El Router (gestiona red)."
+      ],
+      "correct_answer": "El Modelo (comunica con BD).",
+      "meta": {
+        "tema": "Tema 7: Patrón Modelo Vista Controlador (MVC)",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q98",
+      "type": "single_choice",
+      "question": "WSDM es un método de desarrollo web centrado en:",
+      "options": [
+        "La base de datos más que el usuario.",
+        "El usuario más que en los datos.",
+        "La compilación y despliegue automático.",
+        "El diseño gráfico exclusivamente."
+      ],
+      "correct_answer": "El usuario más que en los datos.",
+      "meta": {
+        "tema": "Tema 7: Patrón Modelo Vista Controlador (MVC)",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q99",
+      "type": "single_choice",
+      "question": "Metodología UWE se fundamenta en:",
+      "options": [
+        "Un metamodelo basado en XML.",
+        "Un metamodelo basado en UML.",
+        "Un metamodelo basado en HTML5.",
+        "Un metamodelo basado en CSS3."
+      ],
+      "correct_answer": "Un metamodelo basado en UML.",
+      "meta": {
+        "tema": "Tema 7: Patrón Modelo Vista Controlador (MVC)",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q100",
+      "type": "single_choice",
+      "question": "WebML se caracteriza por:",
+      "options": [
+        "Bajo nivel de abstracción y foco técnico inicial.",
+        "Un alto nivel de abstracción sin considerar detalles técnicos iniciales.",
+        "Exclusividad para aplicaciones móviles.",
+        "Sustituir patrones de diseño por scripts."
+      ],
+      "correct_answer": "Un alto nivel de abstracción sin considerar detalles técnicos iniciales.",
+      "meta": {
+        "tema": "Tema 7: Patrón Modelo Vista Controlador (MVC)",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q101",
+      "type": "single_choice",
+      "question": "Framework para la capa de Modelo en Java:",
+      "options": [
+        "Bootstrap.",
+        "Node.js.",
+        "JPA o Hibernate.",
+        "JQuery."
+      ],
+      "correct_answer": "JPA o Hibernate.",
+      "meta": {
+        "tema": "Tema 7: Patrón Modelo Vista Controlador (MVC)",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q102",
+      "type": "single_choice",
+      "question": "Framework para la capa de Vista en Java:",
+      "options": [
+        "JSF (Java Servlet Faces).",
+        "JPA.",
+        "Hibernate.",
+        "Apache Axis."
+      ],
+      "correct_answer": "JSF (Java Servlet Faces).",
+      "meta": {
+        "tema": "Tema 7: Patrón Modelo Vista Controlador (MVC)",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q103",
+      "type": "single_choice",
+      "question": "Un patrón de diseño es:",
+      "options": [
+        "Un lenguaje de programación para web.",
+        "Una solución general y reutilizable a problemas comunes.",
+        "Un protocolo de transporte de datos.",
+        "Un estándar de marcado derivado de SGML."
+      ],
+      "correct_answer": "Una solución general y reutilizable a problemas comunes.",
+      "meta": {
+        "tema": "Tema 7: Patrón Modelo Vista Controlador (MVC)",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q104",
+      "type": "single_choice",
+      "question": "Tipos de patrones de diseño:",
+      "options": [
+        "Estáticos, dinámicos y persistentes.",
+        "Creacionales, estructurales y de comportamiento.",
+        "Cliente, servidor y distribuido.",
+        "HTML, CSS y JavaScript."
+      ],
+      "correct_answer": "Creacionales, estructurales y de comportamiento.",
+      "meta": {
+        "tema": "Tema 7: Patrón Modelo Vista Controlador (MVC)",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q105",
+      "type": "single_choice",
+      "question": "¿MVC permite la separación de lógica de negocio y visualización?",
+      "options": [
+        "No, mezcla ambas capas para simplificar.",
+        "Solo en aplicaciones sin base de datos.",
+        "Sí, es su objetivo fundamental.",
+        "Solo si se usa AJAX."
+      ],
+      "correct_answer": "Sí, es su objetivo fundamental.",
+      "meta": {
+        "tema": "Tema 7: Patrón Modelo Vista Controlador (MVC)",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q106",
+      "type": "single_choice",
+      "question": "Con la creación de clusters se consigue:",
+      "options": [
+        "Eliminar completamente la necesidad de redes.",
+        "Ejecutar únicamente tareas de usuario individuales.",
+        "Reemplazar HTTP por FTP en sistemas distribuidos.",
+        "Compartir recursos (carga o computación) entre nodos."
+      ],
+      "correct_answer": "Compartir recursos (carga o computación) entre nodos.",
+      "meta": {
+        "tema": "Tema 8: Tecnologías Grid de la información",
+        "correct_letter": "D"
+      }
+    },
+    {
+      "id": "q107",
+      "type": "single_choice",
+      "question": "Las aplicaciones distribuidas de alto rendimiento (HPC):",
+      "options": [
+        "Requieren gran capacidad de cómputo, superior a un único superordenador.",
+        "Solo ejecutan tareas ofimáticas de bajo consumo.",
+        "Se limitan a sistemas monousuario.",
+        "Funcionan siempre sin paralelismo."
+      ],
+      "correct_answer": "Requieren gran capacidad de cómputo, superior a un único superordenador.",
+      "meta": {
+        "tema": "Tema 8: Tecnologías Grid de la información",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q108",
+      "type": "single_choice",
+      "question": "La Tecnología Grid está diseñada para:",
+      "options": [
+        "Resolver problemas demasiado grandes para un superordenador.",
+        "Ejecutar solo páginas HTML estáticas.",
+        "Eliminar el uso de middleware distribuido.",
+        "Sustituir los clusters locales por un único PC."
+      ],
+      "correct_answer": "Resolver problemas demasiado grandes para un superordenador.",
+      "meta": {
+        "tema": "Tema 8: Tecnologías Grid de la información",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q109",
+      "type": "single_choice",
+      "question": "Tres puntos fundamentales para considerar un sistema como Grid:",
+      "options": [
+        "Coordinación de recursos, protocolos estándar y QoS.",
+        "Uso exclusivo de JavaScript, HTML5 y CSS3.",
+        "Monolitismo, acoplamiento fuerte y baja latencia.",
+        "Seguridad nula, ejecución local y sin estándares."
+      ],
+      "correct_answer": "Coordinación de recursos, protocolos estándar y QoS.",
+      "meta": {
+        "tema": "Tema 8: Tecnologías Grid de la información",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q110",
+      "type": "single_choice",
+      "question": "La tecnología Grid ha de ser:",
+      "options": [
+        "Dependiente de un único proveedor y plataforma.",
+        "Local, monolítica y rígida.",
+        "Exclusiva para superordenadores idénticos.",
+        "Independiente, concurrente, contextualizable y económica."
+      ],
+      "correct_answer": "Independiente, concurrente, contextualizable y económica.",
+      "meta": {
+        "tema": "Tema 8: Tecnologías Grid de la información",
+        "correct_letter": "D"
+      }
+    },
+    {
+      "id": "q111",
+      "type": "single_choice",
+      "question": "Diferencia entre Cluster y Grid:",
+      "options": [
+        "Un grid siempre es local y un cluster siempre remoto.",
+        "Los clusters suelen ser locales, el Grid une clusters dispersos geográficamente.",
+        "Un cluster usa HTTP y un grid usa FTP.",
+        "No existe diferencia: son sinónimos."
+      ],
+      "correct_answer": "Los clusters suelen ser locales, el Grid une clusters dispersos geográficamente.",
+      "meta": {
+        "tema": "Tema 8: Tecnologías Grid de la información",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q112",
+      "type": "single_choice",
+      "question": "Aplicaciones HTC (Alta Productividad) se encargan de:",
+      "options": [
+        "Renderizado gráfico en tiempo real exclusivamente.",
+        "Tareas secuenciales que pueden dividirse y componerse.",
+        "Solo tareas interactivas de baja duración.",
+        "Tareas que requieren GPU obligatoria."
+      ],
+      "correct_answer": "Tareas secuenciales que pueden dividirse y componerse.",
+      "meta": {
+        "tema": "Tema 8: Tecnologías Grid de la información",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q113",
+      "type": "single_choice",
+      "question": "La e-Ciencia es:",
+      "options": [
+        "Cuando la ciencia depende de la computación (meteorología, bioinformática).",
+        "La ciencia realizada sin herramientas digitales.",
+        "Un tipo de diseño web orientado a datos.",
+        "Un estándar de comunicación HTTP."
+      ],
+      "correct_answer": "Cuando la ciencia depende de la computación (meteorología, bioinformática).",
+      "meta": {
+        "tema": "Tema 8: Tecnologías Grid de la información",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q114",
+      "type": "single_choice",
+      "question": "¿Qué es la Meta-computación?",
+      "options": [
+        "Un único superordenador con más memoria.",
+        "La unión de varios superordenadores.",
+        "Un navegador especializado en HPC.",
+        "Un protocolo de cifrado de red."
+      ],
+      "correct_answer": "La unión de varios superordenadores.",
+      "meta": {
+        "tema": "Tema 8: Tecnologías Grid de la información",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q115",
+      "type": "single_choice",
+      "question": "Ventaja de los clusters:",
+      "options": [
+        "Menor fiabilidad por depender de múltiples nodos.",
+        "Obligan a usar nodos idénticos siempre.",
+        "No permiten paralelización.",
+        "Disminución de la obsolescencia y mayor fiabilidad (tolerancia a fallos)."
+      ],
+      "correct_answer": "Disminución de la obsolescencia y mayor fiabilidad (tolerancia a fallos).",
+      "meta": {
+        "tema": "Tema 8: Tecnologías Grid de la información",
+        "correct_letter": "D"
+      }
+    },
+    {
+      "id": "q116",
+      "type": "single_choice",
+      "question": "El software de control en Grid sirve para:",
+      "options": [
+        "Cambiar el HTML de las páginas servidas.",
+        "Monitorizar y controlar los recursos globalmente.",
+        "Compilar programas en lenguaje ensamblador.",
+        "Sustituir la red por ejecución local."
+      ],
+      "correct_answer": "Monitorizar y controlar los recursos globalmente.",
+      "meta": {
+        "tema": "Tema 8: Tecnologías Grid de la información",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q117",
+      "type": "single_choice",
+      "question": "El criterio económico en Grid implica:",
+      "options": [
+        "Ser más caro que usar un superordenador dedicado.",
+        "Ser más rentable que el uso de mainframes.",
+        "Evitar cualquier reutilización de recursos.",
+        "Obligar a adquirir hardware propietario."
+      ],
+      "correct_answer": "Ser más rentable que el uso de mainframes.",
+      "meta": {
+        "tema": "Tema 8: Tecnologías Grid de la información",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q118",
+      "type": "single_choice",
+      "question": "QoS en Grid mide:",
+      "options": [
+        "Tiempo de respuesta, rendimiento y seguridad.",
+        "Solo el ancho de banda de red.",
+        "Únicamente el número de usuarios conectados.",
+        "El tamaño de archivos HTML."
+      ],
+      "correct_answer": "Tiempo de respuesta, rendimiento y seguridad.",
+      "meta": {
+        "tema": "Tema 8: Tecnologías Grid de la información",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q119",
+      "type": "single_choice",
+      "question": "¿Los nodos en un Grid deben ser idénticos?",
+      "options": [
+        "Sí, es obligatorio que sean iguales.",
+        "Sí, para asegurar compatibilidad de hardware.",
+        "No, se usan elementos heterogéneos.",
+        "Solo si el Grid usa HTTP."
+      ],
+      "correct_answer": "No, se usan elementos heterogéneos.",
+      "meta": {
+        "tema": "Tema 8: Tecnologías Grid de la información",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q120",
+      "type": "single_choice",
+      "question": "La tecnología Grid se enmarca en el paradigma de:",
+      "options": [
+        "Programación local monousuario.",
+        "Computación distribuida.",
+        "Computación sin red.",
+        "Compilación estática."
+      ],
+      "correct_answer": "Computación distribuida.",
+      "meta": {
+        "tema": "Tema 8: Tecnologías Grid de la información",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q121",
+      "type": "single_choice",
+      "question": "SOAP es la tecnología utilizada para:",
+      "options": [
+        "Invocar servicios descubiertos y comunicar consumidor con proveedor.",
+        "Diseñar interfaces web responsive.",
+        "Reemplazar HTTP por FTP en servicios.",
+        "Sustituir XML por CSS3."
+      ],
+      "correct_answer": "Invocar servicios descubiertos y comunicar consumidor con proveedor.",
+      "meta": {
+        "tema": "Tema 9: Arquitectura Orientada a Servicios (SOA)",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q122",
+      "type": "single_choice",
+      "question": "¿Qué es un Web Service?",
+      "options": [
+        "Un archivo HTML con estilos embebidos.",
+        "Un componente que solo funciona en local.",
+        "Una tecnología que habilita la comunicación entre computadoras mediante protocolos y estándares.",
+        "Un estándar de diseño gráfico para web."
+      ],
+      "correct_answer": "Una tecnología que habilita la comunicación entre computadoras mediante protocolos y estándares.",
+      "meta": {
+        "tema": "Tema 9: Arquitectura Orientada a Servicios (SOA)",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q123",
+      "type": "single_choice",
+      "question": "Apache Axis está formado por:",
+      "options": [
+        "La aplicación AXIS y el servidor Apache.",
+        "Un navegador y un motor CSS.",
+        "Un compilador JavaScript y un router.",
+        "Un framework de Bootstrap y un plugin JQuery."
+      ],
+      "correct_answer": "La aplicación AXIS y el servidor Apache.",
+      "meta": {
+        "tema": "Tema 9: Arquitectura Orientada a Servicios (SOA)",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q124",
+      "type": "single_choice",
+      "question": "Un Web Service puede utilizar protocolos como:",
+      "options": [
+        "TCP únicamente.",
+        "SMTP exclusivamente.",
+        "XML-RPC, SOAP o REST.",
+        "FTP para todos los casos."
+      ],
+      "correct_answer": "XML-RPC, SOAP o REST.",
+      "meta": {
+        "tema": "Tema 9: Arquitectura Orientada a Servicios (SOA)",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q125",
+      "type": "single_choice",
+      "question": "WSDL sirve para:",
+      "options": [
+        "Describir las interfaces de los servicios web.",
+        "Ejecutar JavaScript en el servidor.",
+        "Definir estilos de presentación CSS.",
+        "Realizar consultas SQL en remoto."
+      ],
+      "correct_answer": "Describir las interfaces de los servicios web.",
+      "meta": {
+        "tema": "Tema 9: Arquitectura Orientada a Servicios (SOA)",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q126",
+      "type": "single_choice",
+      "question": "Elementos de la arquitectura SOA:",
+      "options": [
+        "Cliente, Servidor, Navegador, HTML.",
+        "Proveedor, Consumidor, Registro y el Servicio.",
+        "Modelo, Vista, Controlador y Servlet.",
+        "DNS, TCP, UDP y HTTP."
+      ],
+      "correct_answer": "Proveedor, Consumidor, Registro y el Servicio.",
+      "meta": {
+        "tema": "Tema 9: Arquitectura Orientada a Servicios (SOA)",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q127",
+      "type": "single_choice",
+      "question": "SOA permite el desarrollo de aplicaciones:",
+      "options": [
+        "Monolíticas y fuertemente acopladas.",
+        "Débilmente acopladas y distribuidas.",
+        "Sin interfaces y sin contratos.",
+        "Exclusivas para escritorio."
+      ],
+      "correct_answer": "Débilmente acopladas y distribuidas.",
+      "meta": {
+        "tema": "Tema 9: Arquitectura Orientada a Servicios (SOA)",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q128",
+      "type": "single_choice",
+      "question": "¿SOA se vincula a una única tecnología?",
+      "options": [
+        "Sí, solo puede usarse con SOAP.",
+        "No, puede usar RPC, CORBA o Web Services.",
+        "Sí, es obligatorio usar REST.",
+        "Sí, únicamente funciona con HTTP/3."
+      ],
+      "correct_answer": "No, puede usar RPC, CORBA o Web Services.",
+      "meta": {
+        "tema": "Tema 9: Arquitectura Orientada a Servicios (SOA)",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q129",
+      "type": "single_choice",
+      "question": "La fase de registro en SOA sirve para:",
+      "options": [
+        "Que el consumidor publique sus necesidades en un repositorio.",
+        "Que el proveedor especifique su interfaz y funcionalidades en un repositorio.",
+        "Que el servidor elimine servicios obsoletos automáticamente.",
+        "Que el navegador guarde cookies de sesión."
+      ],
+      "correct_answer": "Que el proveedor especifique su interfaz y funcionalidades en un repositorio.",
+      "meta": {
+        "tema": "Tema 9: Arquitectura Orientada a Servicios (SOA)",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q130",
+      "type": "single_choice",
+      "question": "¿Qué protocolo de transporte usa SOA por defecto?",
+      "options": [
+        "SMTP.",
+        "FTP.",
+        "HTTP.",
+        "UDP."
+      ],
+      "correct_answer": "HTTP.",
+      "meta": {
+        "tema": "Tema 9: Arquitectura Orientada a Servicios (SOA)",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q131",
+      "type": "single_choice",
+      "question": "IBM WebSphere es:",
+      "options": [
+        "Un lenguaje de marcado derivado de SGML.",
+        "Un middleware para crear aplicaciones multiplataforma usando servicios web.",
+        "Un estándar de estilos para CSS3.",
+        "Un framework para diseño responsive en cliente."
+      ],
+      "correct_answer": "Un middleware para crear aplicaciones multiplataforma usando servicios web.",
+      "meta": {
+        "tema": "Tema 9: Arquitectura Orientada a Servicios (SOA)",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q132",
+      "type": "single_choice",
+      "question": "SOA busca soluciones:",
+      "options": [
+        "Independientes para cada problema mediante módulos.",
+        "Dependientes y fuertemente acopladas.",
+        "Basadas solo en HTML estático.",
+        "Que eliminen el registro de servicios."
+      ],
+      "correct_answer": "Independientes para cada problema mediante módulos.",
+      "meta": {
+        "tema": "Tema 9: Arquitectura Orientada a Servicios (SOA)",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q133",
+      "type": "single_choice",
+      "question": "El consumidor en SOA es quien:",
+      "options": [
+        "Publica servicios en el registro.",
+        "Implementa el servicio web.",
+        "Demanda la utilización de determinados servicios.",
+        "Compila el WSDL a HTML."
+      ],
+      "correct_answer": "Demanda la utilización de determinados servicios.",
+      "meta": {
+        "tema": "Tema 9: Arquitectura Orientada a Servicios (SOA)",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q134",
+      "type": "single_choice",
+      "question": "Enhanced Web Services en Java incluyen:",
+      "options": [
+        "Un motor de estilos para CSS3.",
+        "Funcionalidades para intercambio de mensajes.",
+        "Un navegador integrado para pruebas.",
+        "Un compilador de Bootstrap."
+      ],
+      "correct_answer": "Funcionalidades para intercambio de mensajes.",
+      "meta": {
+        "tema": "Tema 9: Arquitectura Orientada a Servicios (SOA)",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q135",
+      "type": "single_choice",
+      "question": "SOA ofrece un desarrollo de aplicaciones web:",
+      "options": [
+        "Lento e inestable.",
+        "Solo válido para aplicaciones sin red.",
+        "Ágil y robusto.",
+        "Incompatible con sistemas distribuidos."
+      ],
+      "correct_answer": "Ágil y robusto.",
+      "meta": {
+        "tema": "Tema 9: Arquitectura Orientada a Servicios (SOA)",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q136",
+      "type": "single_choice",
+      "question": "HTTP es un protocolo:",
+      "options": [
+        "Exclusivo para transferencia de archivos multimedia.",
+        "De capa física para transmisión eléctrica.",
+        "Basado en redes P2P sin servidor.",
+        "Basado en arquitectura cliente-servidor, para intercambio de información y carente de estado."
+      ],
+      "correct_answer": "Basado en arquitectura cliente-servidor, para intercambio de información y carente de estado.",
+      "meta": {
+        "tema": "Tema 10: Protocolo HTTP",
+        "correct_letter": "D"
+      }
+    },
+    {
+      "id": "q137",
+      "type": "single_choice",
+      "question": "Diferencia principal entre HTTP y HTTPS:",
+      "options": [
+        "La seguridad.",
+        "La sintaxis del HTML.",
+        "La capacidad de ejecutar JavaScript.",
+        "El uso de CSS3 obligatorio."
+      ],
+      "correct_answer": "La seguridad.",
+      "meta": {
+        "tema": "Tema 10: Protocolo HTTP",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q138",
+      "type": "single_choice",
+      "question": "Un código de respuesta HTTP 404 significa:",
+      "options": [
+        "El servidor ha fallado completamente (error 5xx).",
+        "El recurso existe, pero requiere autenticación.",
+        "Se ha comunicado con el servidor, pero el recurso no existe.",
+        "La petición se ha procesado correctamente sin contenido."
+      ],
+      "correct_answer": "Se ha comunicado con el servidor, pero el recurso no existe.",
+      "meta": {
+        "tema": "Tema 10: Protocolo HTTP",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q139",
+      "type": "single_choice",
+      "question": "Diferencia entre petición GET y POST:",
+      "options": [
+        "GET solo funciona en HTTPS y POST solo en HTTP.",
+        "GET envía datos en la URL; POST los envía de forma \"oculta\" en el cuerpo del mensaje.",
+        "GET siempre cifra el contenido y POST no.",
+        "GET se usa para subir archivos y POST para leer páginas."
+      ],
+      "correct_answer": "GET envía datos en la URL; POST los envía de forma \"oculta\" en el cuerpo del mensaje.",
+      "meta": {
+        "tema": "Tema 10: Protocolo HTTP",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q140",
+      "type": "single_choice",
+      "question": "Las cookies se clasifican por almacenamiento en:",
+      "options": [
+        "De sesión y persistentes.",
+        "Públicas y privadas.",
+        "Locales y remotas.",
+        "Temporales y cifradas únicamente."
+      ],
+      "correct_answer": "De sesión y persistentes.",
+      "meta": {
+        "tema": "Tema 10: Protocolo HTTP",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q141",
+      "type": "single_choice",
+      "question": "SSL y TLS son:",
+      "options": [
+        "Lenguajes de marcado para servicios web.",
+        "Métodos HTTP equivalentes a GET y POST.",
+        "Frameworks de Java para MVC.",
+        "Protocolos seguros usados por HTTPS para conexiones cliente-servidor."
+      ],
+      "correct_answer": "Protocolos seguros usados por HTTPS para conexiones cliente-servidor.",
+      "meta": {
+        "tema": "Tema 10: Protocolo HTTP",
+        "correct_letter": "D"
+      }
+    },
+    {
+      "id": "q142",
+      "type": "single_choice",
+      "question": "El protocolo HTTP pertenece a la capa de:",
+      "options": [
+        "Enlace de datos.",
+        "Aplicación.",
+        "Física.",
+        "Transporte."
+      ],
+      "correct_answer": "Aplicación.",
+      "meta": {
+        "tema": "Tema 10: Protocolo HTTP",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q143",
+      "type": "single_choice",
+      "question": "Una URL especifica:",
+      "options": [
+        "Solo la IP del servidor y nada más.",
+        "El método HTTP y el tamaño de respuesta.",
+        "Protocolo, dirección/nombre del recurso y opcionalmente puerto.",
+        "El tipo de cifrado de la conexión."
+      ],
+      "correct_answer": "Protocolo, dirección/nombre del recurso y opcionalmente puerto.",
+      "meta": {
+        "tema": "Tema 10: Protocolo HTTP",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q144",
+      "type": "single_choice",
+      "question": "URI puede entenderse como:",
+      "options": [
+        "Un localizador.",
+        "Un cifrado de red.",
+        "Un tipo de cookie persistente.",
+        "Un puerto TCP fijo."
+      ],
+      "correct_answer": "Un localizador.",
+      "meta": {
+        "tema": "Tema 10: Protocolo HTTP",
+        "correct_letter": "A"
+      }
+    },
+    {
+      "id": "q145",
+      "type": "single_choice",
+      "question": "URN permite:",
+      "options": [
+        "Indicar el protocolo y puerto obligatorios.",
+        "Identificar recursos en la red pero no indica cómo acceder a ellos.",
+        "Sustituir completamente a las URLs en navegadores.",
+        "Transferir datos cifrados en HTTP."
+      ],
+      "correct_answer": "Identificar recursos en la red pero no indica cómo acceder a ellos.",
+      "meta": {
+        "tema": "Tema 10: Protocolo HTTP",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q146",
+      "type": "single_choice",
+      "question": "Las conexiones persistentes sirven para:",
+      "options": [
+        "Aumentar el número de errores 404.",
+        "Obligar a cerrar TCP tras cada petición.",
+        "Reducir el tráfico de peticiones usando una misma conexión TCP.",
+        "Sustituir GET por POST automáticamente."
+      ],
+      "correct_answer": "Reducir el tráfico de peticiones usando una misma conexión TCP.",
+      "meta": {
+        "tema": "Tema 10: Protocolo HTTP",
+        "correct_letter": "C"
+      }
+    },
+    {
+      "id": "q147",
+      "type": "single_choice",
+      "question": "¿Qué protocolo es más inapropiado para información sensible?",
+      "options": [
+        "POST.",
+        "GET.",
+        "HTTPS.",
+        "TLS."
+      ],
+      "correct_answer": "GET.",
+      "meta": {
+        "tema": "Tema 10: Protocolo HTTP",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q148",
+      "type": "single_choice",
+      "question": "Los códigos HTTP 5xx indican:",
+      "options": [
+        "Redirecciones del navegador.",
+        "Error del servidor.",
+        "Error del cliente (URL incorrecta).",
+        "Respuestas informativas 1xx."
+      ],
+      "correct_answer": "Error del servidor.",
+      "meta": {
+        "tema": "Tema 10: Protocolo HTTP",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q149",
+      "type": "single_choice",
+      "question": "El método HEAD es equivalente a GET pero:",
+      "options": [
+        "Devuelve el cuerpo del mensaje y no cabeceras.",
+        "Solo devuelve las cabeceras, no el mensaje.",
+        "Cambia recursos en el servidor.",
+        "Se usa únicamente para subir archivos."
+      ],
+      "correct_answer": "Solo devuelve las cabeceras, no el mensaje.",
+      "meta": {
+        "tema": "Tema 10: Protocolo HTTP",
+        "correct_letter": "B"
+      }
+    },
+    {
+      "id": "q150",
+      "type": "single_choice",
+      "question": "¿Qué sistema de cifrado usa HTTPS?",
+      "options": [
+        "Solo cifrado simétrico.",
+        "Solo cifrado asimétrico.",
+        "Una combinación de clave asimétrica (SSL) y simétrica (TLS).",
+        "No usa cifrado, solo hashing."
+      ],
+      "correct_answer": "Una combinación de clave asimétrica (SSL) y simétrica (TLS).",
+      "meta": {
+        "tema": "Tema 10: Protocolo HTTP",
+        "correct_letter": "C"
+      }
     }
-
-    /*
-      NOTA IMPORTANTE:
-      El contenido es muy extenso (incluye Temas 4–10 y además la “segunda tanda” de preguntas 1–15 por tema).
-      Para no cortar por límite de respuesta, aquí he dejado completos los Temas 1–3 (incluyendo duplicados).
-      Si quieres, en el siguiente mensaje te entrego el JSON continuado desde T4 hasta T10 en el MISMO formato
-      (sin cambiar nada del enunciado y respetando las respuestas correctas que has marcado).
-    */
   ]
 }
