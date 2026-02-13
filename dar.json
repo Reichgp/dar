@@ -1,0 +1,2736 @@
+{
+  "settings": {
+    "show_progress": true,
+    "shuffle_options": false,
+    "show_explanation": true,
+    "shuffle_questions": false
+  },
+  "questions": [
+  {
+    "id": "q1",
+    "type": "single_choice",
+    "question": "¿De qué estándar surge el lenguaje HTML?",
+    "options": [
+      "XML, como una versión simplificada para la web.",
+      "SGML, como estándar general de marcado.",
+      "Markdown, como lenguaje ligero de marcado.",
+      "La especificación ECMAScript del W3C."
+    ],
+    "correct_answer": "SGML, como estándar general de marcado.",
+    "meta": {
+      "tema": "Tema 1: Lenguaje de marcado HTML5",
+      "correct_letter": "B",
+      "explicacion": "El lenguaje HTML surge de las reglas estándares SGML (Standard Generalized Markup Language), que es el estándar padre de los lenguajes de marcado con intención declarativa [1]."
+    }
+  },
+  {
+    "id": "q2",
+    "type": "single_choice",
+    "question": "Un documento HTML:",
+    "options": [
+      "Se limita a etiquetas HTML y no admite integración con otros lenguajes.",
+      "Solo puede incluir JavaScript, pero no CSS.",
+      "Combina HTML con otros lenguajes.",
+      "Es un documento de texto plano sin estructura."
+    ],
+    "correct_answer": "Combina HTML con otros lenguajes.",
+    "meta": {
+      "tema": "Tema 1: Lenguaje de marcado HTML5",
+      "correct_letter": "C",
+      "explicacion": "Un documento web moderno es una combinación de etiquetas de marcado (HTML), lógica de programación (JavaScript) y hojas de estilo (CSS) para definir su apariencia [2]."
+    }
+  },
+  {
+    "id": "q7",
+    "type": "single_choice",
+    "question": "Las etiquetas semánticas de HTML5 buscan:",
+    "options": [
+      "Eliminar el uso de JavaScript en la web.",
+      "Sustituir la necesidad de usar <div> para identificar cada bloque.",
+      "Convertir HTML en un lenguaje de programación completo.",
+      "Obligar a usar tablas para el diseño."
+    ],
+    "correct_answer": "Sustituir la necesidad de usar <div> para identificar cada bloque.",
+    "meta": {
+      "tema": "Tema 1: Lenguaje de marcado HTML5",
+      "correct_letter": "B",
+      "explicacion": "HTML5 introduce etiquetas como <header>, <nav> o <article> para dar significado real a la estructura, evitando el abuso de etiquetas <div> carentes de semántica para el navegador [3, 4]."
+    }
+  },
+  {
+    "id": "q16",
+    "type": "single_choice",
+    "question": "HTML y CSS se centran respectivamente en:",
+    "options": [
+      "Presentación y lógica de negocio.",
+      "Estructura y presentación.",
+      "Acceso a datos y seguridad.",
+      "Compilación y ejecución."
+    ],
+    "correct_answer": "Estructura y presentación.",
+    "meta": {
+      "tema": "Tema 2: Introducción a hojas de estilo CSS",
+      "correct_letter": "B",
+      "explicacion": "La filosofía del desarrollo web moderno dicta que el HTML debe encargarse exclusivamente de la estructura del contenido, mientras que el CSS se ocupa de la presentación visual [5, 6]."
+    }
+  },
+  {
+    "id": "q32",
+    "type": "single_choice",
+    "question": "AJAX significa:",
+    "options": [
+      "Advanced JSON and XForms.",
+      "Asynchronous JavaScript and XML.",
+      "Automatic Java and XHTML.",
+      "Assembled JavaScript and XHTML."
+    ],
+    "correct_answer": "Asynchronous JavaScript and XML.",
+    "meta": {
+      "tema": "Tema 3: JavaScript",
+      "correct_letter": "B",
+      "explicacion": "Es el acrónimo de Asynchronous JavaScript and XML, una técnica que combina tecnologías para permitir que la web cargue datos en segundo plano sin recargar la página completa [7, 8]."
+    }
+  },
+  {
+    "id": "q47",
+    "type": "single_choice",
+    "question": "Estados de creación de un componente:",
+    "options": [
+      "Diseño, compilación, ejecución y depuración.",
+      "Construcción, despliegue, borrado y reinicio.",
+      "Análisis, prueba, mantenimiento y retirada.",
+      "Especificación, implementación, objeto y contratos."
+    ],
+    "correct_answer": "Especificación, implementación, objeto y contratos.",
+    "meta": {
+      "tema": "Tema 4: Programación orientada a componentes",
+      "correct_letter": "D",
+      "explicacion": "El ciclo de vida de un componente requiere pasar por su definición abstracta (especificación), su desarrollo (implementación), su registro como entidad instalada (objeto) y los acuerdos de uso (contratos) [9, 10]."
+    }
+  },
+  {
+    "id": "q94",
+    "type": "single_choice",
+    "question": "El controlador en MVC actúa como:",
+    "options": [
+      "Enlace entre el modelo y la vista ante eventos de usuario.",
+      "Motor de base de datos relacional.",
+      "Sustituto de la vista para mostrar HTML.",
+      "Sistema de archivos para recursos estáticos."
+    ],
+    "correct_answer": "Enlace entre el modelo y la vista ante eventos de usuario.",
+    "meta": {
+      "tema": "Tema 7: Modelo Vista Controlador",
+      "correct_letter": "A",
+      "explicacion": "En el patrón MVC, el controlador es la capa de lógica de negocio que recibe las peticiones del usuario y coordina la respuesta enviando datos del Modelo a la Vista [11, 12]."
+    }
+  },
+  {
+    "id": "q110",
+    "type": "single_choice",
+    "question": "La tecnología Grid ha de ser:",
+    "options": [
+      "Dependiente de un único proveedor.",
+      "Local, monolítica y rígida.",
+      "Exclusiva para superordenadores idénticos.",
+      "Dependiente, Consistente, Penetrante y Económica."
+    ],
+    "correct_answer": "Dependiente, Consistente, Penetrante y Económica.",
+    "meta": {
+      "tema": "Tema 8: Tecnologías Grid de la información",
+      "correct_letter": "D",
+      "explicacion": "CORRECCIÓN: El manual oficial define las cuatro características de un Grid como: Estable y segura (Dependiente), basada en estándares (Consistente), con comunicación de resultados (Penetrante) y rentable frente a mainframes (Económica) [13, 14]."
+    }
+  },
+  {
+    "id": "q137",
+    "type": "single_choice",
+    "question": "Diferencia principal entre HTTP y HTTPS:",
+    "options": [
+      "La seguridad.",
+      "La sintaxis del HTML.",
+      "La capacidad de ejecutar JavaScript.",
+      "El uso de CSS3 obligatorio."
+    ],
+    "correct_answer": "La seguridad.",
+    "meta": {
+      "tema": "Tema 10: Protocolo HTTP",
+      "correct_letter": "A",
+      "explicacion": "La 'S' en HTTPS corresponde a 'Secure'. El protocolo utiliza capas de cifrado (SSL/TLS) para garantizar que la información no pueda ser interceptada por terceros [15, 16]."
+    }
+  },
+  {
+    "id": "q150",
+    "type": "single_choice",
+    "question": "¿Qué sistema de cifrado usa HTTPS?",
+    "options": [
+      "Solo cifrado simétrico.",
+      "Solo cifrado asimétrico.",
+      "Una combinación de clave asimétrica (SSL) y simétrica (TLS).",
+      "No usa cifrado, solo hashing."
+    ],
+    "correct_answer": "Una combinación de clave asimétrica (SSL) y simétrica (TLS).",
+    "meta": {
+      "tema": "Tema 10: Protocolo HTTP",
+      "correct_letter": "C",
+      "explicacion": "HTTPS utiliza un sistema híbrido: usa la clave asimétrica para el intercambio inicial de claves y la clave simétrica para el cifrado de los datos durante la sesión por ser más rápida [17, 18]."
+    }
+  }
+]
+¿Deseas que proceda con el siguiente bloque de preguntas en este mismo formato?
+¿Puedes darme el resto de las preguntas en este formato?
+¿Qué temas específicos cubre el resto de la batería de preguntas?
+¿Cómo afecta la corrección de la pregunta 110 al estudio del Grid?
+perfecto est eformato, pero dame las 150 preguntas que has seleccionado, una a una, por orden, del 1 al 150 sin saltarte ninguna
+A continuación, presento la batería completa de las 150 preguntas únicas extraídas del documento fuente dar_todas.pdf, verificadas y corregidas según los manuales oficiales de la asignatura. He incorporado la Explicación técnica para cada una, asegurando que todas las respuestas coincidan con la teoría de los Temas 1 al 10.
+[
+  {
+    "id": "q1",
+    "type": "single_choice",
+    "question": "¿De qué estándar surge el lenguaje HTML?",
+    "options": [
+      "XML, como una versión simplificada para la web.",
+      "SGML, como estándar general de marcado.",
+      "Markdown, como lenguaje ligero de marcado.",
+      "La especificación ECMAScript del W3C."
+    ],
+    "correct_answer": "SGML, como estándar general de marcado.",
+    "meta": {
+      "tema": "Tema 1: Lenguaje de marcado HTML5",
+      "correct_letter": "B",
+      "explicacion": "El lenguaje HTML se deriva de las reglas del SGML (Standard Generalized Markup Language), que es el estándar padre de los lenguajes de marcado con intención declarativa [1, 2]."
+    }
+  },
+  {
+    "id": "q2",
+    "type": "single_choice",
+    "question": "Un documento HTML:",
+    "options": [
+      "Se limita a etiquetas HTML y no admite integración con otros lenguajes.",
+      "Solo puede incluir JavaScript, pero no CSS.",
+      "Combina HTML con otros lenguajes.",
+      "Es un documento de texto plano sin estructura."
+    ],
+    "correct_answer": "Combina HTML con otros lenguajes.",
+    "meta": {
+      "tema": "Tema 1: Lenguaje de marcado HTML5",
+      "correct_letter": "C",
+      "explicacion": "Un documento web moderno es una combinación de etiquetas de marcado (HTML), lógica de programación (JavaScript) y hojas de estilo (CSS) para definir su apariencia [1, 12]."
+    }
+  },
+  {
+    "id": "q3",
+    "type": "single_choice",
+    "question": "Mejoras de HTML5 respecto a HTML:",
+    "options": [
+      "Incorpora tag para definir diálogos y conversaciones.",
+      "Elimina por completo los formularios, sustituyéndolos por JSON.",
+      "Impide el uso de multimedia sin plugins externos.",
+      "Sustituye CSS por atributos de estilo obligatorios."
+    ],
+    "correct_answer": "Incorpora tag para definir diálogos y conversaciones.",
+    "meta": {
+      "tema": "Tema 1: Lenguaje de marcado HTML5",
+      "correct_letter": "A",
+      "explicacion": "HTML5 introduce nuevas etiquetas semánticas para mejorar la estructura del contenido, incluyendo aquellas para definir diálogos y conversaciones entre personas [13, 14]."
+    }
+  },
+  {
+    "id": "q4",
+    "type": "single_choice",
+    "question": "La etiqueta <img> sirve para:",
+    "options": [
+      "Crear un contenedor para imágenes como si fuera un <div>.",
+      "Insertar una imagen.",
+      "Insertar un vídeo en formato MP4.",
+      "Definir un mapa del sitio para buscadores."
+    ],
+    "correct_answer": "Insertar una imagen.",
+    "meta": {
+      "tema": "Tema 1: Lenguaje de marcado HTML5",
+      "correct_letter": "B",
+      "explicacion": "La función básica y específica de la etiqueta <img> es permitir la inserción de recursos gráficos en el documento [14, 15]."
+    }
+  },
+  {
+    "id": "q5",
+    "type": "single_choice",
+    "question": "En un formulario HTML, el campo action:",
+    "options": [
+      "Define el método de envío (GET o POST).",
+      "Indica la página a la que se envían los datos.",
+      "Indica el tipo MIME del formulario.",
+      "Bloquea el envío hasta validar con CSS."
+    ],
+    "correct_answer": "Indica la página a la que se envían los datos.",
+    "meta": {
+      "tema": "Tema 1: Lenguaje de marcado HTML5",
+      "correct_letter": "B",
+      "explicacion": "El atributo 'action' especifica la URL del destino o script de servidor al que se remitirá la información recolectada para su procesamiento [16, 17]."
+    }
+  },
+  {
+    "id": "q6",
+    "type": "single_choice",
+    "question": "La etiqueta <head> permite:",
+    "options": [
+      "Insertar el contenido visible principal de la página.",
+      "Introducir metadatos sobre el documento.",
+      "Incluir únicamente enlaces de navegación.",
+      "Definir el pie de página del documento."
+    ],
+    "correct_answer": "Introducir metadatos sobre el documento.",
+    "meta": {
+      "tema": "Tema 1: Lenguaje de marcado HTML5",
+      "correct_letter": "B",
+      "explicacion": "La sección <head> contiene información no visible directamente, como el título y los metadatos que ayudan a los navegadores y buscadores a interpretar la página [17, 18]."
+    }
+  },
+  {
+    "id": "q7",
+    "type": "single_choice",
+    "question": "Las etiquetas semánticas de HTML5 buscan:",
+    "options": [
+      "Eliminar el uso de JavaScript en la web.",
+      "Sustituir la necesidad de usar <div> para identificar cada bloque.",
+      "Convertir HTML en un lenguaje de programación completo.",
+      "Obligar a usar tablas para el diseño."
+    ],
+    "correct_answer": "Sustituir la necesidad de usar <div> para identificar cada bloque.",
+    "meta": {
+      "tema": "Tema 1: Lenguaje de marcado HTML5",
+      "correct_letter": "B",
+      "explicacion": "HTML5 introduce etiquetas como <header>, <nav> o <article> para dar significado real a la estructura, evitando el abuso de etiquetas <div> carentes de semántica [19, 20]."
+    }
+  },
+  {
+    "id": "q8",
+    "type": "single_choice",
+    "question": "Para representar contenido en un párrafo se usa:",
+    "options": [
+      "<p>.",
+      "<span>.",
+      "<br>.",
+      "<h1>."
+    ],
+    "correct_answer": "<p>.",
+    "meta": {
+      "tema": "Tema 1: Lenguaje de marcado HTML5",
+      "correct_letter": "A",
+      "explicacion": "La etiqueta <p> es el elemento estándar para delimitar un bloque de texto como párrafo, insertando un espacio vertical automático al finalizar [20, 21]."
+    }
+  },
+  {
+    "id": "q9",
+    "type": "single_choice",
+    "question": "¿Qué etiqueta define una lista no ordenada?",
+    "options": [
+      "<ol>.",
+      "<ul>.",
+      "<li>.",
+      "<dl>."
+    ],
+    "correct_answer": "<ul>.",
+    "meta": {
+      "tema": "Tema 1: Lenguaje de marcado HTML5",
+      "correct_letter": "B",
+      "explicacion": "Las siglas <ul> corresponden a 'Unordered List', utilizada para listados donde el orden no es relevante (viñetas), a diferencia de <ol> que es para listas numeradas [20, 22]."
+    }
+  },
+  {
+    "id": "q10",
+    "type": "single_choice",
+    "question": "Los lenguajes de marcado se centran en:",
+    "options": [
+      "La compilación del código a binario.",
+      "La estructuración del contenido.",
+      "El acceso directo a memoria y punteros.",
+      "El control de procesos del sistema operativo."
+    ],
+    "correct_answer": "La estructuración del contenido.",
+    "meta": {
+      "tema": "Tema 1: Lenguaje de marcado HTML5",
+      "correct_letter": "B",
+      "explicacion": "A diferencia de los lenguajes de programación que ejecutan lógica, los de marcado tienen una intención declarativa enfocada en cómo se organiza la información [2, 23]."
+    }
+  },
+  {
+    "id": "q11",
+    "type": "single_choice",
+    "question": "XHTML se diferencia de HTML en que:",
+    "options": [
+      "Permite omitir siempre el cierre de etiquetas.",
+      "No sigue ninguna regla de sintaxis estricta.",
+      "No posee un conjunto de etiquetas predefinido.",
+      "Es un lenguaje de hojas de estilo."
+    ],
+    "correct_answer": "No posee un conjunto de etiquetas predefinido.",
+    "meta": {
+      "tema": "Tema 1: Lenguaje de marcado HTML5",
+      "correct_letter": "C",
+      "explicacion": "XHTML es una variante basada en XML que requiere una sintaxis mucho más estricta y no tiene un conjunto de etiquetas predefinido de la misma forma que el estándar HTML tradicional [2, 23]."
+    }
+  },
+  {
+    "id": "q12",
+    "type": "single_choice",
+    "question": "¿Es obligatorio cerrar las etiquetas en HTML5?",
+    "options": [
+      "No, nunca se cierran etiquetas en HTML5.",
+      "Solo se cierran etiquetas si llevan atributos.",
+      "Sí, para mantener la intención declarativa y el rigor estructural.",
+      "Solo se cierran en documentos JSON-LD."
+    ],
+    "correct_answer": "Sí, para mantener la intención declarativa y el rigor estructural.",
+    "meta": {
+      "tema": "Tema 1: Lenguaje de marcado HTML5",
+      "correct_letter": "C",
+      "explicacion": "Aunque algunos navegadores son permisivos, el estándar HTML5 promueve el cierre de etiquetas para garantizar que la estructura del documento sea consistente y válida [24, 25]."
+    }
+  },
+  {
+    "id": "q13",
+    "type": "single_choice",
+    "question": "¿Qué elemento de HTML5 se usa para dibujos y gráficos?",
+    "options": [
+      "<svg>.",
+      "<img>.",
+      "<canvas>.",
+      "<style>."
+    ],
+    "correct_answer": "<canvas>.",
+    "meta": {
+      "tema": "Tema 1: Lenguaje de marcado HTML5",
+      "correct_letter": "C",
+      "explicacion": "La etiqueta <canvas> proporciona un espacio en la web donde se pueden generar gráficos dinámicos y animaciones mediante scripts, generalmente JavaScript [25, 26]."
+    }
+  },
+  {
+    "id": "q14",
+    "type": "single_choice",
+    "question": "El atributo method en formularios suele aceptar:",
+    "options": [
+      "PUT y DELETE.",
+      "FTP y SMTP.",
+      "GET y POST.",
+      "TCP y UDP."
+    ],
+    "correct_answer": "GET y POST.",
+    "meta": {
+      "tema": "Tema 1: Lenguaje de marcado HTML5",
+      "correct_letter": "C",
+      "explicacion": "En el protocolo HTTP, los métodos estándar para el envío de datos desde un formulario son GET (datos en la URL) y POST (datos en el cuerpo del mensaje) [25, 27]."
+    }
+  },
+  {
+    "id": "q15",
+    "type": "single_choice",
+    "question": "¿Qué etiqueta de HTML5 define un bloque de contenido independiente (como un post)?",
+    "options": [
+      "<section>.",
+      "<div>.",
+      "<article>.",
+      "<aside>."
+    ],
+    "correct_answer": "<article>.",
+    "meta": {
+      "tema": "Tema 1: Lenguaje de marcado HTML5",
+      "correct_letter": "C",
+      "explicacion": "La etiqueta <article> está diseñada específicamente para agrupar contenido que tiene sentido por sí mismo y podría ser distribuido de forma independiente, como noticias o posts [28, 29]."
+    }
+  },
+  {
+    "id": "q16",
+    "type": "single_choice",
+    "question": "HTML y CSS se centran respectivamente en:",
+    "options": [
+      "Presentación y lógica de negocio.",
+      "Estructura y presentación.",
+      "Acceso a datos y seguridad.",
+      "Compilación y ejecución."
+    ],
+    "correct_answer": "Estructura y presentación.",
+    "meta": {
+      "tema": "Tema 2: Introducción a hojas de estilo CSS",
+      "correct_letter": "B",
+      "explicacion": "El objetivo fundamental del desarrollo web moderno es separar el código: HTML define qué elementos hay (estructura) y CSS define cómo se ven (presentación) [29, 30]."
+    }
+  },
+  {
+    "id": "q17",
+    "type": "single_choice",
+    "question": "CSS3 agrega funcionalidades como:",
+    "options": [
+      "Gestión de sesiones y cookies.",
+      "Control de procesos en segundo plano.",
+      "Rotación, múltiples fondos y redondeo de bordes.",
+      "Compilación a bytecode."
+    ],
+    "correct_answer": "Rotación, múltiples fondos y redondeo de bordes.",
+    "meta": {
+      "tema": "Tema 2: Introducción a hojas de estilo CSS",
+      "correct_letter": "C",
+      "explicacion": "CSS3 mejora significativamente las capacidades visuales permitiendo aplicar sombras, redondeo de esquinas (border-radius) y transformaciones como rotaciones sin necesidad de imágenes externas [29, 31]."
+    }
+  },
+  {
+    "id": "q18",
+    "type": "single_choice",
+    "question": "¿Qué código HTML5 enlaza una hoja de estilo externa?",
+    "options": [
+      "<style src='estilo.css'></style>",
+      "<css link='estilo.css'>",
+      "<link rel='stylesheet' href='estilo.css'>",
+      "<script rel='stylesheet' href='estilo.css'></script>"
+    ],
+    "correct_answer": "<link rel='stylesheet' href='estilo.css'>",
+    "meta": {
+      "tema": "Tema 2: Introducción a hojas de estilo CSS",
+      "correct_letter": "C",
+      "explicacion": "Para vincular un archivo .css externo se utiliza la etiqueta <link> dentro del <head>, especificando que la relación es una hoja de estilos ('stylesheet') [32, 33]."
+    }
+  },
+  {
+    "id": "q19",
+    "type": "single_choice",
+    "question": "Ventaja del enlace externo en CSS:",
+    "options": [
+      "Impide que el navegador use caché.",
+      "Permite cambios globales afectando a todas las páginas vinculadas.",
+      "Obliga a escribir los estilos dentro del HTML.",
+      "Solo funciona en HTML5, no en HTML4."
+    ],
+    "correct_answer": "Permite cambios globales afectando a todas las páginas vinculadas.",
+    "meta": {
+      "tema": "Tema 2: Introducción a hojas de estilo CSS",
+      "correct_letter": "B",
+      "explicacion": "Al tener los estilos en un archivo separado, cualquier cambio realizado en ese único fichero se refleja instantáneamente en todo el sitio web, optimizando el mantenimiento [30, 33]."
+    }
+  },
+  {
+    "id": "q20",
+    "type": "single_choice",
+    "question": "Los selectores CSS universales usan el símbolo:",
+    "options": [
+      "*.",
+      "#.",
+      ".",
+      "@"
+    ],
+    "correct_answer": "*.",
+    "meta": {
+      "tema": "Tema 2: Introducción a hojas de estilo CSS",
+      "correct_letter": "A",
+      "explicacion": "El asterisco '*' actúa como selector universal en CSS, lo que significa que las propiedades definidas bajo este selector afectarán a todas las etiquetas del documento [34, 35]."
+    }
+  },
+  {
+    "id": "q21",
+    "type": "single_choice",
+    "question": "Un identificador (id) en CSS:",
+    "options": [
+      "Puede repetirse infinitas veces en la misma página.",
+      "No puede repetirse en el mismo documento.",
+      "Solo puede aplicarse a etiquetas <div>.",
+      "Sustituye a las clases en CSS3."
+    ],
+    "correct_answer": "No puede repetirse en el mismo documento.",
+    "meta": {
+      "tema": "Tema 2: Introducción a hojas de estilo CSS",
+      "correct_letter": "B",
+      "explicacion": "A diferencia de las clases, el atributo 'id' debe ser único dentro de cada página HTML para identificar de forma inequívoca a un solo elemento [35, 36]."
+    }
+  },
+  {
+    "id": "q22",
+    "type": "single_choice",
+    "question": "Las clases (class) en CSS:",
+    "options": [
+      "Solo pueden usarse una vez por documento.",
+      "Se aplican automáticamente sin declararlas en HTML.",
+      "Pueden usarse en múltiples etiquetas.",
+      "Son exclusivas del <head>."
+    ],
+    "correct_answer": "Pueden usarse en múltiples etiquetas.",
+    "meta": {
+      "tema": "Tema 2: Introducción a hojas de estilo CSS",
+      "correct_letter": "C",
+      "explicacion": "Las clases permiten agrupar varios elementos bajo un mismo estilo visual, pudiendo repetirse el atributo 'class' en tantas etiquetas como sea necesario [35, 36]."
+    }
+  },
+  {
+    "id": "q23",
+    "type": "single_choice",
+    "question": "CSS3 introduce el canal alfa para:",
+    "options": [
+      "Definir el tamaño de fuente.",
+      "La transparencia.",
+      "Mejorar la velocidad del servidor.",
+      "Establecer el orden de carga del HTML."
+    ],
+    "correct_answer": "La transparencia.",
+    "meta": {
+      "tema": "Tema 2: Introducción a hojas de estilo CSS",
+      "correct_letter": "B",
+      "explicacion": "El canal alfa (parámetro 'a' en RGBA o HSLA) permite definir el grado de opacidad de un color, habilitando efectos de transparencia en los elementos [37, 38]."
+    }
+  },
+  {
+    "id": "q24",
+    "type": "single_choice",
+    "question": "Las pseudo-clases permiten:",
+    "options": [
+      "Cambiar el HTML del servidor.",
+      "Definir nuevos elementos HTML dinámicos.",
+      "Clasificar elementos según su estado (ej. hover).",
+      "Convertir CSS en un lenguaje de programación."
+    ],
+    "correct_answer": "Clasificar elementos según su estado (ej. hover).",
+    "meta": {
+      "tema": "Tema 2: Introducción a hojas de estilo CSS",
+      "correct_letter": "C",
+      "explicacion": "Las pseudo-clases se utilizan para aplicar estilos a elementos basándose en acciones del usuario o estados, como cuando el ratón pasa por encima de un enlace (:hover) [38, 39]."
+    }
+  },
+  {
+    "id": "q25",
+    "type": "single_choice",
+    "question": "¿Qué propiedad de CSS3 genera bordes redondeados?",
+    "options": [
+      "border-style.",
+      "border-radius.",
+      "outline.",
+      "padding."
+    ],
+    "correct_answer": "border-radius.",
+    "meta": {
+      "tema": "Tema 2: Introducción a hojas de estilo CSS",
+      "correct_letter": "B",
+      "explicacion": "La propiedad 'border-radius' permite definir el radio de las esquinas de un elemento para que luzcan redondeadas, una de las mejoras estéticas clave de CSS3 [38, 40]."
+    }
+  },
+  {
+    "id": "q26",
+    "type": "single_choice",
+    "question": "text-shadow en CSS3 sirve para:",
+    "options": [
+      "Cambiar el tipo de letra por una fuente externa.",
+      "Ajustar el interlineado del texto.",
+      "Sombrear textos.",
+      "Crear bordes redondeados en el texto."
+    ],
+    "correct_answer": "Sombrear textos.",
+    "meta": {
+      "tema": "Tema 2: Introducción a hojas de estilo CSS",
+      "correct_letter": "C",
+      "explicacion": "Esta propiedad permite añadir una o varias sombras al texto de un elemento, especificando su desplazamiento, difuminado y color [41, 42]."
+    }
+  },
+  {
+    "id": "q27",
+    "type": "single_choice",
+    "question": "¿Qué es un gradiente en CSS3?",
+    "options": [
+      "Un tipo de fuente especial para títulos.",
+      "Un script que genera colores aleatorios.",
+      "Una transición entre al menos dos colores.",
+      "Un borde que se dibuja con puntos."
+    ],
+    "correct_answer": "Una transición entre al menos dos colores.",
+    "meta": {
+      "tema": "Tema 2: Introducción a hojas de estilo CSS",
+      "correct_letter": "C",
+      "explicacion": "Los gradientes son rellenos que muestran una transición suave entre diferentes colores, pudiendo ser lineales o radiales [40, 42]."
+    }
+  },
+  {
+    "id": "q28",
+    "type": "single_choice",
+    "question": "Las transformaciones en CSS3 permiten:",
+    "options": [
+      "Ejecutar lógica condicional en el navegador.",
+      "Realizar cambios geométricos a los elementos.",
+      "Modificar la estructura del DOM en tiempo real.",
+      "Sustituir imágenes por texto automáticamente."
+    ],
+    "correct_answer": "Realizar cambios geométricos a los elementos.",
+    "meta": {
+      "tema": "Tema 2: Introducción a hojas de estilo CSS",
+      "correct_letter": "B",
+      "explicacion": "Las transformaciones permiten modificar la geometría de los elementos mediante rotaciones, escalados, inclinaciones o traslaciones en el espacio 2D o 3D [40, 42]."
+    }
+  },
+  {
+    "id": "q29",
+    "type": "single_choice",
+    "question": "¿Se recomienda incluir estilos dentro de la etiqueta HTML?",
+    "options": [
+      "Sí, porque mejora la reutilización.",
+      "Sí, porque aumenta la velocidad del servidor.",
+      "No, se prefiere la separación total de contenido y estilo.",
+      "Solo si se usa Bootstrap."
+    ],
+    "correct_answer": "No, se prefiere la separación total de contenido y estilo.",
+    "meta": {
+      "tema": "Tema 2: Introducción a hojas de estilo CSS",
+      "correct_letter": "C",
+      "explicacion": "La buena práctica dicta que el estilo debe estar separado en archivos externos (.css) para facilitar la escalabilidad y limpieza del código [30, 43]."
+    }
+  },
+  {
+    "id": "q30",
+    "type": "single_choice",
+    "question": "¿Qué selector se usa para un elemento con un ID específico?",
+    "options": [
+      "El símbolo .",
+      "El símbolo *",
+      "El símbolo #",
+      "El símbolo @"
+    ],
+    "correct_answer": "El símbolo #",
+    "meta": {
+      "tema": "Tema 2: Introducción a hojas de estilo CSS",
+      "correct_letter": "C",
+      "explicacion": "En CSS, para seleccionar un elemento por su identificador único se antepone el símbolo de almohadilla (#) al nombre del ID [36, 43]."
+    }
+  },
+  {
+    "id": "q31",
+    "type": "single_choice",
+    "question": "El lenguaje JavaScript normalmente se ejecuta en:",
+    "options": [
+      "El cliente.",
+      "El servidor exclusivamente.",
+      "El router de red.",
+      "El compilador del sistema operativo."
+    ],
+    "correct_answer": "El cliente.",
+    "meta": {
+      "tema": "Tema 3: Lenguaje script de navegador JavaScript",
+      "correct_letter": "A",
+      "explicacion": "JavaScript es un lenguaje de programación que se procesa en el navegador del usuario (lado del cliente) para proporcionar interactividad sin consultar constantemente al servidor [43, 44]."
+    }
+  },
+  {
+    "id": "q32",
+    "type": "single_choice",
+    "question": "AJAX significa:",
+    "options": [
+      "Advanced JSON and XForms.",
+      "Asynchronous JavaScript and XML (o eXtensions en algunos textos).",
+      "Automatic Java and XHTML.",
+      "Assembled JavaScript and XHTML."
+    ],
+    "correct_answer": "Asynchronous JavaScript and XML (o eXtensions en algunos textos).",
+    "meta": {
+      "tema": "Tema 3: Lenguaje script de navegador JavaScript",
+      "correct_letter": "B",
+      "explicacion": "Es el acrónimo de Asynchronous JavaScript and XML, una técnica que combina varias tecnologías para permitir el asincronismo en la web [45, 46]."
+    }
+  },
+  {
+    "id": "q33",
+    "type": "single_choice",
+    "question": "¿Qué problema resuelve AJAX?",
+    "options": [
+      "Permite compilar JavaScript a C++ automáticamente.",
+      "Permite recargar áreas de la web sin recargar la página completa.",
+      "Sustituye HTTP por FTP en comunicaciones web.",
+      "Elimina la necesidad de usar CSS."
+    ],
+    "correct_answer": "Permite recargar áreas de la web sin recargar la página completa.",
+    "meta": {
+      "tema": "Tema 3: Lenguaje script de navegador JavaScript",
+      "correct_letter": "B",
+      "explicacion": "AJAX permite cargar datos en segundo plano y actualizar partes específicas de la interfaz de usuario, optimizando el tráfico y mejorando la fluidez de navegación [45, 46]."
+    }
+  },
+  {
+    "id": "q34",
+    "type": "single_choice",
+    "question": "La sintaxis de JQuery se basa en:",
+    "options": [
+      "El objeto jQuery() o $().",
+      "El objeto document.queryCss().",
+      "El objeto window.ajax().",
+      "El objeto style.selector()."
+    ],
+    "correct_answer": "El objeto jQuery() o $().",
+    "meta": {
+      "tema": "Tema 3: Lenguaje script de navegador JavaScript",
+      "correct_letter": "A",
+      "explicacion": "JQuery simplifica el desarrollo mediante el uso de este objeto global, al cual se le pasan selectores para manipular elementos del DOM de forma ágil [47, 48]."
+    }
+  },
+  {
+    "id": "q35",
+    "type": "single_choice",
+    "question": "¿Qué aporta JQuery a la UX?",
+    "options": [
+      "Sustituye HTML por un lenguaje binario.",
+      "Evita el uso del DOM en el navegador.",
+      "Interactividad como barras de menú, pestañas y búsquedas.",
+      "Obliga a recargar la página para cada acción."
+    ],
+    "correct_answer": "Interactividad como barras de menú, pestañas y búsquedas.",
+    "meta": {
+      "tema": "Tema 3: Lenguaje script de navegador JavaScript",
+      "correct_letter": "C",
+      "explicacion": "Gracias a su capacidad para manejar eventos y animaciones, JQuery permite crear interfaces mucho más ricas y dinámicas que mejoran la experiencia del usuario (UX) [48, 49]."
+    }
+  },
+  {
+    "id": "q36",
+    "type": "single_choice",
+    "question": "Pasos para activar AJAX:",
+    "options": [
+      "Llamada a JS, petición asíncrona, recuperación de datos, modificación de la página.",
+      "Cargar CSS, compilar HTML, reiniciar servidor, mostrar resultados.",
+      "Guardar cookies, cerrar sesión, reiniciar navegador, volver a entrar.",
+      "Definir tablas, migrar base de datos, lanzar servidor FTP, renderizar."
+    ],
+    "correct_answer": "Llamada a JS, petición asíncrona, recuperación de datos, modificación de la página.",
+    "meta": {
+      "tema": "Tema 3: Lenguaje script de navegador JavaScript",
+      "correct_letter": "A",
+      "explicacion": "El flujo de AJAX implica iniciar una llamada de script, realizar la petición al servidor sin bloquear la página, obtener la respuesta y actualizar el contenido visualmente [48, 50]."
+    }
+  },
+  {
+    "id": "q37",
+    "type": "single_choice",
+    "question": "El DOM es:",
+    "options": [
+      "Un lenguaje de programación para servidores.",
+      "Un sistema de bases de datos del navegador.",
+      "Una estructura arbórea que crea el navegador al cargar la web.",
+      "Un protocolo de red para intercambiar archivos."
+    ],
+    "correct_answer": "Una estructura arbórea que crea el navegador al cargar la web.",
+    "meta": {
+      "tema": "Tema 3: Lenguaje script de navegador JavaScript",
+      "correct_letter": "C",
+      "explicacion": "El Document Object Model (DOM) es la representación jerárquica de todos los elementos de la página, la cual JavaScript utiliza para acceder y modificar el contenido dinámicamente [40, 51]."
+    }
+  },
+  {
+    "id": "q38",
+    "type": "single_choice",
+    "question": "JavaScript es un lenguaje:",
+    "options": [
+      "Compilado a código máquina antes de ejecutarse.",
+      "Exclusivo para bases de datos relacionales.",
+      "De scripting e interpretado.",
+      "Diseñado para sustituir HTML."
+    ],
+    "correct_answer": "De scripting e interpretado.",
+    "meta": {
+      "tema": "Tema 3: Lenguaje script de navegador JavaScript",
+      "correct_letter": "C",
+      "explicacion": "JavaScript se clasifica como un lenguaje de scripting porque su código es interpretado directamente por el navegador en tiempo de ejecución, en lugar de requerir una compilación previa a binario [51, 52]."
+    }
+  },
+  {
+    "id": "q39",
+    "type": "single_choice",
+    "question": "El objeto XMLHttpRequest es fundamental para:",
+    "options": [
+      "Definir estilos CSS dinámicos.",
+      "AJAX.",
+      "Sustituir el servidor por el cliente.",
+      "Ejecutar Java dentro del navegador."
+    ],
+    "correct_answer": "AJAX.",
+    "meta": {
+      "tema": "Tema 3: Lenguaje script de navegador JavaScript",
+      "correct_letter": "B",
+      "explicacion": "Este objeto es la pieza central de AJAX, ya que proporciona la funcionalidad necesaria para realizar peticiones HTTP de forma asíncrona al servidor desde el navegador [53, 54]."
+    }
+  },
+  {
+    "id": "q40",
+    "type": "single_choice",
+    "question": "JQuery utiliza selectores basados en:",
+    "options": [
+      "XPath.",
+      "CSS.",
+      "SQL.",
+      "FTP."
+    ],
+    "correct_answer": "CSS.",
+    "meta": {
+      "tema": "Tema 3: Lenguaje script de navegador JavaScript",
+      "correct_letter": "B",
+      "explicacion": "Una de las grandes ventajas de JQuery es que permite a los desarrolladores utilizar la misma sintaxis de selectores de CSS para encontrar y manipular elementos en el código JavaScript [54, 55]."
+    }
+  },
+  {
+    "id": "q41",
+    "type": "single_choice",
+    "question": "¿Qué etiqueta avisa si JavaScript está bloqueado?",
+    "options": [
+      "<nojs>",
+      "<noscript>",
+      "<script-blocked>",
+      "<js-off>"
+    ],
+    "correct_answer": "<noscript>",
+    "meta": {
+      "tema": "Tema 3: Lenguaje script de navegador JavaScript",
+      "correct_letter": "B",
+      "explicacion": "La etiqueta <noscript> se utiliza para mostrar contenido alternativo o mensajes de advertencia a aquellos usuarios que tienen deshabilitada la ejecución de scripts en sus navegadores [54]."
+    }
+  },
+  {
+    "id": "q42",
+    "type": "single_choice",
+    "question": "En JQuery, el argumento de $( ) es un:",
+    "options": [
+      "Compilador.",
+      "Motor de renderizado.",
+      "Selector.",
+      "Tipo de dato binario."
+    ],
+    "correct_answer": "Selector.",
+    "meta": {
+      "tema": "Tema 3: Lenguaje script de navegador JavaScript",
+      "correct_letter": "C",
+      "explicacion": "El funcionamiento básico de JQuery consiste en pasar un 'selector' como argumento a su objeto principal para identificar qué partes del documento se desean afectar [47, 54]."
+    }
+  },
+  {
+    "id": "q43",
+    "type": "single_choice",
+    "question": "JavaScript es de tipado:",
+    "options": [
+      "Fuerte y estático.",
+      "Débil o no tipado.",
+      "Solo numérico.",
+      "Exclusivo de enteros."
+    ],
+    "correct_answer": "Débil o no tipado.",
+    "meta": {
+      "tema": "Tema 3: Lenguaje script de navegador JavaScript",
+      "correct_letter": "B",
+      "explicacion": "JavaScript es un lenguaje de tipado débil, lo que significa que no es necesario declarar el tipo de dato de una variable y este puede cambiar dinámicamente durante la ejecución [56]."
+    }
+  },
+  {
+    "id": "q44",
+    "type": "single_choice",
+    "question": "¿Qué permite dotar de dinamismo a una web estática?",
+    "options": [
+      "JavaScript.",
+      "HTML5.",
+      "CSS3.",
+      "SGML."
+    ],
+    "correct_answer": "JavaScript.",
+    "meta": {
+      "tema": "Tema 3: Lenguaje script de navegador JavaScript",
+      "correct_letter": "A",
+      "explicacion": "Mientras que HTML y CSS definen el contenido y su aspecto, JavaScript es el lenguaje que permite que la página responda a eventos y cambie su contenido sin recargar [56, 57]."
+    }
+  },
+  {
+    "id": "q45",
+    "type": "single_choice",
+    "question": "¿Se puede incluir JS dentro del archivo HTML?",
+    "options": [
+      "No, debe ir siempre en un archivo externo.",
+      "Sí, entre etiquetas <script>.",
+      "Solo si se usa XHTML estricto.",
+      "Solo dentro de <style>."
+    ],
+    "correct_answer": "Sí, entre etiquetas <script>.",
+    "meta": {
+      "tema": "Tema 3: Lenguaje script de navegador JavaScript",
+      "correct_letter": "B",
+      "explicacion": "Aunque se recomienda el uso de archivos externos por orden, JavaScript permite incluir código directamente en el documento HTML utilizando el bloque contenedor <script> [52, 56]."
+    }
+  },
+  {
+    "id": "q46",
+    "type": "single_choice",
+    "question": "Un componente es:",
+    "options": [
+      "Un único objeto sin interfaces.",
+      "Una colección de objetos que proporcionan servicios a diferentes sistemas.",
+      "Un archivo HTML con estilos embebidos.",
+      "Un script que solo se ejecuta en cliente."
+    ],
+    "correct_answer": "Una colección de objetos que proporcionan servicios a diferentes sistemas.",
+    "meta": {
+      "tema": "Tema 4: Concepto de la programación orientada a componentes",
+      "correct_letter": "B",
+      "explicacion": "En el paradigma de la POC, un componente se define como una unidad de software que encapsula funcionalidades y las expone para ser consumidas por otros sistemas [58, 59]."
+    }
+  },
+  {
+    "id": "q47",
+    "type": "single_choice",
+    "question": "Estados de creación de un componente:",
+    "options": [
+      "Diseño, compilación, ejecución y depuración.",
+      "Construcción, despliegue, borrado y reinicio.",
+      "Análisis, prueba, mantenimiento y retirada.",
+      "Especificación, implementación, objeto y contratos."
+    ],
+    "correct_answer": "Especificación, implementación, objeto y contratos.",
+    "meta": {
+      "tema": "Tema 4: Concepto de la programación orientada a componentes",
+      "correct_letter": "D",
+      "explicacion": "El ciclo de creación de un componente requiere pasar por su definición abstracta, desarrollo técnico, existencia en el sistema y acuerdos legales de uso de su interfaz [59, 60]."
+    }
+  },
+  {
+    "id": "q48",
+    "type": "single_choice",
+    "question": "Ventaja principal de la POC:",
+    "options": [
+      "Reutilización de código.",
+      "Sustituir completamente la POO.",
+      "Evitar el uso de interfaces.",
+      "Obligar a la herencia múltiple."
+    ],
+    "correct_answer": "Reutilización de código.",
+    "meta": {
+      "tema": "Tema 4: Concepto de la programación orientada a componentes",
+      "correct_letter": "A",
+      "explicacion": "La principal motivación de la programación por componentes es asegurar que el código sea modular y pueda ser reutilizado en múltiples proyectos sin cambios internos [61, 62]."
+    }
+  },
+  {
+    "id": "q49",
+    "type": "single_choice",
+    "question": "Diferencia entre objeto y componente:",
+    "options": [
+      "Un componente no puede reutilizarse.",
+      "Un objeto siempre se ejecuta en red y un componente no.",
+      "El componente es una entidad autónoma que exporta rendimiento y usa interfaces abiertas.",
+      "Un componente no tiene contratos ni interfaces."
+    ],
+    "correct_answer": "El componente es una entidad autónoma que exporta rendimiento y usa interfaces abiertas.",
+    "meta": {
+      "tema": "Tema 4: Concepto de la programación orientada a componentes",
+      "correct_letter": "C",
+      "explicacion": "A diferencia de un objeto simple de programación, el componente está diseñado para ser una pieza autónoma e independiente que se comunica mediante interfaces estandarizadas [62]."
+    }
+  },
+  {
+    "id": "q50",
+    "type": "single_choice",
+    "question": "Reutilización de 'caja negra' significa:",
+    "options": [
+      "No se conoce la implementación interna, solo su interfaz.",
+      "Se conoce todo el código fuente y se modifica libremente.",
+      "Se reutiliza copiando y pegando el código en cada proyecto.",
+      "Solo se reutilizan variables globales."
+    ],
+    "correct_answer": "No se conoce la implementación interna, solo su interfaz.",
+    "meta": {
+      "tema": "Tema 4: Concepto de la programación orientada a componentes",
+      "correct_letter": "A",
+      "explicacion": "Este concepto implica que el usuario del componente no necesita (ni puede) ver cómo está programado por dentro; simplemente confía en lo que la interfaz promete hacer [63, 64]."
+    }
+  },
+  {
+    "id": "q51",
+    "type": "single_choice",
+    "question": "La POC es una variante de:",
+    "options": [
+      "Programación estructurada.",
+      "Programación funcional.",
+      "La Programación Orientada a Objetos (POO).",
+      "Programación lógica."
+    ],
+    "correct_answer": "La Programación Orientada a Objetos (POO).",
+    "meta": {
+      "tema": "Tema 4: Concepto de la programación orientada a componentes",
+      "correct_letter": "C",
+      "explicacion": "La POC surge como una evolución de la POO, cambiando el enfoque de la jerarquía de clases y la herencia por el de la composición y los servicios independientes [55, 64]."
+    }
+  },
+  {
+    "id": "q52",
+    "type": "single_choice",
+    "question": "La interfaz de un componente es:",
+    "options": [
+      "Un archivo de configuración sin relación con el cliente.",
+      "El nexo de unión entre el cliente y la implementación.",
+      "Un conjunto de estilos CSS.",
+      "Un protocolo de red."
+    ],
+    "correct_answer": "El nexo de unión entre el cliente y la implementación.",
+    "meta": {
+      "tema": "Tema 4: Concepto de la programación orientada a componentes",
+      "correct_letter": "B",
+      "explicacion": "La interfaz define formalmente qué operaciones ofrece el componente y cómo debe ser invocado, actuando como el único punto de contacto para el desarrollador externo [65, 66]."
+    }
+  },
+  {
+    "id": "q53",
+    "type": "single_choice",
+    "question": "Componentes con estado:",
+    "options": [
+      "Aquellos que no guardan datos nunca.",
+      "Aquellos que solo tienen métodos estáticos.",
+      "Aquellos que almacenan datos de manera local (ej. un contador).",
+      "Aquellos que solo funcionan en bases de datos."
+    ],
+    "correct_answer": "Aquellos que almacenan datos de manera local (ej. un contador).",
+    "meta": {
+      "tema": "Tema 4: Concepto de la programación orientada a componentes",
+      "correct_letter": "C",
+      "explicacion": "Se dice que un componente tiene estado cuando es capaz de recordar información entre diferentes llamadas o interacciones durante su ejecución en el sistema [66, 67]."
+    }
+  },
+  {
+    "id": "q54",
+    "type": "single_choice",
+    "question": "¿Qué lenguaje permite la creación clara de componentes?",
+    "options": [
+      "Java y Ada95.",
+      "HTML y CSS.",
+      "SQL y XML.",
+      "Python y Bash."
+    ],
+    "correct_answer": "Java y Ada95.",
+    "meta": {
+      "tema": "Tema 4: Concepto de la programación orientada a componentes",
+      "correct_letter": "A",
+      "explicacion": "Java (con sus Beans) y Ada95 son ejemplos académicos clásicos de lenguajes diseñados con características que facilitan la encapsulación y creación de componentes modulares [67, 68]."
+    }
+  },
+  {
+    "id": "q55",
+    "type": "single_choice",
+    "question": "Un contrato de uso establece:",
+    "options": [
+      "La funcionalidad a través de su interfaz.",
+      "La estética visual del componente.",
+      "La velocidad de descarga de la web.",
+      "El tipo de navegador obligatorio."
+    ],
+    "correct_answer": "La funcionalidad a través de su interfaz.",
+    "meta": {
+      "tema": "Tema 4: Concepto de la programación orientada a componentes",
+      "correct_letter": "A",
+      "explicacion": "El contrato de uso es el acuerdo técnico que asegura que el componente cumplirá con las funciones descritas en su interfaz si se utiliza correctamente [68, 69]."
+    }
+  },
+  {
+    "id": "q56",
+    "type": "single_choice",
+    "question": "La POC utiliza principalmente:",
+    "options": [
+      "La herencia en lugar de la composición.",
+      "La recursividad como base del diseño.",
+      "La composición en lugar de la herencia.",
+      "El acoplamiento fuerte como objetivo."
+    ],
+    "correct_answer": "La composición en lugar de la herencia.",
+    "meta": {
+      "tema": "Tema 4: Concepto de la programación orientada a componentes",
+      "correct_letter": "C",
+      "explicacion": "A diferencia de la POO tradicional que abusa de la jerarquía (herencia), la POC prefiere construir sistemas complejos uniendo piezas independientes (composición) [68, 70]."
+    }
+  },
+  {
+    "id": "q57",
+    "type": "single_choice",
+    "question": "Los componentes pueden ejecutarse de forma:",
+    "options": [
+      "Solo local.",
+      "Local o distribuida.",
+      "Solo en cliente.",
+      "Solo en servidor."
+    ],
+    "correct_answer": "Local o distribuida.",
+    "meta": {
+      "tema": "Tema 4: Concepto de la programación orientada a componentes",
+      "correct_letter": "B",
+      "explicacion": "Dada su naturaleza independiente y modular, un componente puede funcionar dentro del mismo programa o estar alojado en una red para ser consultado remotamente [70, 71]."
+    }
+  },
+  {
+    "id": "q58",
+    "type": "single_choice",
+    "question": "¿Es necesaria la fase de instalación de un componente?",
+    "options": [
+      "No, los componentes no requieren registro.",
+      "Solo si el componente usa CSS3.",
+      "Sí, para registrarlo en el sistema y que las aplicaciones lo usen.",
+      "Solo en aplicaciones móviles."
+    ],
+    "correct_answer": "Sí, para registrarlo en el sistema y que las aplicaciones lo usen.",
+    "meta": {
+      "tema": "Tema 4: Concepto de la programación orientada a componentes",
+      "correct_letter": "C",
+      "explicacion": "La instalación es el paso donde el componente se integra físicamente en el entorno de ejecución, permitiendo que otras partes del software lo reconozcan y utilicen [71, 72]."
+    }
+  },
+  {
+    "id": "q59",
+    "type": "single_choice",
+    "question": "La fase de especificación debe ser:",
+    "options": [
+      "Independiente de la plataforma de desarrollo.",
+      "Dependiente del lenguaje de programación del cliente.",
+      "Exclusiva para Windows.",
+      "Obligatoria en HTML."
+    ],
+    "correct_answer": "Independiente de la plataforma de desarrollo.",
+    "meta": {
+      "tema": "Tema 4: Concepto de la programación orientada a componentes",
+      "correct_letter": "A",
+      "explicacion": "Para que un componente sea verdaderamente universal, su definición abstracta (qué hace) debe realizarse sin atarse a un lenguaje o sistema operativo específico [71, 73]."
+    }
+  },
+  {
+    "id": "q60",
+    "type": "single_choice",
+    "question": "Bajo acoplamiento en componentes implica:",
+    "options": [
+      "Mayor dependencia y menos flexibilidad.",
+      "Menor dependencia entre módulos.",
+      "Herencia obligatoria entre módulos.",
+      "Uso exclusivo de variables globales."
+    ],
+    "correct_answer": "Menor dependencia entre módulos.",
+    "meta": {
+      "tema": "Tema 4: Concepto de la programación orientada a componentes",
+      "correct_letter": "B",
+      "explicacion": "El bajo acoplamiento busca que los cambios realizados dentro de un componente no afecten a los demás, permitiendo que el sistema sea más flexible y fácil de arreglar [74, 75]."
+    }
+  },
+  {
+    "id": "q61",
+    "type": "single_choice",
+    "question": "La arquitectura de componentes busca:",
+    "options": [
+      "Evitar cualquier reutilización de código.",
+      "Sustituir el ciclo de vida del software por prototipos.",
+      "Desarrollos más robustos, homogéneos y escalables.",
+      "Obligar a usar un único lenguaje de programación."
+    ],
+    "correct_answer": "Desarrollos más robustos, homogéneos y escalables.",
+    "meta": {
+      "tema": "Tema 5: Arquitectura de componentes",
+      "correct_letter": "C",
+      "explicacion": "Al basarse en piezas ya probadas y estándares, la arquitectura de componentes asegura que el software resultante sea de mayor calidad y fácil de ampliar [7, 74]."
+    }
+  },
+  {
+    "id": "q62",
+    "type": "single_choice",
+    "question": "CORBA se centra en:",
+    "options": [
+      "Facilitar el uso de componentes remotos mediante POO.",
+      "Sustituir HTTP por SMTP.",
+      "Eliminar el uso de middleware en redes.",
+      "Crear únicamente páginas estáticas HTML."
+    ],
+    "correct_answer": "Facilitar el uso de componentes remotos mediante POO.",
+    "meta": {
+      "tema": "Tema 5: Arquitectura de componentes",
+      "correct_letter": "A",
+      "explicacion": "CORBA es un estándar diseñado para permitir que objetos escritos en diferentes lenguajes puedan comunicarse a través de una red de forma transparente [76, 77]."
+    }
+  },
+  {
+    "id": "q63",
+    "type": "single_choice",
+    "question": "DCOM permite:",
+    "options": [
+      "Ejecutar CSS en el servidor.",
+      "Diseñar interfaces gráficas con HTML5.",
+      "Desarrollar componentes distribuidos.",
+      "Sustituir Java por JavaScript."
+    ],
+    "correct_answer": "Desarrollar componentes distribuidos.",
+    "meta": {
+      "tema": "Tema 5: Arquitectura de componentes",
+      "correct_letter": "C",
+      "explicacion": "DCOM (Distributed Component Object Model) es la tecnología de Microsoft que permite que los componentes se comuniquen entre sí aunque estén en diferentes ordenadores [76, 77]."
+    }
+  },
+  {
+    "id": "q64",
+    "type": "single_choice",
+    "question": "Enterprise JavaBeans (EJB) utiliza un modelo:",
+    "options": [
+      "Peer-to-peer.",
+      "Monolítico sin capas.",
+      "Cliente-Servidor.",
+      "Exclusivo de escritorio."
+    ],
+    "correct_answer": "Cliente-Servidor.",
+    "meta": {
+      "tema": "Tema 5: Arquitectura de componentes",
+      "correct_letter": "C",
+      "explicacion": "Los EJB forman parte del estándar J2EE para aplicaciones empresariales distribuidas, operando típicamente bajo la arquitectura de cliente que solicita servicios al servidor [77, 78]."
+    }
+  },
+  {
+    "id": "q65",
+    "type": "single_choice",
+    "question": "Composición simple en POC ocurre cuando:",
+    "options": [
+      "Solo se usan componentes propios sin frameworks.",
+      "Se combinan componentes de un framework con otros.",
+      "Se elimina toda dependencia y no hay interfaces.",
+      "Los componentes se copian dentro del mismo archivo."
+    ],
+    "correct_answer": "Se combinan componentes de un framework con otros.",
+    "meta": {
+      "tema": "Tema 5: Arquitectura de componentes",
+      "correct_letter": "B",
+      "explicacion": "Se habla de composición simple cuando aprovechamos las herramientas de integración que ofrece un framework para unir diferentes componentes entre sí [79, 80]."
+    }
+  },
+  {
+    "id": "q66",
+    "type": "single_choice",
+    "question": "La arquitectura software detalla estructuras con un:",
+    "options": [
+      "Alto nivel de abstracción.",
+      "Bajo nivel de ensamblador.",
+      "Nivel de microcódigo.",
+      "Nivel de hardware físico."
+    ],
+    "correct_answer": "Alto nivel de abstracción.",
+    "meta": {
+      "tema": "Tema 5: Arquitectura de componentes",
+      "correct_letter": "A",
+      "explicacion": "La arquitectura no se pierde en los detalles técnicos de cada línea de código, sino que define el esquema global, las conexiones y el comportamiento del sistema a gran escala [76, 80]."
+    }
+  },
+  {
+    "id": "q67",
+    "type": "single_choice",
+    "question": "¿Qué tecnología busca transparencia para el desarrollador?",
+    "options": [
+      "CORBA.",
+      ".NET.",
+      "HTML5.",
+      "CSS3."
+    ],
+    "correct_answer": ".NET.",
+    "meta": {
+      "tema": "Tema 5: Arquitectura de componentes",
+      "correct_letter": "B",
+      "explicacion": "La plataforma .NET de Microsoft fue diseñada para que el programador pueda centrarse en la lógica del negocio mientras que el framework se encarga de la interoperabilidad y gestión de recursos [76, 81]."
+    }
+  },
+  {
+    "id": "q68",
+    "type": "single_choice",
+    "question": "La composición heterogénea implica:",
+    "options": [
+      "Componer solo dentro del mismo lenguaje.",
+      "Eliminar frameworks y usar solo componentes puros.",
+      "Componer componentes a través de diferentes frameworks.",
+      "Ejecutar componentes solo localmente."
+    ],
+    "correct_answer": "Componer componentes a través de diferentes frameworks.",
+    "meta": {
+      "tema": "Tema 5: Arquitectura de componentes",
+      "correct_letter": "C",
+      "explicacion": "Este tipo de composición compleja se da cuando un sistema requiere integrar piezas que provienen de distintos entornos de trabajo o tecnologías [81, 82]."
+    }
+  },
+  {
+    "id": "q69",
+    "type": "single_choice",
+    "question": "¿Es posible tratar a un framework como un componente?",
+    "options": [
+      "No, un framework nunca puede encapsularse.",
+      "Solo si se reescribe en ensamblador.",
+      "Sí, mediante la extensión del framework.",
+      "Solo en arquitecturas monolíticas."
+    ],
+    "correct_answer": "Sí, mediante la extensión del framework.",
+    "meta": {
+      "tema": "Tema 5: Arquitectura de componentes",
+      "correct_letter": "C",
+      "explicacion": "Un framework avanzado puede ser encapsulado y tratado como un componente de mayor tamaño para ser integrado dentro de otras arquitecturas más amplias [81, 83]."
+    }
+  },
+  {
+    "id": "q70",
+    "type": "single_choice",
+    "question": "Composición transitiva es:",
+    "options": [
+      "La composición que se hace en un único paso y termina ahí.",
+      "El resultado de una composición previa que se vuelve a combinar.",
+      "La composición exclusiva de componentes gráficos.",
+      "La eliminación de interfaces para simplificar."
+    ],
+    "correct_answer": "El resultado de una composición previa que se vuelve a combinar.",
+    "meta": {
+      "tema": "Tema 5: Arquitectura de componentes",
+      "correct_letter": "B",
+      "explicacion": "En sistemas complejos, el producto de unir dos componentes puede ser utilizado como una pieza única para formar una composición aún mayor, siguiendo una cadena de integración [83, 84]."
+    }
+  },
+  {
+    "id": "q71",
+    "type": "single_choice",
+    "question": "Para lograr reutilización es necesario crear:",
+    "options": [
+      "Repositorios de imágenes.",
+      "Repositorios de componentes.",
+      "Repositorios de usuarios.",
+      "Repositorios de conexiones HTTP."
+    ],
+    "correct_answer": "Repositorios de componentes.",
+    "meta": {
+      "tema": "Tema 5: Arquitectura de componentes",
+      "correct_letter": "B",
+      "explicacion": "Para que la industria del software sea eficiente, los componentes validados deben almacenarse en repositorios accesibles para que otros desarrolladores puedan localizarlos y usarlos [84, 85]."
+    }
+  },
+  {
+    "id": "q72",
+    "type": "single_choice",
+    "question": "La arquitectura basada en componentes enfatiza:",
+    "options": [
+      "La herencia y el acoplamiento fuerte.",
+      "La descomposición en componentes funcionales con interfaces definidas.",
+      "El uso exclusivo de variables globales.",
+      "La ausencia total de contratos."
+    ],
+    "correct_answer": "La descomposición en componentes funcionales con interfaces definidas.",
+    "meta": {
+      "tema": "Tema 5: Arquitectura de componentes",
+      "correct_letter": "B",
+      "explicacion": "El pilar de esta arquitectura es dividir el problema en partes manejables que hablen entre sí únicamente a través de puntos de conexión estandarizados e interfaces [58, 86]."
+    }
+  },
+  {
+    "id": "q73",
+    "type": "single_choice",
+    "question": "¿Qué aporta la arquitectura de componentes al ciclo industrial?",
+    "options": [
+      "Mayor eficiencia.",
+      "Mayor dependencia entre módulos.",
+      "Menor reutilización.",
+      "Sustitución de pruebas por despliegue directo."
+    ],
+    "correct_answer": "Mayor eficiencia.",
+    "meta": {
+      "tema": "Tema 5: Arquitectura de componentes",
+      "correct_letter": "A",
+      "explicacion": "Al industrializar el desarrollo y evitar 'reinventar la rueda', las empresas pueden entregar software de calidad en menos tiempo y con menos errores [86, 87]."
+    }
+  },
+  {
+    "id": "q74",
+    "type": "single_choice",
+    "question": "La arquitectura ayuda a prever:",
+    "options": [
+      "El color final del diseño.",
+      "Cambios en el software.",
+      "La marca del navegador del usuario.",
+      "El tipo de teclado del programador."
+    ],
+    "correct_answer": "Cambios en el software.",
+    "meta": {
+      "tema": "Tema 5: Arquitectura de componentes",
+      "correct_letter": "B",
+      "explicacion": "Un sistema bien arquitecturado permite anticipar cómo afectarán las futuras modificaciones y asegura que el software pueda evolucionar sin colapsar [79, 88]."
+    }
+  },
+  {
+    "id": "q75",
+    "type": "single_choice",
+    "question": "¿Los componentes deben ser dependientes entre sí?",
+    "options": [
+      "Sí, porque mejora el control.",
+      "Sí, porque evita interfaces.",
+      "No, la fuerza de la arquitectura reside en su independencia e interfaz.",
+      "Solo en sistemas distribuidos."
+    ],
+    "correct_answer": "No, la fuerza de la arquitectura reside en su independencia e interfaz.",
+    "meta": {
+      "tema": "Tema 5: Arquitectura de componentes",
+      "correct_letter": "C",
+      "explicacion": "La meta es la independencia absoluta: un componente debe poder ser extraído de un sistema y puesto en otro totalmente distinto siempre que se respete su interfaz [88, 89]."
+    }
+  },
+  {
+    "id": "q76",
+    "type": "single_choice",
+    "question": "Bootstrap garantiza:",
+    "options": [
+      "Un diseño adaptativo y principios de accesibilidad.",
+      "La ejecución de Java en el navegador sin servidor.",
+      "La compilación automática de CSS a HTML.",
+      "La eliminación de JavaScript en interfaces web."
+    ],
+    "correct_answer": "Un diseño adaptativo y principios de accesibilidad.",
+    "meta": {
+      "tema": "Tema 6: Bootstrap",
+      "correct_letter": "A",
+      "explicacion": "Bootstrap está diseñado para que la web se adapte a cualquier tamaño de pantalla (responsive) y para que sea usable por personas con discapacidades mediante estándares de accesibilidad [90, 91]."
+    }
+  },
+  {
+    "id": "q77",
+    "type": "single_choice",
+    "question": "Requisitos para ejecutar Bootstrap 3:",
+    "options": [
+      "Solo HTML y CSS.",
+      "CSS, JS, HTML5 y JQuery.",
+      "PHP, MySQL y Apache.",
+      "XML, XSLT y XPath."
+    ],
+    "correct_answer": "CSS, JS, HTML5 y JQuery.",
+    "meta": {
+      "tema": "Tema 6: Bootstrap",
+      "correct_letter": "B",
+      "explicacion": "La versión 3 de Bootstrap depende internamente de la librería JQuery para sus componentes interactivos (modales, menús, etc.) y requiere los estándares modernos de HTML5 y CSS3 [57, 91]."
+    }
+  },
+  {
+    "id": "q78",
+    "type": "single_choice",
+    "question": "El diseño con rejilla de Bootstrap:",
+    "options": [
+      "Obliga a usar tablas HTML para maquetar.",
+      "Elimina el uso de contenedores en la web.",
+      "Sustituye CSS por JavaScript para el layout.",
+      "Crea una estructura ordenada y proporciona continuidad."
+    ],
+    "correct_answer": "Crea una estructura ordenada y proporciona continuidad.",
+    "meta": {
+      "tema": "Tema 6: Bootstrap",
+      "correct_letter": "D",
+      "explicacion": "El sistema de rejilla (grid) permite organizar el contenido en columnas y filas, lo que otorga un aspecto profesional, limpio y equilibrado a la página [91, 92]."
+    }
+  },
+  {
+    "id": "q79",
+    "type": "single_choice",
+    "question": "Etiqueta necesaria para el diseño adaptativo en móviles:",
+    "options": [
+      "<meta name='mobile' content='true'>",
+      "<meta charset='UTF-8'>",
+      "<meta name='viewport' content='width=device-width, initial-scale=1'>",
+      "<meta http-equiv='refresh' content='30'>"
+    ],
+    "correct_answer": "<meta name='viewport' content='width=device-width, initial-scale=1'>",
+    "meta": {
+      "tema": "Tema 6: Bootstrap",
+      "correct_letter": "C",
+      "explicacion": "Esta etiqueta indica al navegador que el ancho de la página debe ser igual al ancho de la pantalla del dispositivo, evitando que la web se vea minúscula en los móviles [93, 94]."
+    }
+  },
+  {
+    "id": "q80",
+    "type": "single_choice",
+    "question": "Tipos de rejillas según dispositivo:",
+    "options": [
+      "tv, console, pc, mobile.",
+      "xs (móviles), sm (tablets), md (PC), lg (PC gran pantalla).",
+      "small, medium, large, xlarge.",
+      "1col, 2col, 3col, 4col."
+    ],
+    "correct_answer": "xs (móviles), sm (tablets), md (PC), lg (PC gran pantalla).",
+    "meta": {
+      "tema": "Tema 6: Bootstrap",
+      "correct_letter": "B",
+      "explicacion": "Bootstrap utiliza estos prefijos de clase para que el desarrollador pueda definir un comportamiento distinto del diseño según el tamaño de la pantalla [93, 95]."
+    }
+  },
+  {
+    "id": "q81",
+    "type": "single_choice",
+    "question": "Clase para centrar la web automáticamente:",
+    "options": [
+      "row-center",
+      "container",
+      "align-web",
+      "center-blocks"
+    ],
+    "correct_answer": "container",
+    "meta": {
+      "tema": "Tema 6: Bootstrap",
+      "correct_letter": "B",
+      "explicacion": "La clase '.container' es el elemento raíz de la estructura de Bootstrap; centra el contenido y le otorga un ancho máximo adecuado para cada tipo de monitor [96, 97]."
+    }
+  },
+  {
+    "id": "q82",
+    "type": "single_choice",
+    "question": "Bootstrap es un framework orientado a:",
+    "options": [
+      "Enmaquetado HTML y diseño CSS.",
+      "Bases de datos distribuidas.",
+      "Control de procesos del sistema operativo.",
+      "Compilación de Java en servidor."
+    ],
+    "correct_answer": "Enmaquetado HTML y diseño CSS.",
+    "meta": {
+      "tema": "Tema 6: Bootstrap",
+      "correct_letter": "A",
+      "explicacion": "A diferencia de los frameworks de back-end, Bootstrap se enfoca exclusivamente en la capa visual y estructural de la aplicación web (front-end) [97, 98]."
+    }
+  },
+  {
+    "id": "q83",
+    "type": "single_choice",
+    "question": "Atributo box-shadow en Bootstrap:",
+    "options": [
+      "Añade efectos visuales según el estado de un campo.",
+      "Cambia el método HTTP de un formulario.",
+      "Define el tamaño de la rejilla responsive.",
+      "Crea enlaces de navegación semánticos."
+    ],
+    "correct_answer": "Añade efectos visuales según el estado de un campo.",
+    "meta": {
+      "tema": "Tema 6: Bootstrap",
+      "correct_letter": "A",
+      "explicacion": "Bootstrap utiliza sombras para resaltar campos de formulario cuando estos obtienen el foco o contienen errores, mejorando la respuesta visual al usuario [97, 99]."
+    }
+  },
+  {
+    "id": "q84",
+    "type": "single_choice",
+    "question": "Para formularios que ocupen poco espacio se usa la clase:",
+    "options": [
+      "form-compact",
+      "form-inline",
+      "form-small",
+      "form-grid"
+    ],
+    "correct_answer": "form-inline",
+    "meta": {
+      "tema": "Tema 6: Bootstrap",
+      "correct_letter": "B",
+      "explicacion": "La clase '.form-inline' coloca todos los elementos del formulario en una sola línea horizontal, ideal para barras de búsqueda o logins sencillos [100, 101]."
+    }
+  },
+  {
+    "id": "q85",
+    "type": "single_choice",
+    "question": "¿Cómo se desactiva el diseño adaptativo?",
+    "options": [
+      "Eliminando los archivos CSS.",
+      "Desactivando JavaScript del navegador.",
+      "Eliminando la etiqueta viewport y el max-width de contenedores.",
+      "Cambiando <div> por <span>."
+    ],
+    "correct_answer": "Eliminando la etiqueta viewport y el max-width de contenedores.",
+    "meta": {
+      "tema": "Tema 6: Bootstrap",
+      "correct_letter": "C",
+      "explicacion": "Si se desea una web con ancho fijo que no cambie en móviles, se deben quitar las instrucciones que fuerzan al navegador a adaptar la escala y el tamaño del contenedor [101, 102]."
+    }
+  },
+  {
+    "id": "q86",
+    "type": "single_choice",
+    "question": "Bootstrap distingue tres estados en formularios:",
+    "options": [
+      "error-only, success-only, warning-only.",
+      "has-error, has-success y has-warning.",
+      "form-red, form-green, form-yellow.",
+      "state-0, state-1, state-2."
+    ],
+    "correct_answer": "has-error, has-success y has-warning.",
+    "meta": {
+      "tema": "Tema 6: Bootstrap",
+      "correct_letter": "B",
+      "explicacion": "Estas clases permiten aplicar colores automáticos (rojo, verde y amarillo) a los campos de texto para informar al usuario sobre la validez de sus datos [101, 103]."
+    }
+  },
+  {
+    "id": "q87",
+    "type": "single_choice",
+    "question": "La clase sr-only sirve para:",
+    "options": [
+      "Aumentar el tamaño del texto en móviles.",
+      "Ocultar elementos para mejorar rendimiento.",
+      "Accesibilidad, ocultando etiquetas visualmente pero no para lectores.",
+      "Crear sombras en texto automáticamente."
+    ],
+    "correct_answer": "Accesibilidad, ocultando etiquetas visualmente pero no para lectores.",
+    "meta": {
+      "tema": "Tema 6: Bootstrap",
+      "correct_letter": "C",
+      "explicacion": "Es vital para el cumplimiento de las normas de accesibilidad (Screen Reader Only); permite que los invidentes escuchen la etiqueta del campo aunque esta no se vea en pantalla [100, 104]."
+    }
+  },
+  {
+    "id": "q88",
+    "type": "single_choice",
+    "question": "¿Bootstrap incluye iconos?",
+    "options": [
+      "No, requiere librerías externas obligatorias.",
+      "Sí, pero solo si se usa React.",
+      "Sí, tiene un amplio número de componentes CSS disponibles.",
+      "Solo soporta iconos SVG personalizados."
+    ],
+    "correct_answer": "Sí, tiene un amplio número de componentes CSS disponibles.",
+    "meta": {
+      "tema": "Tema 6: Bootstrap",
+      "correct_letter": "C",
+      "explicacion": "Bootstrap viene por defecto con una librería de iconos (Glyphicons) que pueden insertarse fácilmente en botones, menús y alertas mediante clases de CSS [104, 105]."
+    }
+  },
+  {
+    "id": "q89",
+    "type": "single_choice",
+    "question": "La rejilla de Bootstrap divide la página en:",
+    "options": [
+      "Filas sin columnas.",
+      "Columnas sin filas.",
+      "Campos e interludios dentro de márgenes.",
+      "Un único contenedor fijo sin divisiones."
+    ],
+    "correct_answer": "Campos e interludios dentro de márgenes.",
+    "meta": {
+      "tema": "Tema 6: Bootstrap",
+      "correct_letter": "C",
+      "explicacion": "Técnicamente, la rejilla o retícula divide el espacio de trabajo en 12 columnas imaginarias que permiten colocar los elementos con precisión matemática [92, 106]."
+    }
+  },
+  {
+    "id": "q90",
+    "type": "single_choice",
+    "question": "Bootstrap es capaz de lograr diseño adaptativo en:",
+    "options": [
+      "Solo móviles.",
+      "Solo PC.",
+      "Solo tablets.",
+      "PC, Tablet y Smartphones."
+    ],
+    "correct_answer": "PC, Tablet y Smartphones.",
+    "meta": {
+      "tema": "Tema 6: Bootstrap",
+      "correct_letter": "D",
+      "explicacion": "La universalidad de Bootstrap radica en que una sola base de código sirve para visualizar correctamente la aplicación en cualquier tipo de terminal inteligente [8, 106]."
+    }
+  },
+  {
+    "id": "q91",
+    "type": "single_choice",
+    "question": "En MVC, la M significa:",
+    "options": [
+      "Módulo: controla la navegación de la web.",
+      "Monitor: supervisa las peticiones HTTP.",
+      "Modelo: Maneja datos y lógica de negocios.",
+      "Motor: renderiza la interfaz de usuario."
+    ],
+    "correct_answer": "Modelo: Maneja datos y lógica de negocios.",
+    "meta": {
+      "tema": "Tema 7: Modelo vista controlador",
+      "correct_letter": "C",
+      "explicacion": "El Modelo es la capa que se comunica con la base de datos y contiene todas las reglas de negocio de la aplicación [90, 106]."
+    }
+  },
+  {
+    "id": "q92",
+    "type": "single_choice",
+    "question": "En MVC, la V significa:",
+    "options": [
+      "Vista: Se encarga del diseño y presentación.",
+      "Validación: comprueba reglas de negocio.",
+      "Versión: gestiona cambios del código.",
+      "Variable: contiene datos temporales."
+    ],
+    "correct_answer": "Vista: Se encarga del diseño y presentación.",
+    "meta": {
+      "tema": "Tema 7: Modelo vista controlador",
+      "correct_letter": "A",
+      "explicacion": "La Vista es la capa de interfaz de usuario; su única responsabilidad es mostrar la información procesada al consumidor final [60, 107]."
+    }
+  },
+  {
+    "id": "q93",
+    "type": "single_choice",
+    "question": "En MVC, la C significa:",
+    "options": [
+      "Cliente: ejecuta la aplicación.",
+      "Conector: une capas de persistencia.",
+      "Controlador: Enruta comandos a modelos y vistas.",
+      "Compilador: transforma el código a binario."
+    ],
+    "correct_answer": "Controlador: Enruta comandos a modelos y vistas.",
+    "meta": {
+      "tema": "Tema 7: Modelo vista controlador",
+      "correct_letter": "C",
+      "explicacion": "El Controlador actúa como cerebro o enlace, tomando las acciones del usuario y decidiendo qué datos del Modelo debe mostrar en qué Vista [107, 108]."
+    }
+  },
+  {
+    "id": "q94",
+    "type": "single_choice",
+    "question": "El controlador en MVC actúa como:",
+    "options": [
+      "Enlace entre el modelo y la vista ante eventos de usuario.",
+      "Motor de base de datos relacional.",
+      "Sustituto de la vista para mostrar HTML.",
+      "Sistema de archivos para recursos estáticos."
+    ],
+    "correct_answer": "Enlace entre el modelo y la vista ante eventos de usuario.",
+    "meta": {
+      "tema": "Tema 7: Modelo vista controlador",
+      "correct_letter": "A",
+      "explicacion": "Su función principal es la mediación: recibe peticiones del usuario, interactúa con el modelo y selecciona la vista apropiada para la respuesta [109, 110]."
+    }
+  },
+  {
+    "id": "q95",
+    "type": "single_choice",
+    "question": "En la implementación Java de MVC, el Servlet suele ser:",
+    "options": [
+      "La Vista.",
+      "El Controlador.",
+      "El Modelo.",
+      "El navegador del cliente."
+    ],
+    "correct_answer": "El Controlador.",
+    "meta": {
+      "tema": "Tema 7: Modelo vista controlador",
+      "correct_letter": "B",
+      "explicacion": "Dentro de la arquitectura web de Java, los servlets procesan las peticiones HTTP iniciales, funcionando perfectamente como la pieza controladora del patrón [110, 111]."
+    }
+  },
+  {
+    "id": "q96",
+    "type": "single_choice",
+    "question": "En la implementación Java de MVC, el JSP suele ser:",
+    "options": [
+      "La Vista.",
+      "El Controlador.",
+      "El Modelo.",
+      "El servidor de aplicaciones."
+    ],
+    "correct_answer": "La Vista.",
+    "meta": {
+      "tema": "Tema 7: Modelo vista controlador",
+      "correct_letter": "A",
+      "explicacion": "JavaServer Pages (JSP) se utiliza para generar contenido HTML de forma dinámica en el servidor, asumiendo el rol de representación visual para el usuario [110, 112]."
+    }
+  },
+  {
+    "id": "q97",
+    "type": "single_choice",
+    "question": "En la implementación Java de MVC, el JavaBean o EJB es:",
+    "options": [
+      "El Controlador (recibe eventos).",
+      "La Vista (renderiza HTML).",
+      "El Modelo (comunica con BD).",
+      "El Router (gestiona red)."
+    ],
+    "correct_answer": "El Modelo (comunica con BD).",
+    "meta": {
+      "tema": "Tema 7: Modelo vista controlador",
+      "correct_letter": "C",
+      "explicacion": "Los JavaBeans y EJB (Enterprise JavaBeans) encapsulan los datos y las operaciones de acceso a bases de datos, cumpliendo con la definición de la capa de Modelo [113, 114]."
+    }
+  },
+  {
+    "id": "q98",
+    "type": "single_choice",
+    "question": "WSDM es un método de desarrollo web centrado en:",
+    "options": [
+      "La base de datos más que el usuario.",
+      "El usuario más que en los datos.",
+      "La compilación y despliegue automático.",
+      "El diseño gráfico exclusivamente."
+    ],
+    "correct_answer": "El usuario más que en los datos.",
+    "meta": {
+      "tema": "Tema 7: Modelo vista controlador",
+      "correct_letter": "B",
+      "explicacion": "Web Site Design Method (WSDM) es una metodología que prioriza los requisitos y perfiles de los usuarios finales para guiar todo el proceso de diseño del sitio [9, 114]."
+    }
+  },
+  {
+    "id": "q99",
+    "type": "single_choice",
+    "question": "Metodología UWE se fundamenta en:",
+    "options": [
+      "Un metamodelo basado en XML.",
+      "Un metamodelo basado en UML.",
+      "Un metamodelo basado en HTML5.",
+      "Un metamodelo basado en CSS3."
+    ],
+    "correct_answer": "Un metamodelo basado en UML.",
+    "meta": {
+      "tema": "Tema 7: Modelo vista controlador",
+      "correct_letter": "B",
+      "explicacion": "UWE (UML-based Web Engineering) utiliza el estándar de modelado UML para definir por separado los aspectos de contenido, navegación y presentación de una web [109, 114]."
+    }
+  },
+  {
+    "id": "q100",
+    "type": "single_choice",
+    "question": "WebML se caracteriza por:",
+    "options": [
+      "Bajo nivel de abstracción y foco técnico inicial.",
+      "Un alto nivel de abstracción sin considerar detalles técnicos iniciales.",
+      "Exclusividad para aplicaciones móviles.",
+      "Sustituir patrones de diseño por scripts."
+    ],
+    "correct_answer": "Un alto nivel de abstracción sin considerar detalles técnicos iniciales.",
+    "meta": {
+      "tema": "Tema 7: Modelo vista controlador",
+      "correct_letter": "B",
+      "explicacion": "WebML permite construir sitios web complejos mediante modelos visuales, abstrayendo al desarrollador de la codificación técnica en las fases iniciales del diseño [9, 115]."
+    }
+  },
+  {
+    "id": "q101",
+    "type": "single_choice",
+    "question": "Framework para la capa de Modelo en Java:",
+    "options": [
+      "Bootstrap.",
+      "Node.js.",
+      "JPA o Hibernate.",
+      "JQuery."
+    ],
+    "correct_answer": "JPA o Hibernate.",
+    "meta": {
+      "tema": "Tema 7: Modelo vista controlador",
+      "correct_letter": "C",
+      "explicacion": "Estas herramientas facilitan el mapeo de objetos Java a tablas de bases de datos relacionales, siendo el estándar de la industria para la capa de persistencia [115, 116]."
+    }
+  },
+  {
+    "id": "q102",
+    "type": "single_choice",
+    "question": "Framework para la capa de Vista en Java:",
+    "options": [
+      "JSF (Java Servlet Faces).",
+      "JPA.",
+      "Hibernate.",
+      "Apache Axis."
+    ],
+    "correct_answer": "JSF (Java Servlet Faces).",
+    "meta": {
+      "tema": "Tema 7: Modelo vista controlador",
+      "correct_letter": "A",
+      "explicacion": "JavaServer Faces (JSF) es un framework centrado en componentes para construir interfaces de usuario de aplicaciones web basadas en Java [115, 116]."
+    }
+  },
+  {
+    "id": "q103",
+    "type": "single_choice",
+    "question": "Un patrón de diseño es:",
+    "options": [
+      "Un lenguaje de programación para web.",
+      "Una solución general y reutilizable a problemas comunes.",
+      "Un protocolo de transporte de datos.",
+      "Un estándar de marcado derivado de SGML."
+    ],
+    "correct_answer": "Una solución general y reutilizable a problemas comunes.",
+    "meta": {
+      "tema": "Tema 7: Modelo vista controlador",
+      "correct_letter": "B",
+      "explicacion": "En ingeniería de software, los patrones son 'recetas' o arquitecturas ya probadas por la comunidad que resuelven retos típicos de diseño de forma eficiente [117, 118]."
+    }
+  },
+  {
+    "id": "q104",
+    "type": "single_choice",
+    "question": "Tipos de patrones de diseño:",
+    "options": [
+      "Estáticos, dinámicos y persistentes.",
+      "Creacionales, estructurales y de comportamiento.",
+      "Cliente, servidor y distribuido.",
+      "HTML, CSS y JavaScript."
+    ],
+    "correct_answer": "Creacionales, estructurales y de comportamiento.",
+    "meta": {
+      "tema": "Tema 7: Modelo vista controlador",
+      "correct_letter": "B",
+      "explicacion": "Esta es la clasificación estándar de la ingeniería de software: patrones para crear objetos, para organizar estructuras y para definir la interacción entre ellos [118, 119]."
+    }
+  },
+  {
+    "id": "q105",
+    "type": "single_choice",
+    "question": "¿MVC permite la separación de lógica de negocio y visualización?",
+    "options": [
+      "No, mezcla ambas capas para simplificar.",
+      "Solo en aplicaciones sin base de datos.",
+      "Sí, es su objetivo fundamental.",
+      "Solo si se usa AJAX."
+    ],
+    "correct_answer": "Sí, es su objetivo fundamental.",
+    "meta": {
+      "tema": "Tema 7: Modelo vista controlador",
+      "correct_letter": "C",
+      "explicacion": "Al separar la Vista (visualización) del Modelo (lógica), se permite que diseñadores y programadores trabajen de forma independiente y que el sistema sea más fácil de mantener [120, 121]."
+    }
+  },
+  {
+    "id": "q106",
+    "type": "single_choice",
+    "question": "Con la creación de clusters se consigue:",
+    "options": [
+      "Eliminar completamente la necesidad de redes.",
+      "Ejecutar únicamente tareas de usuario individuales.",
+      "Reemplazar HTTP por FTP en sistemas distribuidos.",
+      "Compartir recursos (carga o computación) entre nodos."
+    ],
+    "correct_answer": "Compartir recursos (carga o computación) entre nodos.",
+    "meta": {
+      "tema": "Tema 8: Tecnologías Grid de la información",
+      "correct_letter": "D",
+      "explicacion": "Un cluster consiste en un grupo de ordenadores conectados en una red local que actúan como si fueran una sola máquina potente para resolver tareas compartidas [121, 122]."
+    }
+  },
+  {
+    "id": "q107",
+    "type": "single_choice",
+    "question": "Las aplicaciones distribuidas de alto rendimiento (HPC):",
+    "options": [
+      "Requieren gran capacidad de cómputo, superior a un único superordenador.",
+      "Solo ejecutan tareas ofimáticas de bajo consumo.",
+      "Se limitan a sistemas monousuario.",
+      "Funcionan siempre sin paralelismo."
+    ],
+    "correct_answer": "Requieren gran capacidad de cómputo, superior a un único superordenador.",
+    "meta": {
+      "tema": "Tema 8: Tecnologías Grid de la información",
+      "correct_letter": "A",
+      "explicacion": "Las aplicaciones HPC (High Performance Computing) necesitan tal nivel de procesamiento que solo pueden ejecutarse mediante el trabajo paralelo de múltiples nodos en un cluster o grid [122, 123]."
+    }
+  },
+  {
+    "id": "q108",
+    "type": "single_choice",
+    "question": "La Tecnología Grid está diseñada para:",
+    "options": [
+      "Resolver problemas demasiado grandes para un superordenador.",
+      "Ejecutar solo páginas HTML estáticas.",
+      "Eliminar el uso de middleware distribuido.",
+      "Sustituir los clusters locales por un único PC."
+    ],
+    "correct_answer": "Resolver problemas demasiado grandes para un superordenador.",
+    "meta": {
+      "tema": "Tema 8: Tecnologías Grid de la información",
+      "correct_letter": "A",
+      "explicacion": "El Grid es una infraestructura que permite la coordinación de recursos de computación geográficamente dispersos para afrontar problemas científicos o industriales masivos [45, 123]."
+    }
+  },
+  {
+    "id": "q109",
+    "type": "single_choice",
+    "question": "Tres puntos fundamentales para considerar un sistema como Grid:",
+    "options": [
+      "Coordinación de recursos, protocolos estándar y QoS.",
+      "Uso exclusivo de JavaScript, HTML5 y CSS3.",
+      "Monolitismo, acoplamiento fuerte y baja latencia.",
+      "Seguridad nula, ejecución local y sin estándares."
+    ],
+    "correct_answer": "Coordinación de recursos, protocolos estándar y QoS.",
+    "meta": {
+      "tema": "Tema 8: Tecnologías Grid de la información",
+      "correct_letter": "A",
+      "explicacion": "Para que un sistema sea Grid debe haber una gestión centralizada de recursos heterogéneos, usar interfaces abiertas para la interoperabilidad y garantizar una calidad de servicio [124, 125]."
+    }
+  },
+{
+  "id": "q110",
+  "type": "single_choice",
+  "question": "La tecnología Grid ha de ser:",
+  "options": [
+    "Dependiente de un único proveedor y plataforma.",
+    "Local, monolítica y rígida.",
+    "Exclusiva para superordenadores idénticos.",
+    "Dependiente, Consistente, Penetrante y Económica."
+  ],
+  "correct_answer": "Dependiente, Consistente, Penetrante y Económica.",
+  "meta": {
+    "tema": "Tema 8: Tecnologías Grid de la información",
+    "correct_letter": "D",
+    "explicacion": "El manual oficial define que el Grid debe ser estable (Dependiente), basado en estándares (Consistente), comunicativo (Penetrante) y rentable (Económico) [10, 125]."
+  }
+}    "id": "q111",
+    "type": "single_choice",
+    "question": "Diferencia entre Cluster y Grid:",
+    "options": [
+      "Un grid siempre es local y un cluster siempre remoto.",
+      "Los clusters suelen ser locales, el Grid une clusters dispersos geográficamente.",
+      "Un cluster usa HTTP y un grid usa FTP.",
+      "No existe diferencia: son sinónimos."
+    ],
+    "correct_answer": "Los clusters suelen ser locales, el Grid une clusters dispersos geográficamente.",
+    "meta": {
+      "tema": "Tema 8: Tecnologías Grid de la información",
+      "correct_letter": "B",
+      "explicacion": "Mientras que un cluster es una agrupación de proximidad física, el Grid es una 'malla' que conecta diversos centros de datos o clusters a través de grandes distancias [10, 126]."
+    }
+  },
+  {
+    "id": "q112",
+    "type": "single_choice",
+    "question": "Aplicaciones HTC (Alta Productividad) se encargan de:",
+    "options": [
+      "Renderizado gráfico en tiempo real exclusivamente.",
+      "Tareas secuenciales que pueden dividirse y componerse.",
+      "Solo tareas interactivas de baja duración.",
+      "Tareas que requieren GPU obligatoria."
+    ],
+    "correct_answer": "Tareas secuenciales que pueden dividirse y componerse.",
+    "meta": {
+      "tema": "Tema 8: Tecnologías Grid de la información",
+      "correct_letter": "B",
+      "explicacion": "HTC (High Throughput Computing) se centra en procesar una gran cantidad de tareas pequeñas o divisibles que requieren mucha potencia de cálculo durante periodos largos de tiempo [10, 126]."
+    }
+  },
+  {
+    "id": "q113",
+    "type": "single_choice",
+    "question": "La e-Ciencia es:",
+    "options": [
+      "Cuando la ciencia depende de la computación (meteorología, bioinformática).",
+      "La ciencia realizada sin herramientas digitales.",
+      "Un tipo de diseño web orientado a datos.",
+      "Un estándar de comunicación HTTP."
+    ],
+    "correct_answer": "Cuando la ciencia depende de la computación (meteorología, bioinformática).",
+    "meta": {
+      "tema": "Tema 8: Tecnologías Grid de la información",
+      "correct_letter": "A",
+      "explicacion": "El término e-Ciencia se refiere a la investigación científica que utiliza recursos computacionales avanzados para analizar grandes volúmenes de datos distribuidos [127, 128]."
+    }
+  },
+  {
+    "id": "q114",
+    "type": "single_choice",
+    "question": "¿Qué es la Meta-computación?",
+    "options": [
+      "Un único superordenador con más memoria.",
+      "La unión de varios superordenadores.",
+      "Un navegador especializado en HPC.",
+      "Un protocolo de cifrado de red."
+    ],
+    "correct_answer": "La unión de varios superordenadores.",
+    "meta": {
+      "tema": "Tema 8: Tecnologías Grid de la información",
+      "correct_letter": "B",
+      "explicacion": "Fue el concepto precursor del Grid; consistía en interconectar varios superordenadores distantes para que funcionaran de forma coordinada como una única entidad lógica [127, 128]."
+    }
+  },
+  {
+    "id": "q115",
+    "type": "single_choice",
+    "question": "Ventaja de los clusters:",
+    "options": [
+      "Menor fiabilidad por depender de múltiples nodos.",
+      "Obligan a usar nodos idénticos siempre.",
+      "No permiten paralelización.",
+      "Disminución de la obsolescencia y mayor fiabilidad (tolerancia a fallos)."
+    ],
+    "correct_answer": "Disminución de la obsolescencia y mayor fiabilidad (tolerancia a fallos).",
+    "meta": {
+      "tema": "Tema 8: Tecnologías Grid de la información",
+      "correct_letter": "D",
+      "explicacion": "Al usar múltiples máquinas estándar, si una falla, las demás continúan el trabajo. Además, permite actualizar el hardware de forma modular y económica [129, 130]."
+    }
+  },
+  {
+    "id": "q116",
+    "type": "single_choice",
+    "question": "El software de control en Grid sirve para:",
+    "options": [
+      "Cambiar el HTML de las páginas servidas.",
+      "Monitorizar y controlar los recursos globalmente.",
+      "Compilar programas en lenguaje ensamblador.",
+      "Sustituir la red por ejecución local."
+    ],
+    "correct_answer": "Monitorizar y controlar los recursos globalmente.",
+    "meta": {
+      "tema": "Tema 8: Tecnologías Grid de la información",
+      "correct_letter": "B",
+      "explicacion": "Un sistema Grid necesita una capa de software (middleware) que se encargue de saber qué nodos están libres, repartir las tareas y vigilar la seguridad de la red [10, 129]."
+    }
+  },
+  {
+    "id": "q117",
+    "type": "single_choice",
+    "question": "El criterio económico en Grid implica:",
+    "options": [
+      "Ser más caro que usar un superordenador dedicado.",
+      "Ser más rentable que el uso de mainframes.",
+      "Evitar cualquier reutilización de recursos.",
+      "Obligar a adquirir hardware propietario."
+    ],
+    "correct_answer": "Ser más rentable que el uso de mainframes.",
+    "meta": {
+      "tema": "Tema 8: Tecnologías Grid de la información",
+      "correct_letter": "B",
+      "explicacion": "La implantación de un Grid solo tiene sentido si ofrece una capacidad de cálculo similar a la de un superordenador mainframe pero a un coste significativamente inferior [131, 132]."
+    }
+  },
+  {
+    "id": "q118",
+    "type": "single_choice",
+    "question": "QoS en Grid mide:",
+    "options": [
+      "Tiempo de respuesta, rendimiento y seguridad.",
+      "Solo el ancho de banda de red.",
+      "Únicamente el número de usuarios conectados.",
+      "El tamaño de archivos HTML."
+    ],
+    "correct_answer": "Tiempo de respuesta, rendimiento y seguridad.",
+    "meta": {
+      "tema": "Tema 8: Tecnologías Grid de la información",
+      "correct_letter": "A",
+      "explicacion": "Quality of Service (QoS) asegura que el sistema Grid cumpla con niveles mínimos de estabilidad y rapidez necesarios para que las aplicaciones HPC funcionen [131, 132]."
+    }
+  },
+  {
+    "id": "q119",
+    "type": "single_choice",
+    "question": "¿Los nodos en un Grid deben ser idénticos?",
+    "options": [
+      "Sí, es obligatorio que sean iguales.",
+      "Sí, para asegurar compatibilidad de hardware.",
+      "No, se usan elementos heterogéneos.",
+      "Solo si el Grid usa HTTP."
+    ],
+    "correct_answer": "No, se usan elementos heterogéneos.",
+    "meta": {
+      "tema": "Tema 8: Tecnologías Grid de la información",
+      "correct_letter": "C",
+      "explicacion": "Una de las fortalezas del Grid es su capacidad para integrar máquinas con distintos sistemas operativos y hardware (heterogeneidad) mediante protocolos comunes [10, 133]."
+    }
+  },
+  {
+    "id": "q120",
+    "type": "single_choice",
+    "question": "La tecnología Grid se enmarca en el paradigma de:",
+    "options": [
+      "Programación local monousuario.",
+      "Computación distribuida.",
+      "Computación sin red.",
+      "Compilación estática."
+    ],
+    "correct_answer": "Computación distribuida.",
+    "meta": {
+      "tema": "Tema 8: Tecnologías Grid de la información",
+      "correct_letter": "B",
+      "explicacion": "La computación distribuida es el modelo donde los recursos de diferentes equipos se unen para trabajar en un objetivo común, siendo el Grid su máxima expresión [130, 133]."
+    }
+  },
+  {
+    "id": "q121",
+    "type": "single_choice",
+    "question": "SOAP es la tecnología utilizada para:",
+    "options": [
+      "Invocar servicios descubiertos y comunicar consumidor con proveedor.",
+      "Diseñar interfaces web responsive.",
+      "Reemplazar HTTP por FTP en servicios.",
+      "Sustituir XML por CSS3."
+    ],
+    "correct_answer": "Invocar servicios descubiertos y comunicar consumidor con proveedor.",
+    "meta": {
+      "tema": "Tema 9: Arquitectura orientada a servicios",
+      "correct_letter": "A",
+      "explicacion": "SOAP (Simple Object Access Protocol) es el protocolo de mensajería basado en XML que permite la comunicación estandarizada entre el cliente y el servicio web [133, 134]."
+    }
+  },
+  {
+    "id": "q122",
+    "type": "single_choice",
+    "question": "¿Qué es un Web Service?",
+    "options": [
+      "Un archivo HTML con estilos embebidos.",
+      "Un componente que solo funciona en local.",
+      "Una tecnología que habilita la comunicación entre computadoras mediante protocolos y estándares.",
+      "Un estándar de diseño gráfico para web."
+    ],
+    "correct_answer": "Una tecnología que habilita la comunicación entre computadoras mediante protocolos y estándares.",
+    "meta": {
+      "tema": "Tema 9: Arquitectura orientada a servicios",
+      "correct_letter": "C",
+      "explicacion": "Los servicios web son aplicaciones modulares que pueden ser localizadas e invocadas a través de la red para realizar tareas específicas de forma distribuida [135, 136]."
+    }
+  },
+  {
+    "id": "q123",
+    "type": "single_choice",
+    "question": "Apache Axis está formado por:",
+    "options": [
+      "La aplicación AXIS y el servidor Apache.",
+      "Un navegador y un motor CSS.",
+      "Un compilador JavaScript y un router.",
+      "Un framework de Bootstrap y un plugin JQuery."
+    ],
+    "correct_answer": "La aplicación AXIS y el servidor Apache.",
+    "meta": {
+      "tema": "Tema 9: Arquitectura orientada a servicios",
+      "correct_letter": "A",
+      "explicacion": "Apache Axis es un framework de código abierto para la construcción y despliegue de servicios web utilizando el servidor web de Apache [108, 135]."
+    }
+  },
+  {
+    "id": "q124",
+    "type": "single_choice",
+    "question": "Un Web Service puede utilizar protocolos como:",
+    "options": [
+      "TCP únicamente.",
+      "SMTP exclusivamente.",
+      "XML-RPC, SOAP o REST.",
+      "FTP para todos los casos."
+    ],
+    "correct_answer": "XML-RPC, SOAP o REST.",
+    "meta": {
+      "tema": "Tema 9: Arquitectura orientada a servicios",
+      "correct_letter": "C",
+      "explicacion": "Dependiendo de la arquitectura seleccionada, los servicios web pueden emplear diferentes protocolos de mensajería y transferencia sobre HTTP [137, 138]."
+    }
+  },
+  {
+    "id": "q125",
+    "type": "single_choice",
+    "question": "WSDL sirve para:",
+    "options": [
+      "Describir las interfaces de los servicios web.",
+      "Ejecutar JavaScript en el servidor.",
+      "Definir estilos de presentación CSS.",
+      "Realizar consultas SQL en remoto."
+    ],
+    "correct_answer": "Describir las interfaces de los servicios web.",
+    "meta": {
+      "tema": "Tema 9: Arquitectura orientada a servicios",
+      "correct_letter": "A",
+      "explicacion": "WSDL (Web Services Description Language) es un archivo XML que informa al consumidor sobre qué funciones tiene el servicio y qué parámetros debe enviar [137, 139]."
+    }
+  },
+  {
+    "id": "q126",
+    "type": "single_choice",
+    "question": "Elementos de la arquitectura SOA:",
+    "options": [
+      "Cliente, Servidor, Navegador, HTML.",
+      "Proveedor, Consumidor, Registro y el Servicio.",
+      "Modelo, Vista, Controlador y Servlet.",
+      "DNS, TCP, UDP y HTTP."
+    ],
+    "correct_answer": "Proveedor, Consumidor, Registro y el Servicio.",
+    "meta": {
+      "tema": "Tema 9: Arquitectura orientada a servicios",
+      "correct_letter": "B",
+      "explicacion": "La arquitectura SOA (Service Oriented Architecture) requiere piezas que ofrecen servicios, piezas que los consumen y un registro central para localizarlos [137, 139]."
+    }
+  },
+  {
+    "id": "q127",
+    "type": "single_choice",
+    "question": "SOA permite el desarrollo de aplicaciones:",
+    "options": [
+      "Monolíticas y fuertemente acopladas.",
+      "Débilmente acopladas y distribuidas.",
+      "Sin interfaces y sin contratos.",
+      "Exclusivas para escritorio."
+    ],
+    "correct_answer": "Débilmente acopladas y distribuidas.",
+    "meta": {
+      "tema": "Tema 9: Arquitectura orientada a servicios",
+      "correct_letter": "B",
+      "explicacion": "El objetivo de SOA es que las aplicaciones se construyan uniendo servicios independientes que no dependan internamente unos de otros (débil acoplamiento) [140, 141]."
+    }
+  },
+  {
+    "id": "q128",
+    "type": "single_choice",
+    "question": "¿SOA se vincula a una única tecnología?",
+    "options": [
+      "Sí, solo se usa con SOAP.",
+      "No, puede usar RPC, CORBA o Web Services.",
+      "Sí, es obligatorio usar REST.",
+      "Sí, únicamente funciona con HTTP/3."
+    ],
+    "correct_answer": "No, puede usar RPC, CORBA o Web Services.",
+    "meta": {
+      "tema": "Tema 9: Arquitectura orientada a servicios",
+      "correct_letter": "B",
+      "explicacion": "SOA es un estilo arquitectónico conceptual e independiente de la implementación técnica que se elija para desplegar los servicios [140, 141]."
+    }
+  },
+  {
+    "id": "q129",
+    "type": "single_choice",
+    "question": "La fase de registro en SOA sirve para:",
+    "options": [
+      "Que el consumidor publique sus necesidades en un repositorio.",
+      "Que el proveedor especifique su interfaz y funcionalidades en un repositorio.",
+      "Que el servidor elimine servicios obsoletos automáticamente.",
+      "Que el navegador guarde cookies de sesión."
+    ],
+    "correct_answer": "Que el proveedor especifique su interfaz y funcionalidades en un repositorio.",
+    "meta": {
+      "tema": "Tema 9: Arquitectura orientada a servicios",
+      "correct_letter": "B",
+      "explicacion": "El registro (como UDDI) actúa como 'páginas amarillas' donde los proveedores anuncian sus servicios para que los consumidores puedan encontrarlos [140, 142]."
+    }
+  },
+  {
+    "id": "q130",
+    "type": "single_choice",
+    "question": "¿Qué protocolo de transporte usa SOA por defecto?",
+    "options": [
+      "SMTP.",
+      "FTP.",
+      "HTTP.",
+      "UDP."
+    ],
+    "correct_answer": "HTTP.",
+    "meta": {
+      "tema": "Tema 9: Arquitectura orientada a servicios",
+      "correct_letter": "C",
+      "explicacion": "Aunque podría usar otros, HTTP es el protocolo estándar de transporte sobre el cual viajan los mensajes SOAP y las peticiones a los servicios web en Internet [143, 144]."
+    }
+  },
+  {
+    "id": "q131",
+    "type": "single_choice",
+    "question": "IBM WebSphere es:",
+    "options": [
+      "Un lenguaje de marcado derivado de SGML.",
+      "Un middleware para crear aplicaciones multiplataforma usando servicios web.",
+      "Un estándar de estilos para CSS3.",
+      "Un framework para diseño responsive en cliente."
+    ],
+    "correct_answer": "Un middleware para crear aplicaciones multiplataforma usando servicios web.",
+    "meta": {
+      "tema": "Tema 9: Arquitectura orientada a servicios",
+      "correct_letter": "B",
+      "explicacion": "WebSphere es una plataforma de software de IBM (middleware) diseñada para facilitar el despliegue de aplicaciones empresariales basadas en SOA [142, 143]."
+    }
+  },
+  {
+    "id": "q132",
+    "type": "single_choice",
+    "question": "SOA busca soluciones:",
+    "options": [
+      "Independientes para cada problema mediante módulos.",
+      "Dependientes y fuertemente acopladas.",
+      "Basadas solo en HTML estático.",
+      "Que eliminen el registro de servicios."
+    ],
+    "correct_answer": "Independientes para cada problema mediante módulos.",
+    "meta": {
+      "tema": "Tema 9: Arquitectura orientada a servicios",
+      "correct_letter": "A",
+      "explicacion": "La filosofía SOA promueve resolver grandes retos de negocio mediante la unión de pequeños servicios específicos y reutilizables [143, 145]."
+    }
+  },
+  {
+    "id": "q133",
+    "type": "single_choice",
+    "question": "El consumidor en SOA es quien:",
+    "options": [
+      "Publica servicios en el registro.",
+      "Implementa el servicio web.",
+      "Demanda la utilización de determinados servicios.",
+      "Compila el WSDL a HTML."
+    ],
+    "correct_answer": "Demanda la utilización de determinados servicios.",
+    "meta": {
+      "tema": "Tema 9: Arquitectura orientada a servicios",
+      "correct_letter": "C",
+      "explicacion": "El consumidor (o cliente) es la aplicación que localiza un servicio en el registro y envía una petición para utilizar su funcionalidad [146, 147]."
+    }
+  },
+  {
+    "id": "q134",
+    "type": "single_choice",
+    "question": "Enhanced Web Services en Java incluyen:",
+    "options": [
+      "Un motor de estilos para CSS3.",
+      "Funcionalidades para intercambio de mensajes.",
+      "Un navegador integrado para pruebas.",
+      "Un compilador de Bootstrap."
+    ],
+    "correct_answer": "Funcionalidades para intercambio de mensajes.",
+    "meta": {
+      "tema": "Tema 9: Arquitectura orientada a servicios",
+      "correct_letter": "B",
+      "explicacion": "Java incorpora extensiones específicas para mejorar la fiabilidad y seguridad en la transmisión de mensajes XML entre servicios distribuidos [144, 146]."
+    }
+  },
+  {
+    "id": "q135",
+    "type": "single_choice",
+    "question": "SOA ofrece un desarrollo de aplicaciones web:",
+    "options": [
+      "Lento e inestable.",
+      "Solo válido para aplicaciones sin red.",
+      "Ágil y robusto.",
+      "Incompatible con sistemas distribuidos."
+    ],
+    "correct_answer": "Ágil y robusto.",
+    "meta": {
+      "tema": "Tema 9: Arquitectura orientada a servicios",
+      "correct_letter": "C",
+      "explicacion": "Al basarse en componentes ya probados y protocolos estandarizados, SOA permite construir sistemas complejos con gran rapidez y estabilidad [148, 149]."
+    }
+  },
+  {
+    "id": "q136",
+    "type": "single_choice",
+    "question": "HTTP es un protocolo:",
+    "options": [
+      "Exclusivo para transferencia de archivos multimedia.",
+      "De capa física para transmisión eléctrica.",
+      "Basado en redes P2P sin servidor.",
+      "Basado en arquitectura cliente-servidor, para intercambio de información y carente de estado."
+    ],
+    "correct_answer": "Basado en arquitectura cliente-servidor, para intercambio de información y carente de estado.",
+    "meta": {
+      "tema": "Tema 10: Protocolo HTTP",
+      "correct_letter": "D",
+      "explicacion": "Hypertext Transfer Protocol (HTTP) es la base de la comunicación web; funciona mediante peticiones de clientes (navegadores) y respuestas de servidores [148, 150]."
+    }
+  },
+  {
+    "id": "q137",
+    "type": "single_choice",
+    "question": "Diferencia principal entre HTTP y HTTPS:",
+    "options": [
+      "La seguridad.",
+      "La sintaxis del HTML.",
+      "La capacidad de ejecutar JavaScript.",
+      "El uso de CSS3 obligatorio."
+    ],
+    "correct_answer": "La seguridad.",
+    "meta": {
+      "tema": "Tema 10: Protocolo HTTP",
+      "correct_letter": "A",
+      "explicacion": "HTTPS es la versión segura de HTTP; utiliza certificados y cifrado (SSL/TLS) para proteger la información transmitida [151, 152]."
+    }
+  },
+  {
+    "id": "q138",
+    "type": "single_choice",
+    "question": "Un código de respuesta HTTP 404 significa:",
+    "options": [
+      "El servidor ha fallado completamente (error 5xx).",
+      "El recurso existe, pero requiere autenticación.",
+      "Se ha comunicado con el servidor, pero el recurso no existe.",
+      "La petición se ha procesado correctamente sin contenido."
+    ],
+    "correct_answer": "Se ha comunicado con el servidor, pero el recurso no existe.",
+    "meta": {
+      "tema": "Tema 10: Protocolo HTTP",
+      "correct_letter": "C",
+      "explicacion": "El error 404 indica que la conexión con el servidor fue exitosa, pero la URL solicitada no apunta a ningún archivo o página existente [152, 153]."
+    }
+  },
+  {
+    "id": "q139",
+    "type": "single_choice",
+    "question": "Diferencia entre petición GET y POST:",
+    "options": [
+      "GET solo funciona en HTTPS y POST solo en HTTP.",
+      "GET envía datos en la URL; POST los envía de forma 'oculta' en el cuerpo del mensaje.",
+      "GET siempre cifra el contenido y POST no.",
+      "GET se usa para subir archivos y POST para leer páginas."
+    ],
+    "correct_answer": "GET envía datos en la URL; POST los envía de forma 'oculta' en el cuerpo del mensaje.",
+    "meta": {
+      "tema": "Tema 10: Protocolo HTTP",
+      "correct_letter": "B",
+      "explicacion": "GET es público y visible en la barra de direcciones; POST es más seguro para datos sensibles al incluirlos dentro del paquete de datos de la petición [58, 154]."
+    }
+  },
+  {
+    "id": "q140",
+    "type": "single_choice",
+    "question": "Las cookies se clasifican por almacenamiento en:",
+    "options": [
+      "De sesión y persistentes.",
+      "Públicas y privadas.",
+      "Locales y remotas.",
+      "Temporales y cifradas únicamente."
+    ],
+    "correct_answer": "De sesión y persistentes.",
+    "meta": {
+      "tema": "Tema 10: Protocolo HTTP",
+      "correct_letter": "A",
+      "explicacion": "Las cookies de sesión desaparecen al cerrar el navegador, mientras que las persistentes tienen una fecha de caducidad y se guardan en el disco duro [154, 155]."
+    }
+  },
+  {
+    "id": "q141",
+    "type": "single_choice",
+    "question": "SSL y TLS son:",
+    "options": [
+      "Lenguajes de marcado para servicios web.",
+      "Métodos HTTP equivalentes a GET y POST.",
+      "Frameworks de Java para MVC.",
+      "Protocolos seguros usados por HTTPS para conexiones cliente-servidor."
+    ],
+    "correct_answer": "Protocolos seguros usados por HTTPS para conexiones cliente-servidor.",
+    "meta": {
+      "tema": "Tema 10: Protocolo HTTP",
+      "correct_letter": "D",
+      "explicacion": "Estos protocolos criptográficos cifran el canal de comunicación para asegurar que la privacidad y la integridad de los datos se mantengan [47, 156]."
+    }
+  },
+  {
+    "id": "q142",
+    "type": "single_choice",
+    "question": "El protocolo HTTP pertenece a la capa de:",
+    "options": [
+      "Enlace de datos.",
+      "Aplicación.",
+      "Física.",
+      "Transporte."
+    ],
+    "correct_answer": "Aplicación.",
+    "meta": {
+      "tema": "Tema 10: Protocolo HTTP",
+      "correct_letter": "B",
+      "explicacion": "En el modelo TCP/IP, HTTP se ubica en la capa superior (aplicación), por encima de las capas de transporte (TCP) e Internet (IP) [3, 156]."
+    }
+  },
+  {
+    "id": "q143",
+    "type": "single_choice",
+    "question": "Una URL especifica:",
+    "options": [
+      "Solo la IP del servidor y nada más.",
+      "El método HTTP y el tamaño de respuesta.",
+      "Protocolo, dirección/nombre del recurso y opcionalmente puerto.",
+      "El tipo de cifrado de la conexión."
+    ],
+    "correct_answer": "Protocolo, dirección/nombre del recurso y opcionalmente puerto.",
+    "meta": {
+      "tema": "Tema 10: Protocolo HTTP",
+      "correct_letter": "C",
+      "explicacion": "La Uniform Resource Locator (URL) es la dirección completa que le dice al navegador exactamente dónde encontrar un recurso en la red [156, 157]."
+    }
+  },
+  {
+    "id": "q144",
+    "type": "single_choice",
+    "question": "URI puede entenderse como:",
+    "options": [
+      "Un localizador.",
+      "Un cifrado de red.",
+      "Un tipo de cookie persistente.",
+      "Un puerto TCP fijo."
+    ],
+    "correct_answer": "Un localizador.",
+    "meta": {
+      "tema": "Tema 10: Protocolo HTTP",
+      "correct_letter": "A",
+      "explicacion": "Un Uniform Resource Identifier (URI) es el concepto genérico de identificador para recursos en la red, siendo la URL su forma más común de localización [108, 158]."
+    }
+  },
+  {
+    "id": "q145",
+    "type": "single_choice",
+    "question": "URN permite:",
+    "options": [
+      "Indicar el protocolo y puerto obligatorios.",
+      "Identificar recursos en la red pero no indica cómo acceder a ellos.",
+      "Sustituir completamente a las URLs en navegadores.",
+      "Transferir datos cifrados en HTTP."
+    ],
+    "correct_answer": "Identificar recursos en la red pero no indica cómo acceder a ellos.",
+    "meta": {
+      "tema": "Tema 10: Protocolo HTTP",
+      "correct_letter": "B",
+      "explicacion": "A diferencia de la URL, el URN (Uniform Resource Name) identifica un recurso de forma persistente e independiente de su ubicación física [158, 159]."
+    }
+  },
+  {
+    "id": "q146",
+    "type": "single_choice",
+    "question": "Las conexiones persistentes sirven para:",
+    "options": [
+      "Aumentar el número de errores 404.",
+      "Obligar a cerrar TCP tras cada petición.",
+      "Reducir el tráfico de peticiones usando una misma conexión TCP.",
+      "Sustituir GET por POST automáticamente."
+    ],
+    "correct_answer": "Reducir el tráfico de peticiones usando una misma conexión TCP.",
+    "meta": {
+      "tema": "Tema 10: Protocolo HTTP",
+      "correct_letter": "C",
+      "explicacion": "Permiten que varias peticiones y respuestas viajen por el mismo canal, evitando el coste de tiempo de abrir y cerrar la conexión para cada imagen o script [158, 160]."
+    }
+  },
+  {
+    "id": "q147",
+    "type": "single_choice",
+    "question": "¿Qué protocolo es más inapropiado para información sensible?",
+    "options": [
+      "POST.",
+      "GET.",
+      "HTTPS.",
+      "TLS."
+    ],
+    "correct_answer": "GET.",
+    "meta": {
+      "tema": "Tema 10: Protocolo HTTP",
+      "correct_letter": "B",
+      "explicacion": "El método GET nunca debe usarse para contraseñas o datos personales porque la información queda grabada en el historial del navegador y en los registros del servidor [161, 162]."
+    }
+  },
+  {
+    "id": "q148",
+    "type": "single_choice",
+    "question": "Los códigos HTTP 5xx indican:",
+    "options": [
+      "Redirecciones del navegador.",
+      "Error del servidor.",
+      "Error del cliente (URL incorrecta).",
+      "Respuestas informativas 1xx."
+    ],
+    "correct_answer": "Error del servidor.",
+    "meta": {
+      "tema": "Tema 10: Protocolo HTTP",
+      "correct_letter": "B",
+      "explicacion": "La serie 500 indica que la petición era correcta, pero el servidor no pudo completarla debido a un fallo interno en su configuración o software [162, 163]."
+    }
+  },
+  {
+    "id": "q149",
+    "type": "single_choice",
+    "question": "El método HEAD es equivalente a GET pero:",
+    "options": [
+      "Devuelve el cuerpo del mensaje y no cabeceras.",
+      "Solo devuelve las cabeceras, no el mensaje.",
+      "Cambia recursos en el servidor.",
+      "Se usa únicamente para subir archivos."
+    ],
+    "correct_answer": "Solo devuelve las cabeceras, no el mensaje.",
+    "meta": {
+      "tema": "Tema 10: Protocolo HTTP",
+      "correct_letter": "B",
+      "explicacion": "Es útil para verificar si un archivo ha cambiado o existe sin necesidad de descargar todo el contenido, ahorrando ancho de banda [27, 162]."
+    }
+  },
+  {
+    "id": "q150",
+    "type": "single_choice",
+    "question": "¿Qué sistema de cifrado usa HTTPS?",
+    "options": [
+      "Solo cifrado simétrico.",
+      "Solo cifrado asimétrico.",
+      "Una combinación de clave asimétrica (SSL) y simétrica (TLS).",
+      "No usa cifrado, solo hashing."
+    ],
+    "correct_answer": "Una combinación de clave asimétrica (SSL) y simétrica (TLS).",
+    "meta": {
+      "tema": "Tema 10: Protocolo HTTP",
+      "correct_letter": "C",
+      "explicacion": "HTTPS utiliza un sistema híbrido: clave asimétrica para identificarse y acordar una clave, y clave simétrica para el intercambio rápido de datos durante la sesión [164, 165]."
+    }
+  }
+]
+
