@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>DAR campus y exámenes</title>
+
   <style>
     :root{
       --bg: #0f1115;
@@ -11,9 +12,9 @@
       --panel-2: #1c2028;
       --border: #2a2f39;
 
-      --text: #d6d6d6;     /* texto principal suave */
+      --text: #d6d6d6;     /* texto principal  */
       --text-2: #a8b0bb;   /* texto secundario */
-      --title: #ececec;    /* títulos (no blanco puro) */
+      --title: #d7dde7;    
 
       --hover: #232834;
       --accent: #7aa2ff;
@@ -39,11 +40,13 @@
       margin-bottom: 14px;
     }
 
+    /* TÍTULO PRINCIPAL */
     h1 {
       margin:0;
       color: var(--title);
       letter-spacing: .2px;
       font-size: 2rem;
+      font-weight: 700;
     }
 
     .muted { color: var(--text-2); }
@@ -60,11 +63,13 @@
 
     #progress { color: var(--text-2); }
 
+  /*Título pregunta*/
     h2 {
       margin: 10px 0 10px;
       color: var(--title);
       font-size: 1.35rem;
       line-height: 1.25;
+      font-weight: 650;
     }
 
     .opt {
@@ -131,7 +136,7 @@
   <div class="topbar">
     <div>
       <h1>DAR Test</h1>
-      <!-- Quitamos el “Listo.”: dejamos status vacío por defecto -->
+     
       <div class="muted small" id="status"></div>
     </div>
 
@@ -158,6 +163,7 @@
   <div class="card">
     <div class="row" style="justify-content:space-between;">
       <div><span class="mono">Aciertos:</span> <span id="score">0</span></div>
+      <div><span class="mono">Fallos:</span> <span id="fails">0</span></div>
       <div><span class="mono">Respondidas:</span> <span id="answered">0</span></div>
       <div><span class="mono">Total:</span> <span id="total">0</span></div>
     </div>
