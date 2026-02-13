@@ -279,7 +279,15 @@ function updateScoreboard() {
   elScore.textContent = String(score);
   elAnswered.textContent = String(answered);
   elTotal.textContent = String(questions.length);
-  elFails.textContent = String(Math.max(0, answered - score));
+
+  const fails = Math.max(0, answered - score);
+
+  // Seguridad: si no existe el elemento, no rompas el test
+  if (elFails) {
+    elFails.textContent = String(fails);
+  } else {
+    console.warn("No existe #fails en el HTML");
+  }
 }
 
 function shuffleInPlace(arr) {
